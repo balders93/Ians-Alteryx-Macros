@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="i" />
+                <Field name="j" />
+                <Field name="Value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input2</Name>
+          <Abbrev />
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="6" />
+              <Fields>
+                <Field name="i" />
+                <Field name="j" />
+                <Field name="Value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>1000</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>100</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>10</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="198" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="j" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="i" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_i" selected="True" rename="Left_i" />
+                <SelectField field="Left_j" selected="True" rename="Left_j" />
+                <SelectField field="Left_Value" selected="True" rename="Left_Value" />
+                <SelectField field="Right_i" selected="True" rename="Right_i" />
+                <SelectField field="Right_j" selected="True" rename="Right_j" />
+                <SelectField field="Right_Value" selected="True" rename="Right_Value" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="j" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Left_i" source="TextInput:" type="Byte" />
+            <Field name="Left_j" source="TextInput:" type="Byte" />
+            <Field name="Left_Value" source="TextInput:" type="Byte" />
+            <Field name="Right_i" source="TextInput:" type="Byte" />
+            <Field name="Right_j" source="TextInput:" type="Byte" />
+            <Field name="Right_Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_j" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="354" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Left_Value]*[Right_Value]" field="New Matrix Value" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[New Matrix Value = [Left_Value]*[Right_Value]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Left_i" source="TextInput:" type="Byte" />
+            <Field name="Left_j" source="TextInput:" type="Byte" />
+            <Field name="Left_Value" source="TextInput:" type="Byte" />
+            <Field name="Right_i" source="TextInput:" type="Byte" />
+            <Field name="Right_j" source="TextInput:" type="Byte" />
+            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="New Matrix Value" source="Formula: [Left_Value]*[Right_Value]" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_j" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="498" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Left_i" action="GroupBy" rename="i" />
+            <SummarizeField field="Right_j" action="GroupBy" rename="j" />
+            <SummarizeField field="New Matrix Value" action="Sum" rename="Value" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_i" order="Asc" />
+            <Field field="Right_j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="630" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (2)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Matrix Multiplication</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (1)</Name>
+          <ToolId value="1" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (2)</Description>
+              <Name>Macro Input (2)</Name>
+              <ToolId value="2" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (2)</Description>
+              <Name>Macro Input (6)</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (14)</Description>
+              <Name>Macro Output (14)</Name>
+              <ToolId value="14" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="6" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
