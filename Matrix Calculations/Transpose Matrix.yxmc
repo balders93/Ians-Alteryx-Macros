@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="210" y="282" />
+        <Position x="138" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -75,7 +75,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="498" y="282" />
+        <Position x="426" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -92,7 +92,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="354" y="282" />
+        <Position x="282" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -122,7 +122,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="42" y="66" width="1608" height="96" />
+        <Position x="54" y="54" width="1608" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -142,7 +142,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="150" width="492" height="96" />
+        <Position x="66" y="138" width="492" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
