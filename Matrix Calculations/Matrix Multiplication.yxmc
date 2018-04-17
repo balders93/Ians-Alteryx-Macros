@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="186" y="294" />
+        <Position x="174" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -85,7 +85,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="186" y="414" />
+        <Position x="174" y="378" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -154,7 +154,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="330" y="354" />
+        <Position x="318" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -223,7 +223,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="486" y="354" />
+        <Position x="474" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -256,7 +256,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="630" y="354" />
+        <Position x="618" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -287,7 +287,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="762" y="354" />
+        <Position x="750" y="318" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -304,7 +304,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="90" width="792" height="96" />
+        <Position x="54" y="54" width="792" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -324,7 +324,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="78" y="174" width="492" height="96" />
+        <Position x="66" y="138" width="492" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>

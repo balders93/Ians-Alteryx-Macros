@@ -127,6 +127,7 @@
         <Position x="0" y="0" width="59" height="59" />
       </GuiSettings>
       <Properties>
+        <Configuration />
         <Annotation DisplayMode="0">
           <Name />
           <DefaultAnnotationText />
@@ -158,9 +159,6 @@
           <DefaultAnnotationText>Dummy Data.csv</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field 1" size="2147483647" source="File: G:\My Drive\Ian Baldwin\Alteryx Macros\Ians-Alteryx-Macros\CSV to YXDB\Dummy Data.csv" type="V_String" />
