@@ -1,6 +1,26 @@
 <?xml version="1.0"?>
 <AlteryxDocument yxmdVer="11.7">
   <Nodes>
+    <Node ToolID="87">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="174" y="366" width="288" height="312" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Macro input for GitHub repository</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="174" g="255" b="174" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
     <Node ToolID="83">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
         <Position x="174" y="702" width="396" height="324" />
@@ -23,7 +43,7 @@
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="594" y="366" width="312" height="312" />
+        <Position x="594" y="366" width="288" height="312" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -110,7 +130,6 @@
         <Configuration>
           <Text><![CDATA[To-Do
 
-- Make tree search iterative
 - Turn into Ned style installer
 ]]></Text>
           <Font name="Segoe UI" size="15.75" style="0" />
@@ -197,9 +216,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -243,9 +262,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
@@ -309,9 +328,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -427,9 +446,9 @@
         </Annotation>
         <MetaInfo connection="Unique">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -439,9 +458,9 @@
         </MetaInfo>
         <MetaInfo connection="Duplicates">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -503,8 +522,8 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
@@ -526,27 +545,27 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Output2">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Output3">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -574,8 +593,8 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -596,9 +615,9 @@
         </Annotation>
         <MetaInfo connection="File List">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Directory List">
@@ -609,6 +628,32 @@
         </MetaInfo>
       </Properties>
       <EngineSettings Macro="Github Downloader\Iterative Structure Download.yxmc" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="258" y="522" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.TextBox.QuestionTextBox">
+        <Position x="246" y="402" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
     </Node>
   </Nodes>
   <Connections>
@@ -664,6 +709,14 @@
       <Origin ToolID="82" Connection="File List" />
       <Destination ToolID="51" Connection="Input" />
     </Connection>
+    <Connection name="#1">
+      <Origin ToolID="85" Connection="Action" />
+      <Destination ToolID="35" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="86" Connection="Question" />
+      <Destination ToolID="85" Connection="Question" />
+    </Connection>
   </Connections>
   <Properties>
     <Memory default="True" />
@@ -688,10 +741,16 @@
         <Value />
         <IsNumeric value="False" />
       </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Text Box (86)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
     </Constants>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Get Ians Macros</Name>
+      <Name>Get GitHub Repo</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -726,6 +785,14 @@
               <ReplaceText>%temp%</ReplaceText>
               <Destination>56/FormulaFields/FormulaField/@expression</Destination>
             </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="85" />
+              <Expression>replace([#1],"https://github.com/","https://api.github.com/repos/") + "/contents"</Expression>
+              <Destination>35/Data/r/c[2]</Destination>
+              <Mode>Expression</Mode>
+            </Action>
           </True>
         </NoCondition>
       </Actions>
@@ -738,9 +805,19 @@
           <Questions>
             <Question>
               <Type>FolderBrowse</Type>
-              <Description>Folder Browse (58)</Description>
+              <Description>Choose your save location:</Description>
               <Name>Folder Browse (58)</Name>
               <ToolId value="58" />
+            </Question>
+            <Question>
+              <Type>TextBox</Type>
+              <Description>Paste your github repo url here:</Description>
+              <Name>Text Box (86)</Name>
+              <ToolId value="86" />
+              <Default>https://github.com/balders93/Ians-Alteryx-Macros</Default>
+              <Password value="False" />
+              <Multiline value="False" />
+              <Hidden value="False" />
             </Question>
           </Questions>
         </Question>
