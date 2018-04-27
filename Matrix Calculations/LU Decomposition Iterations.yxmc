@@ -1,0 +1,1653 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1032" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>LU Decomposition Iterative Macro</Text>
+          <Font name="Segoe UI" size="48" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="186" width="492" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workflow built by: Ian Baldwin (@balders93)</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="174" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>L &amp; U</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="12" />
+              <Fields>
+                <Field name="Triangle" />
+                <Field name="i" />
+                <Field name="j" />
+                <Field name="Value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>L</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>L</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>L</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>L</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>L</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>L</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>U</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>U</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>U</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>U</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>U</c>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>U</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="138" width="1164" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>LU Decomposition using Doolittle's Algorithm</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="174" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Answer Matrix</Name>
+          <Abbrev>A</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="9" />
+              <Fields>
+                <Field name="i" />
+                <Field name="j" />
+                <Field name="Value" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>-1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>-2</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>-4</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>3</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>-4</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>-2</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>8</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1098" y="66" width="300" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iterative macros have a limit of 10m iterations</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="151" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="3594" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Iteration Output</Name>
+          <Abbrev>I</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="3042" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="i" action="Max" rename="Max_i" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Max_i" source="(Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="3294" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Max_i] &gt;[Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Max_i] &gt;[Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="3138" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="3762" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>End Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="3438" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Max_i" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="3438" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Max_i" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="450" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>Triangle</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>L</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Triangle] = "L"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="666" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[i] &lt;= [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[i] &lt;= [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="666" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[i] = [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[i] = [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings>
+        <Position x="1014" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input1"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+          <Value name="Input.Input2"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output14">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_i" order="Asc" />
+            <Field field="Right_j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Matrix Calculations\Matrix Multiplication.yxmc" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1290" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="i" />
+            <Field field="j" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="i" />
+            <Field field="j" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_i" selected="False" rename="Right_i" />
+                <SelectField field="Right_j" selected="False" rename="Right_j" />
+                <SelectField field="Right_Value" selected="True" rename="Right_Value" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+            <Field field="j" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
+            <Field name="Right_Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="" />
+            <Field field="j" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+            <Field field="j" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1146" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;U&quot;" field="Triangle" size="1" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Triangle = "U"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_i" order="Asc" />
+            <Field field="Right_j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1434" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Right_Value]-[Value]" field="Value" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Value = [Right_Value]-[Value]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Formula: [Right_Value]-[Value]" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
+            <Field name="Right_Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="" />
+            <Field field="j" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1590" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Triangle" selected="True" />
+            <SelectField field="i" selected="True" />
+            <SelectField field="j" selected="True" />
+            <SelectField field="Value" selected="True" />
+            <SelectField field="Right_Value" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Formula: [Right_Value]-[Value]" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="" />
+            <Field field="j" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1722" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[i] &gt; [Engine.IterationNumber] AND [j] &lt;= [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[i] &gt; [Engine.IterationNumber] AND [j] &lt;= [Engine.IterationNu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1914" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[j] = [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[j] = [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings>
+        <Position x="2082" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input1"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+          <Value name="Input.Input2"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output14">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_i" order="Asc" />
+            <Field field="Right_j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Matrix Calculations\Matrix Multiplication.yxmc" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2226" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;L&quot;" field="Triangle" size="1" type="String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Triangle = "L"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_i" order="Asc" />
+            <Field field="Right_j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2514" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="i" />
+            <Field field="j" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="i" />
+            <Field field="j" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Triangle" selected="True" />
+                <SelectField field="Left_i" selected="True" />
+                <SelectField field="Left_j" selected="True" />
+                <SelectField field="Left_Value" selected="True" />
+                <SelectField field="Right_i" selected="False" rename="Right_i" />
+                <SelectField field="Right_j" selected="False" rename="Right_j" />
+                <SelectField field="Right_Value" selected="True" rename="Right_Value" />
+                <SelectField field="Left_Uii" selected="True" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
+            <Field name="Uii" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+            <Field field="j" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="Uii" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="" />
+            <Field field="j" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Int16" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+            <Field field="j" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2658" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="([Right_Value]-[Value])/[Uii]" field="Value" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Value = ([Right_Value]-[Value])/[Uii]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Formula: ([Right_Value]-[Value])/[Uii]" type="Double" />
+            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="Uii" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="" />
+            <Field field="j" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2790" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Right_Value" selected="False" />
+            <SelectField field="Uii" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Formula: ([Right_Value]-[Value])/[Uii]" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="" />
+            <Field field="j" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2910" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+            <Connection>#3</Connection>
+            <Connection>#4</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1722" y="522" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#3</Connection>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[i] &lt; [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[i] &lt; [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="858" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[j] &gt;= [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[j] &gt;= [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2082" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[i] = [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[i] = [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2226" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[j] = [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[j] = [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2142" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[j] = [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[j] = [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="TextInput:" type="String" />
+            <Field name="i" source="TextInput:" type="Byte" />
+            <Field name="j" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="3594" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Triangle" order="Ascending" />
+            <Field field="i" order="Ascending" />
+            <Field field="j" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Triangle - Ascending
+i - Ascending
+j - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Triangle" size="1" source="(Multiple Sources)" type="String" />
+            <Field name="i" source="(Multiple Sources)" type="Byte" />
+            <Field name="j" source="(Multiple Sources)" type="Byte" />
+            <Field name="Value" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Triangle" order="Ascending" />
+            <Field field="i" order="Ascending" />
+            <Field field="j" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="2370" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Triangle" selected="False" />
+                <SelectField field="Source_i" selected="False" />
+                <SelectField field="Source_j" selected="False" />
+                <SelectField field="Source_Value" selected="True" rename="Uii" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
+            <Field name="Uii" source="(Multiple Sources)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="46" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="46" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="54" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="Output" />
+      <Destination ToolID="54" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="38" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="38" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="True" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="False" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="False" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="True" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="43" Connection="False" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="59" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="True" />
+      <Destination ToolID="60" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="True" />
+      <Destination ToolID="45" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="True" />
+      <Destination ToolID="45" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output14" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Join" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="50" Connection="False" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="65" Connection="False" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="True" />
+      <Destination ToolID="52" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="True" />
+      <Destination ToolID="52" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="True" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output14" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="67" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="True" />
+      <Destination ToolID="67" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Join" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="36" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="True" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (34)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (39)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>LU Decomposition Iterations</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (3)</Name>
+          <ToolId value="3" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (4)</Description>
+              <Name>Macro Input (4)</Name>
+              <ToolId value="4" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (7)</Description>
+              <Name>Macro Input (7)</Name>
+              <ToolId value="7" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (34)</Description>
+              <Name>Macro Output (34)</Name>
+              <ToolId value="34" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (39)</Description>
+              <Name>Macro Output (39)</Name>
+              <ToolId value="39" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>L &amp; U</Input>
+        <Output>Iteration Output</Output>
+        <IterationLimit value="10000000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="4" Selected="True" />
+        <Tool ToolId="7" Selected="True" />
+        <Tool ToolId="52" Selected="True" />
+        <Tool ToolId="45" Selected="True" />
+        <Tool ToolId="34" Selected="True" />
+        <Tool ToolId="39" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

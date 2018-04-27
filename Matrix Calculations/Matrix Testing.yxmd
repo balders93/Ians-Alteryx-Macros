@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="11.7">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="186" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="12" />
+          <Fields>
+            <Field name="Triangle" />
+            <Field name="i" />
+            <Field name="j" />
+            <Field name="Value" />
+          </Fields>
+          <Data>
+            <r>
+              <c>L</c>
+              <c>1</c>
+              <c>1</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>L</c>
+              <c>2</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>L</c>
+              <c>2</c>
+              <c>2</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>L</c>
+              <c>3</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>L</c>
+              <c>3</c>
+              <c>2</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>L</c>
+              <c>3</c>
+              <c>3</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>U</c>
+              <c>1</c>
+              <c>1</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>U</c>
+              <c>1</c>
+              <c>2</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>U</c>
+              <c>1</c>
+              <c>3</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>U</c>
+              <c>2</c>
+              <c>2</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>U</c>
+              <c>2</c>
+              <c>3</c>
+              <c>0</c>
+            </r>
+            <r>
+              <c>U</c>
+              <c>3</c>
+              <c>3</c>
+              <c>0</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="174" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="9" />
+          <Fields>
+            <Field name="i" />
+            <Field name="j" />
+            <Field name="Value" />
+          </Fields>
+          <Data>
+            <r>
+              <c>1</c>
+              <c>1</c>
+              <c>2</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>2</c>
+              <c>-1</c>
+            </r>
+            <r>
+              <c>1</c>
+              <c>3</c>
+              <c>-2</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>1</c>
+              <c>-4</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>2</c>
+              <c>6</c>
+            </r>
+            <r>
+              <c>2</c>
+              <c>3</c>
+              <c>3</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>1</c>
+              <c>-4</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>2</c>
+              <c>-2</c>
+            </r>
+            <r>
+              <c>3</c>
+              <c>3</c>
+              <c>8</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings>
+        <Position x="402" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.L &amp; U"><![CDATA[Triangle=Triangle
+i=i
+j=j
+Value=Value
+]]></Value>
+          <Value name="Input.Answer Matrix"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>LU Decomposition Iterations (3)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Matrix Calculations\LU Decomposition Iterations.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4892_f7c12b9d17dd486aa88d93e0109924fe_\Engine_7408_5e57045740be405085e7f89891d6c771_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="498" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_4892_f7c12b9d17dd486aa88d93e0109924fe_\Engine_7408_9bfba93aad2b4f9e8cc405e892781bb2_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="60" Connection="L &amp; U" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="60" Connection="Answer Matrix" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Iteration Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="End Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="True" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Matrix Testing</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

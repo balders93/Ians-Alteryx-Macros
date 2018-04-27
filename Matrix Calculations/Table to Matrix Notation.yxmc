@@ -16,7 +16,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="186" y="294" />
+        <Position x="198" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -70,7 +70,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1086" y="306" />
+        <Position x="1098" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -87,7 +87,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="654" y="306" />
+        <Position x="666" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -113,9 +113,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Col 1" source="TextInput:" type="Byte" />
-            <Field name="Col 2" source="TextInput:" type="Byte" />
-            <Field name="Col 3" source="TextInput:" type="Byte" />
+            <Field name="0" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -123,7 +123,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxBasePluginsGui.FieldInfo.FieldInfo">
-        <Position x="330" y="366" />
+        <Position x="342" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -147,7 +147,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="522" y="366" />
+        <Position x="534" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -169,7 +169,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="RecordID: Starting Value=0" type="Int32" />
             <Field name="Name" size="5" source="FieldInfo" type="V_String" />
           </RecordInfo>
           <SortInfo>
@@ -181,12 +181,12 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="426" y="366" />
+        <Position x="438" y="354" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FieldName>RecordID</FieldName>
-          <StartValue>1</StartValue>
+          <StartValue>0</StartValue>
           <FieldType>Int32</FieldType>
           <FieldSize>6</FieldSize>
           <Position>0</Position>
@@ -198,7 +198,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="RecordID" source="RecordID: Starting Value=0" type="Int32" />
             <Field name="Name" size="5" source="FieldInfo" type="V_String" />
             <Field name="Type" size="4" source="FieldInfo" type="String" />
             <Field name="Size" source="FieldInfo" type="Int32" />
@@ -215,12 +215,12 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
-        <Position x="750" y="306" />
+        <Position x="762" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FieldName>i</FieldName>
-          <StartValue>1</StartValue>
+          <StartValue>0</StartValue>
           <FieldType>Int32</FieldType>
           <FieldSize>6</FieldSize>
           <Position>0</Position>
@@ -232,10 +232,10 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Col 1" source="TextInput:" type="Byte" />
-            <Field name="Col 2" source="TextInput:" type="Byte" />
-            <Field name="Col 3" source="TextInput:" type="Byte" />
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="0" source="TextInput:" type="Byte" />
+            <Field name="1" source="TextInput:" type="Byte" />
+            <Field name="2" source="TextInput:" type="Byte" />
           </RecordInfo>
           <SortInfo>
             <Field field="i" order="Asc" />
@@ -246,7 +246,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
-        <Position x="858" y="306" />
+        <Position x="870" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -269,8 +269,8 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="RecordID: Starting Value=1" type="Int32" />
-            <Field name="Name" size="5" source="Transpose:" type="String" />
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
             <Field name="Value" source="TextInput:" type="Byte" />
           </RecordInfo>
           <SortInfo>
@@ -282,7 +282,7 @@
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="954" y="306" />
+        <Position x="966" y="294" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -300,7 +300,7 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
             <Field name="j" source="Transpose:" type="Int32" />
             <Field name="Value" source="TextInput:" type="Byte" />
           </RecordInfo>
@@ -313,7 +313,7 @@
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Test.Test">
-        <Position x="426" y="498" />
+        <Position x="438" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -344,7 +344,7 @@ OR [Type] = "Double"
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="42" y="66" width="792" height="96" />
+        <Position x="54" y="54" width="792" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -364,7 +364,7 @@ OR [Type] = "Double"
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="150" width="492" height="96" />
+        <Position x="66" y="138" width="492" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
