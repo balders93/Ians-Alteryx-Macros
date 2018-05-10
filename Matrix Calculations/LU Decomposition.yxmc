@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="294" y="234" width="840" height="396" />
+        <Position x="318" y="234" width="840" height="396" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -24,7 +24,7 @@
     </Node>
     <Node ToolID="32">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1482" y="234" width="420" height="204" />
+        <Position x="1506" y="234" width="420" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -44,7 +44,7 @@
     </Node>
     <Node ToolID="28">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1158" y="234" width="300" height="204" />
+        <Position x="1182" y="234" width="300" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -64,11 +64,11 @@
     </Node>
     <Node ToolID="31">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="1926" y="234" width="300" height="204" />
+        <Position x="1950" y="234" width="300" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>Browse LU decomposition</Text>
+          <Text>Output LU decomposition</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
           <FillColor r="174" g="255" b="174" />
@@ -84,7 +84,7 @@
     </Node>
     <Node ToolID="25">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="450" y="654" width="252" height="192" />
+        <Position x="474" y="654" width="252" height="192" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -104,7 +104,7 @@
     </Node>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="30" y="234" width="240" height="204" />
+        <Position x="54" y="234" width="240" height="204" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -137,7 +137,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="114" y="306" />
+        <Position x="138" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -221,7 +221,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="54" y="54" width="792" height="96" />
+        <Position x="78" y="54" width="792" height="96" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -241,7 +241,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="66" y="138" width="492" height="48" />
+        <Position x="90" y="138" width="492" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -261,7 +261,7 @@
     </Node>
     <Node ToolID="8">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="330" y="306" />
+        <Position x="354" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -286,7 +286,7 @@
     </Node>
     <Node ToolID="9">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Test.Test">
-        <Position x="534" y="678" />
+        <Position x="558" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -310,7 +310,7 @@
     </Node>
     <Node ToolID="10">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="462" y="306" />
+        <Position x="486" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -340,7 +340,7 @@
     </Node>
     <Node ToolID="11">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="618" y="306" />
+        <Position x="642" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -371,7 +371,7 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="810" y="306" />
+        <Position x="834" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -399,7 +399,7 @@
     </Node>
     <Node ToolID="13">
       <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
-        <Position x="618" y="450" />
+        <Position x="642" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -430,7 +430,7 @@
     </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="810" y="450" />
+        <Position x="834" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -458,7 +458,7 @@
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="582" y="246" width="192" height="48" />
+        <Position x="606" y="246" width="192" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -478,7 +478,7 @@
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="582" y="390" width="192" height="48" />
+        <Position x="606" y="390" width="192" height="48" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -498,7 +498,7 @@
     </Node>
     <Node ToolID="19">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="978" y="306" />
+        <Position x="1002" y="306" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -530,7 +530,7 @@ Triangle = "U"
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="978" y="450" />
+        <Position x="1002" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -562,7 +562,7 @@ Triangle = "L"
     </Node>
     <Node ToolID="21">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
-        <Position x="1266" y="258" />
+        <Position x="1290" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -593,7 +593,7 @@ Triangle = "L"
     </Node>
     <Node ToolID="33">
       <GuiSettings>
-        <Position x="1662" y="270" />
+        <Position x="1686" y="270" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -614,10 +614,10 @@ Value=Value
         </Annotation>
         <MetaInfo connection="End Output">
           <RecordInfo>
-            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Iteration Output">
@@ -631,37 +631,9 @@ Value=Value
       </Properties>
       <EngineSettings Macro="Matrix Calculations\LU Decomposition Iterations.yxmc" />
     </Node>
-    <Node ToolID="23">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="2058" y="282" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_3608_bf2213d603a14eb8bbb636f445431e03_\Engine_7408_94ca85c86780463687f116683a8c4b09_.yxdb</TempFile>
-          <TempFileDataProfiling />
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Profile</DefaultTab>
-              <Hints>
-                <Table />
-              </Hints>
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="27">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="42" y="918" width="192" height="180" />
+        <Position x="66" y="918" width="192" height="180" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -682,7 +654,7 @@ Value=Value
     </Node>
     <Node ToolID="29">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="690" y="54" width="312" height="132" />
+        <Position x="714" y="54" width="312" height="132" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -700,6 +672,23 @@ Value=Value
           <Left value="False" />
         </Annotation>
       </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2070" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output Decomposition</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
     </Node>
   </Nodes>
   <Connections>
@@ -757,7 +746,7 @@ Value=Value
     </Connection>
     <Connection>
       <Origin ToolID="33" Connection="End Output" />
-      <Destination ToolID="23" Connection="Input" />
+      <Destination ToolID="34" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -780,6 +769,12 @@ Value=Value
       <Constant>
         <Namespace>Question</Namespace>
         <Name>Macro Input (2)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (34)</Name>
         <Value />
         <IsNumeric value="False" />
       </Constant>
@@ -820,6 +815,12 @@ Value=Value
               <Name>Macro Input (2)</Name>
               <ToolId value="2" />
             </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (34)</Description>
+              <Name>Macro Output (34)</Name>
+              <ToolId value="34" />
+            </Question>
           </Questions>
         </Question>
       </Questions>
@@ -834,8 +835,8 @@ Value=Value
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
         <Tool ToolId="2" Selected="True" />
-        <Tool ToolId="23" Selected="False" />
         <Tool ToolId="33" Selected="True" />
+        <Tool ToolId="34" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
