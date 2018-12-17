@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2018.4">
   <Nodes>
     <Node ToolID="88">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -177,6 +177,7 @@
               <Item name="User-Agent" value="Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Mobile Safari/537.36" />
             </NameValues>
             <Fields orderChanged="False">
+              <Field name="Folder Name" selected="False" />
               <Field name="url" selected="False" />
               <Field name="*Unknown" selected="False" />
             </Fields>
@@ -186,6 +187,7 @@
             <QueryStringBodyMode>Compose</QueryStringBodyMode>
             <ComposeNameValues />
             <ComposeFields orderChanged="False">
+              <Field name="Folder Name" selected="False" />
               <Field name="url" selected="False" />
               <Field name="*Unknown" selected="False" />
             </ComposeFields>
@@ -820,9 +822,9 @@ download_url = Replace([download_url], "%20", "...</DefaultAnnotationText>
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
-        <Tool ToolId="85" Selected="True" />
-        <Tool ToolId="84" Selected="True" />
         <Tool ToolId="83" Selected="True" />
+        <Tool ToolId="84" Selected="True" />
+        <Tool ToolId="85" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
