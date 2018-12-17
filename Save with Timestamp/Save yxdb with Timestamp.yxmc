@@ -233,7 +233,7 @@
     <MetaInfo>
       <NameIsFileName value="True" />
       <Name>Save yxdb with Timestamp</Name>
-      <Description>Saves file with either Date or DateTime appended.</Description>
+      <Description>Saves file with either Date or DateTime appended</Description>
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
