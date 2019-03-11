@@ -1,0 +1,2714 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2070" y="258" width="192" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Ratings for next iteration</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1602" y="258" width="444" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Iterate Match IDs</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1326" y="258" width="252" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join Elo ratings to both teams</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="231" g="206" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1326" y="450" width="348" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output new ratings</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1038" y="450" width="264" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Update Elo ratings based on results</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="762" y="450" width="252" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Join Elo ratings to both teams</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="231" g="206" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="426" y="450" width="312" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Keep next match only</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="186" y="450" width="216" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Results Input</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="186" y="258" width="216" height="168" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Elo Ratings</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="678" width="192" height="180" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text />
+          <Font name="Segoe UI" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="4" />
+          <BG_Image>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</BG_Image>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1164" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>ELO Iterative Macro</Text>
+          <Font name="Segoe UI" size="48" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="150" width="456" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workflow built by: Ian Baldwin (@balders93)</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="258" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Results Input</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="100" />
+              <Fields>
+                <Field name="Match ID" />
+                <Field name="Match Date" />
+                <Field name="Team" />
+                <Field name="Result" />
+                <Field name="Opposition" />
+                <Field name="Home/Away/Neutral" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>1871-03-27</c>
+                  <c>England</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>1</c>
+                  <c>1871-03-27</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1872-02-05</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>1872-02-05</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1873-03-03</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>1873-03-03</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1874-02-23</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>1874-02-23</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1875-02-15</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>5</c>
+                  <c>1875-02-15</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>1875-03-08</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>6</c>
+                  <c>1875-03-08</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>1875-12-13</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>7</c>
+                  <c>1875-12-13</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>1876-03-06</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>8</c>
+                  <c>1876-03-06</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>1877-02-05</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>9</c>
+                  <c>1877-02-05</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>1877-02-19</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>10</c>
+                  <c>1877-02-19</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>1877-03-05</c>
+                  <c>England</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>11</c>
+                  <c>1877-03-05</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>1878-03-04</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>12</c>
+                  <c>1878-03-04</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>1878-03-11</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>13</c>
+                  <c>1878-03-11</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>1879-02-17</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>14</c>
+                  <c>1879-02-17</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>1879-03-10</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>15</c>
+                  <c>1879-03-10</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>1879-03-24</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>16</c>
+                  <c>1879-03-24</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>1880-02-02</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>17</c>
+                  <c>1880-02-02</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>1880-02-14</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>18</c>
+                  <c>1880-02-14</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>1880-02-28</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>19</c>
+                  <c>1880-02-28</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>1881-02-05</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>20</c>
+                  <c>1881-02-05</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>1881-02-19</c>
+                  <c>Ireland</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>21</c>
+                  <c>1881-02-19</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>1881-02-19</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>22</c>
+                  <c>1881-02-19</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>1881-03-19</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>23</c>
+                  <c>1881-03-19</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>1882-01-28</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Wales</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>24</c>
+                  <c>1882-01-28</c>
+                  <c>Wales</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>1882-02-06</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>25</c>
+                  <c>1882-02-06</c>
+                  <c>Ireland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>1882-02-18</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>26</c>
+                  <c>1882-02-18</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>1882-03-04</c>
+                  <c>England</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>27</c>
+                  <c>1882-03-04</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>1882-12-16</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>28</c>
+                  <c>1882-12-16</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>1883-01-08</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>29</c>
+                  <c>1883-01-08</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>1883-02-05</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>30</c>
+                  <c>1883-02-05</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>1883-02-17</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>31</c>
+                  <c>1883-02-17</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>1883-03-03</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>32</c>
+                  <c>1883-03-03</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>1884-01-05</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>33</c>
+                  <c>1884-01-05</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>1884-01-12</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>34</c>
+                  <c>1884-01-12</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>1884-02-04</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>35</c>
+                  <c>1884-02-04</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>1884-02-16</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>36</c>
+                  <c>1884-02-16</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>1884-03-01</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>37</c>
+                  <c>1884-03-01</c>
+                  <c>Scotland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>1884-04-12</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Wales</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>38</c>
+                  <c>1884-04-12</c>
+                  <c>Wales</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>1885-01-03</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>39</c>
+                  <c>1885-01-03</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>1885-01-10</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>Wales</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>40</c>
+                  <c>1885-01-10</c>
+                  <c>Wales</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>1885-02-07</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>41</c>
+                  <c>1885-02-07</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>1885-02-21</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>42</c>
+                  <c>1885-02-21</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>1885-03-07</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>43</c>
+                  <c>1885-03-07</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>1886-01-02</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>44</c>
+                  <c>1886-01-02</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>1886-01-09</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Wales</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>45</c>
+                  <c>1886-01-09</c>
+                  <c>Wales</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>1886-02-06</c>
+                  <c>England</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>46</c>
+                  <c>1886-02-06</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>1886-02-20</c>
+                  <c>Ireland</c>
+                  <c>lost</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>47</c>
+                  <c>1886-02-20</c>
+                  <c>Scotland</c>
+                  <c>won</c>
+                  <c>Ireland</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>1886-03-13</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Scotland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>48</c>
+                  <c>1886-03-13</c>
+                  <c>Scotland</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>1887-01-08</c>
+                  <c>England</c>
+                  <c>draw</c>
+                  <c>Wales</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>49</c>
+                  <c>1887-01-08</c>
+                  <c>Wales</c>
+                  <c>draw</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>1887-02-05</c>
+                  <c>England</c>
+                  <c>lost</c>
+                  <c>Ireland</c>
+                  <c>Away</c>
+                </r>
+                <r>
+                  <c>50</c>
+                  <c>1887-02-05</c>
+                  <c>Ireland</c>
+                  <c>won</c>
+                  <c>England</c>
+                  <c>Home</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Team" size="8" source="TextInput:" type="String" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="258" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>ELO Input</Name>
+          <Abbrev>E</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="161" />
+              <Fields>
+                <Field name="Team" />
+                <Field name="ELO Score" />
+                <Field name="K-Factor" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>France</c>
+                  <c>2000.0</c>
+                  <c>20.0</c>
+                </r>
+                <r>
+                  <c>England</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Wales</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Ireland</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Scotland</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Australia</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>New Zealand</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>South Africa</c>
+                  <c>2000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Italy</c>
+                  <c>1500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Romania</c>
+                  <c>1500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Argentina</c>
+                  <c>1500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Spain</c>
+                  <c>1500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Fiji</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Czech Republic</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Japan</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Portugal</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Tonga</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Netherlands</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Uruguay</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Canada</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Poland</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Belgium</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>United States of America</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Samoa</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Sweden</c>
+                  <c>1000</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Denmark</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Georgia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Russia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Chile</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Germany</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Hong Kong</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Morocco</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Serbia and Montenegro</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Brazil</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Switzerland</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Namibia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Korea</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Zimbabwe</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Tunisia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>West Germany</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Ukraine</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Croatia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Andorra</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Bulgaria</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Paraguay</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Luxembourg</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Sri Lanka</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Austria</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Hungary</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Kenya</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Slovenia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Latvia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Thailand</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Lithuania</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Chinese Taipei</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Israel</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Norway</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Malaysia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Moldova</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Singapore</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Bosnia and Herzegovina</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>British and Irish Lions</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Uganda</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Malta</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Finland</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Peru</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Soviet Union</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Venezuela</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Colombia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Ivory Coast</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Kazakhstan</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Madagascar</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Botswana</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Senegal</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>China</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Trinidad and Tobago</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Cyprus</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>India</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Bermuda</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Zambia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Barbados</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Papua New Guinea</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>East Germany</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Mali</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Togo</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Bahamas</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Ghana</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Monaco</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Niger</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Burkina Faso</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Cayman Islands</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Costa Rica</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Mauritius</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Nigeria</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Philippines</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Benin</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Greece</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Cook Islands</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Armenia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Guyana</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>United Arab Emirates</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Laos</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Mexico</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Cameroon</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Jamaica</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Guam</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Cambodia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Indonesia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Iran</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Pakistan</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Rwanda</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Azerbaijan</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Brunei</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Guatemala</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Niue Island</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Slovakia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Solomon Islands</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Swaziland</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Lebanon</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Tahiti</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Uzbekistan</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Ecuador</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Tanzania</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Burundi</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>El Salvador</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>British Virgin Islands</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Reunion</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Vanuatu</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Panama</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>St Lucia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>St Vincent and Grenadines</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Chad</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Turkey</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Curacao</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Estonia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Algeria</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Jordan</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Qatar</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Turks and Caicos Islands</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Mauritania</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>New Caledonia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Pacific Islanders</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Mayotte</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Montenegro</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>DR Congo</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Martinique</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Dominican Republic</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Lesotho</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Malawi</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Nicaragua</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>American Samoa</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Belarus</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Mongolia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Egypt</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Gibraltar</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Libya</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Honduras</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Kyrgyzstan</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Macau</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>Saudi Arabia</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+                <r>
+                  <c>US Virgin Islands</c>
+                  <c>500</c>
+                  <c>20</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="486" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]+1" field="Iteration" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText><![CDATA[Iteration = Iteration +1
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[Iteration = [Engine.IterationNumber]+1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Team" size="8" source="TextInput:" type="String" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2130" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Iterative Output</Name>
+          <Abbrev>I</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="606" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Match ID] = [Iteration]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Match ID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-01-18 13:01:04</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-01-18 13:01:04</StartDate>
+              <EndDate>2019-01-18 13:01:04</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Match ID] = [Iteration]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Team" size="8" source="TextInput:" type="String" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Team" size="8" source="TextInput:" type="String" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="798" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Team" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Team" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ELO Score" selected="True" rename="Team ELO" input="Left_" />
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="Team ELO" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Team" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Team" size="8" source="TextInput:" type="String" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="918" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Team" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Opposition" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Team" selected="False" input="Left_" />
+                <SelectField field="Left_ELO Score" selected="True" rename="Oppo ELO" input="Left_" />
+                <SelectField field="Right_K-Factor" selected="False" rename="Right_K-Factor" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Oppo ELO" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="Team ELO" source="TextInput:" type="Double" />
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="Team ELO" source="TextInput:" type="Double" />
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Opposition" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1146" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="([Oppo ELO]-[Team ELO]+Switch([Home/Away/Neutral],0,&quot;Home&quot;,-75,&quot;Away&quot;,75))" field="Adjusted Elo Difference" size="8" type="Double" />
+            <FormulaField expression="1/(1+POW(10, [Adjusted Elo Difference]/400))" field="Expected Win %" size="8" type="Double" />
+            <FormulaField expression="[Team ELO] + &#xA;[K-Factor]*(&#xA;	Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA;	- [Expected Win %]&#xA;	)" field="ELO Score" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>Adjusted Elo Difference = ([Oppo ELO]-[Team ELO]+Switch([Home/Away/Neutral],0,"H...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Oppo ELO" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="Team ELO" source="TextInput:" type="Double" />
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber]+1" type="Int64" />
+            <Field name="Adjusted Elo Difference" source="Formula: ([Oppo ELO]-[Team ELO]+Switch([Home/Away/Neutral],0,&quot;Home&quot;,-75,&quot;Away&quot;,75))" type="Double" />
+            <Field name="Expected Win %" source="Formula: 1/(1+POW(10, [Adjusted Elo Difference]/400))" type="Double" />
+            <Field name="ELO Score" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1374" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Team</FieldFind>
+          <FieldSearch>Team</FieldSearch>
+          <ReplaceFoundField>Result</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="ELO Score" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="ELO Score2" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1470" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF " field="ELO Score" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <AnnotationText><![CDATA[ELO Score = IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF 
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[ELO Score = IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF 
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="Formula: IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF " type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="ELO Score2" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1950" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team" selected="True" />
+            <SelectField field="ELO Score" selected="True" />
+            <SelectField field="K-Factor" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="Formula: IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF " type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1362" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Iteration" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Oppo ELO" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="Team ELO" source="TextInput:" type="Double" />
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Adjusted Elo Difference" source="Formula: ([Oppo ELO]-[Team ELO]+Switch([Home/Away/Neutral],0,&quot;Home&quot;,-75,&quot;Away&quot;,75))" type="Double" />
+            <Field name="Expected Win %" source="Formula: 1/(1+POW(10, [Adjusted Elo Difference]/400))" type="Double" />
+            <Field name="ELO Score" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1554" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1638" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Iteration" action="GroupBy" rename="Iteration" />
+            <SummarizeField field="Match ID" action="Max" rename="Max_Match ID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Iteration" source="Summarize: GroupBy - Iteration" type="Int64" />
+            <Field name="Max_Match ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Iteration" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1734" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="Formula: IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF " type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="ELO Score2" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+            <Field name="Iteration" source="Summarize: GroupBy - Iteration" type="Int64" />
+            <Field name="Max_Match ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1842" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Max_Match ID] &gt; [Iteration]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Max_Match ID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-01-18 16:33:58</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-01-18 16:33:58</StartDate>
+              <EndDate>2019-01-18 16:33:58</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Keep Next Match</AnnotationText>
+          <DefaultAnnotationText>[Max_Match ID] &gt; [Iteration]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="Formula: IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF " type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="ELO Score2" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+            <Field name="Iteration" source="Summarize: GroupBy - Iteration" type="Int64" />
+            <Field name="Max_Match ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="ELO Score" source="Formula: IF IsNull([ELO Score2]) THEN [ELO Score] ELSE [ELO Score2] ENDIF " type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="ELO Score2" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+            <Field name="Iteration" source="Summarize: GroupBy - Iteration" type="Int64" />
+            <Field name="Max_Match ID" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1458" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Home/Away/Neutral" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>Home/Away/Neutral - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Oppo ELO" source="TextInput:" type="Double" />
+            <Field name="K-Factor" source="TextInput:" type="Double" />
+            <Field name="Team" size="25" source="TextInput:" type="V_String" />
+            <Field name="Team ELO" source="TextInput:" type="Double" />
+            <Field name="Match ID" source="TextInput:" type="Byte" />
+            <Field name="Match Date" source="TextInput:" type="Date" />
+            <Field name="Result" size="4" source="TextInput:" type="String" />
+            <Field name="Opposition" size="8" source="TextInput:" type="String" />
+            <Field name="Home/Away/Neutral" size="4" source="TextInput:" type="String" />
+            <Field name="Adjusted Elo Difference" source="Formula: ([Oppo ELO]-[Team ELO]+Switch([Home/Away/Neutral],0,&quot;Home&quot;,-75,&quot;Away&quot;,75))" type="Double" />
+            <Field name="Expected Win %" source="Formula: 1/(1+POW(10, [Adjusted Elo Difference]/400))" type="Double" />
+            <Field name="ELO Score" source="Formula: [Team ELO] + &#xA;[K-Factor]*(&#xA; Switch([Result],0.5,&quot;won&quot;,1,&quot;lost&quot;,0)&#xA; - [Expected Win %]&#xA; )" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="Home/Away/Neutral" order="Descending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="45" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="45" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="42" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="True" />
+      <Destination ToolID="42" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="43" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Join" />
+      <Destination ToolID="43" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection Wireless="True">
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Join" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="51" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ELO Macro</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>ELO Ratings</CategoryName>
+      <SearchTags />
+      <Author>Ian Baldwin</Author>
+      <Company>The Information Lab</Company>
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (34)</Name>
+          <ToolId value="34" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (36)</Description>
+              <Name>Macro Input (36)</Name>
+              <ToolId value="36" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (35)</Description>
+              <Name>Macro Input (35)</Name>
+              <ToolId value="35" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (40)</Description>
+              <Name>Macro Output (40)</Name>
+              <ToolId value="40" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (49)</Description>
+              <Name>Macro Output (49)</Name>
+              <ToolId value="49" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>ELO Input</Input>
+        <Output>Iterative Output</Output>
+        <IterationLimit value="17000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="35" Selected="True" />
+        <Tool ToolId="36" Selected="True" />
+        <Tool ToolId="40" Selected="True" />
+        <Tool ToolId="49" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
