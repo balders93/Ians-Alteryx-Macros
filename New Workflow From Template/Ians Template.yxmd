@@ -50,7 +50,7 @@
           <Text>Green for inputs and outputs</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
-          <FillColor r="174" g="255" b="174" />
+          <FillColor r="191" g="255" b="191" />
           <Shape shape="0" />
           <Justification Justification="7" />
         </Configuration>
