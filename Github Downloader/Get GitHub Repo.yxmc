@@ -10,7 +10,7 @@
           <Text>Macro input for GitHub repository</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
-          <FillColor r="174" g="255" b="174" />
+          <FillColor r="224" g="224" b="224" />
           <Shape shape="0" />
           <Justification Justification="7" />
         </Configuration>
@@ -43,14 +43,14 @@
     </Node>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
-        <Position x="594" y="294" width="288" height="312" />
+        <Position x="594" y="294" width="336" height="312" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <Text>Macro input for save location</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
-          <FillColor r="174" g="255" b="174" />
+          <FillColor r="224" g="224" b="224" />
           <Shape shape="0" />
           <Justification Justification="7" />
         </Configuration>
@@ -193,9 +193,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -239,9 +239,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
@@ -263,7 +263,7 @@
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FolderBrowse.FolderBrowse">
-        <Position x="690" y="330" width="59" height="59" />
+        <Position x="642" y="330" width="59" height="59" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -276,7 +276,7 @@
     </Node>
     <Node ToolID="59">
       <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
-        <Position x="702" y="450" width="59" height="59" />
+        <Position x="654" y="450" width="59" height="59" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -305,9 +305,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -423,9 +423,9 @@
         </Annotation>
         <MetaInfo connection="Unique">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -435,9 +435,9 @@
         </MetaInfo>
         <MetaInfo connection="Duplicates">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -497,8 +497,8 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
             <Field name="DownloadHeaders" size="2147483647" source="Download" type="V_String" />
@@ -520,27 +520,27 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Output2">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Output3">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -568,8 +568,8 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
             <Field name="Save Location" size="1073741823" source="Formula: &quot;%temp%&quot; + &quot;\&quot; + Replace([path], &quot;/&quot;, &quot;\&quot;)" type="V_WString" />
             <Field name="Sub folder" size="1073741823" source="Formula: Replace([Save Location], [name], &quot;&quot;)" type="V_WString" />
           </RecordInfo>
@@ -590,9 +590,9 @@
         </Annotation>
         <MetaInfo connection="File List">
           <RecordInfo>
-            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
-            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="download_url" size="2048" source="Formula: Replace([download_url], &quot;%20&quot;, &quot; &quot;) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="name" size="2048" source="CrossTab:Header:JSON_Name2:name:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+            <Field name="path" size="2048" source="CrossTab:Header:JSON_Name2:path:Concat: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Directory List">
@@ -630,6 +630,19 @@
         </Annotation>
       </Properties>
     </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Error.Error">
+        <Position x="810" y="450" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -640,7 +653,7 @@
       <Origin ToolID="51" Connection="Output" />
       <Destination ToolID="56" Connection="Input" />
     </Connection>
-    <Connection name="#1">
+    <Connection name="#1" Wireless="True">
       <Origin ToolID="59" Connection="Action" />
       <Destination ToolID="56" Connection="Action" />
     </Connection>
@@ -651,6 +664,10 @@
     <Connection name="#1">
       <Origin ToolID="58" Connection="Question" />
       <Destination ToolID="59" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="58" Connection="Question" />
+      <Destination ToolID="89" Connection="Question" />
     </Connection>
     <Connection>
       <Origin ToolID="63" Connection="Output" />
@@ -684,7 +701,7 @@
       <Origin ToolID="88" Connection="File List" />
       <Destination ToolID="51" Connection="Input" />
     </Connection>
-    <Connection name="#1">
+    <Connection name="#1" Wireless="True">
       <Origin ToolID="85" Connection="Action" />
       <Destination ToolID="35" Connection="Action" />
     </Connection>
@@ -730,8 +747,8 @@
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
-      <CategoryName />
-      <SearchTags />
+      <CategoryName>Connectors</CategoryName>
+      <SearchTags>GitHub, Repo, Connector, Balders, Ian Baldwin</SearchTags>
       <Author>Ian Baldwin</Author>
       <Company />
       <Copyright />
@@ -768,6 +785,12 @@
               <Destination>35/Data/r/c[2]</Destination>
               <Mode>Expression</Mode>
             </Action>
+            <Action>
+              <Type>Error</Type>
+              <Description>Choose a save location for your repo!</Description>
+              <ToolId value="89" />
+              <Expression>[#1] = ""</Expression>
+            </Action>
           </True>
         </NoCondition>
       </Actions>
@@ -800,7 +823,7 @@
       <ModuleType>Macro</ModuleType>
       <MacroCustomHelp value="False" />
       <MacroDynamicOutputFields value="False" />
-      <MacroImageStd value="0" />
+      <MacroImage>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</MacroImage>
       <MacroInputs />
       <MacroOutputs />
       <Wiz_CustomHelp value="False" />
