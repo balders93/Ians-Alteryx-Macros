@@ -2532,6 +2532,32 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
     </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.LabelGroup.LabelGroup">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.LabelGroup.LabelGroup">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
@@ -2658,16 +2684,32 @@
           <ToolId value="34" />
           <Questions>
             <Question>
-              <Type>MacroInput</Type>
-              <Description>Macro Input (36)</Description>
-              <Name>Macro Input (36)</Name>
-              <ToolId value="36" />
+              <Type>LabelGroup</Type>
+              <Description>Map Fields for Elo Rating Initialisation</Description>
+              <Name>LabelGroup (64)</Name>
+              <ToolId value="64" />
+              <Questions>
+                <Question>
+                  <Type>MacroInput</Type>
+                  <Description>Macro Input (36)</Description>
+                  <Name>Macro Input (36)</Name>
+                  <ToolId value="36" />
+                </Question>
+              </Questions>
             </Question>
             <Question>
-              <Type>MacroInput</Type>
-              <Description>Macro Input (35)</Description>
-              <Name>Macro Input (35)</Name>
-              <ToolId value="35" />
+              <Type>LabelGroup</Type>
+              <Description>Map Fields for Results Input</Description>
+              <Name>LabelGroup (65)</Name>
+              <ToolId value="65" />
+              <Questions>
+                <Question>
+                  <Type>MacroInput</Type>
+                  <Description>Macro Input (35)</Description>
+                  <Name>Macro Input (35)</Name>
+                  <ToolId value="35" />
+                </Question>
+              </Questions>
             </Question>
             <Question>
               <Type>MacroOutput</Type>

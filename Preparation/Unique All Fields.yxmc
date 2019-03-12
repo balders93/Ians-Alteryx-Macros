@@ -332,7 +332,7 @@
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>Dynamic Unique</Name>
+      <Name>Unique All Fields</Name>
       <Description>Uniques across all fields</Description>
       <RootToolName />
       <ToolVersion />

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.1">
+<AlteryxDocument yxmdVer="2018.4">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -246,7 +246,7 @@
           <Text>User chooses save location</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
-          <FillColor r="174" g="255" b="174" />
+          <FillColor r="224" g="224" b="224" />
           <Shape shape="0" />
           <Justification Justification="7" />
         </Configuration>
@@ -259,7 +259,7 @@
     </Node>
     <Node ToolID="7">
       <GuiSettings Plugin="AlteryxGuiToolkit.Questions.FolderBrowse.FolderBrowse">
-        <Position x="954" y="366" width="59" height="59" />
+        <Position x="954" y="342" width="59" height="59" />
       </GuiSettings>
       <Properties>
         <Configuration />
@@ -279,7 +279,7 @@
           <Text>User names workflow</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
-          <FillColor r="174" g="255" b="174" />
+          <FillColor r="224" g="224" b="224" />
           <Shape shape="0" />
           <Justification Justification="7" />
         </Configuration>
@@ -405,15 +405,15 @@
       <Origin ToolID="30" Connection="Output" />
       <Destination ToolID="31" Connection="Input" />
     </Connection>
-    <Connection name="#1">
+    <Connection name="#1" Wireless="True">
       <Origin ToolID="7" Connection="Question" />
       <Destination ToolID="8" Connection="Question" />
     </Connection>
-    <Connection name="#2">
+    <Connection name="#2" Wireless="True">
       <Origin ToolID="9" Connection="Question" />
       <Destination ToolID="8" Connection="Question" />
     </Connection>
-    <Connection name="#1">
+    <Connection name="#1" Wireless="True">
       <Origin ToolID="9" Connection="Question" />
       <Destination ToolID="14" Connection="Question" />
     </Connection>
