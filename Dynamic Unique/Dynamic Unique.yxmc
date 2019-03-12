@@ -23,7 +23,7 @@
           <UseFileInput value="False" />
           <Name>Input2</Name>
           <Abbrev />
-          <ShowFieldMap value="True" />
+          <ShowFieldMap value="False" />
           <Optional value="False" />
           <TextInput>
             <Configuration>
