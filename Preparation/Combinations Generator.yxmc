@@ -1,0 +1,732 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.1">
+  <Nodes>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1158" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Seed" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="1" type="Byte" />
+            <Field name="2" type="Byte" />
+            <Field name="3" type="Byte" />
+            <Field name="4" type="Byte" />
+            <Field name="5" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1266" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="978" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>N</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="1122" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>K</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="1134" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="990" y="138" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.GenerateRows.GenerateRows">
+        <Position x="162" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Seed</UpdateField_Name>
+          <CreateField_Name>RowCount</CreateField_Name>
+          <CreateField_Type>Byte</CreateField_Type>
+          <CreateField_Size>1</CreateField_Size>
+          <Expression_Init>1</Expression_Init>
+          <Expression_Cond>RowCount &lt;= 100</Expression_Cond>
+          <Expression_Loop>RowCount + 1</Expression_Loop>
+          <RecordCount value="100" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowCount" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxGenerateRows" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="258" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>Fact</UpdateField_Name>
+          <CreateField_Name>Factorial</CreateField_Name>
+          <CreateField_Type>Double</CreateField_Type>
+          <CreateField_Size>8</CreateField_Size>
+          <OtherRows>NULL</OtherRows>
+          <NumRows value="1" />
+          <Expression><![CDATA[[RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF ]]></Expression>
+          <GroupByFields />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>[RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:F...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RowCount" type="Byte" />
+            <Field description="Formula: [RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF " name="Factorial" source="Formula: [RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF " type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="54" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="1" />
+          <Fields>
+            <Field name="n" />
+            <Field name="k" />
+            <Field name="n-k" />
+          </Fields>
+          <Data>
+            <r>
+              <c>10</c>
+              <c>5</c>
+              <c>5</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="n" source="TextInput:" type="Byte" />
+            <Field name="k" source="TextInput:" type="Byte" />
+            <Field name="n-k" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="162" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="%Question.N%" field="n" size="1" type="Byte" />
+            <FormulaField expression="%Question.K%" field="k" size="1" type="Byte" />
+            <FormulaField expression="%Question.N%-%Question.K%" field="n-k" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <AnnotationText><![CDATA[n = %Question.N%
+k = %Question.K%
+n-k = %Question.N%-%Question.K%
+]]></AnnotationText>
+          <DefaultAnnotationText><![CDATA[n = %Question.N%
+k = %Question.K%
+n-k = %Question.N%-%Question.K%
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="n" source="Formula: 10" type="Byte" />
+            <Field name="k" source="Formula: 5" type="Byte" />
+            <Field name="n-k" source="Formula: 10-5" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="258" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields />
+          <DataFields>
+            <Field field="n" selected="True" />
+            <Field field="k" selected="True" />
+            <Field field="n-k" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="3" source="Transpose:" type="String" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="366" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Value" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RowCount" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Name" size="3" source="Transpose:" type="String" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="Byte" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Value" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Name" size="3" source="Transpose:" type="String" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="Byte" />
+            <Field name="RowCount" type="Byte" />
+            <Field description="Formula: [RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF " name="Factorial" source="Formula: [RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF " type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Value" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RowCount" type="Byte" />
+            <Field description="Formula: [RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF " name="Factorial" source="Formula: [RowCount]* IF [Row-1:RowCount] = NULL() THEN 1 ELSE [Row-1:Factorial] ENDIF " type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RowCount" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="474" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields />
+          <HeaderField field="Name" />
+          <DataField field="Factorial" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="k" source="CrossTab:Header:Name:k:Sum:" type="Double" />
+            <Field name="n_k" source="CrossTab:Header:Name:n-k:Sum:" type="Double" />
+            <Field name="n" source="CrossTab:Header:Name:n:Sum:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[n]/([k]*[n_k])" field="Number of Rows" size="8" type="Double" />
+            <FormulaField expression="0" field="Seed" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Number of Rows = [n]/([k]*[n_k])
+Seed = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="k" source="CrossTab:Header:Name:k:Sum:" type="Double" />
+            <Field name="n_k" source="CrossTab:Header:Name:n-k:Sum:" type="Double" />
+            <Field name="n" source="CrossTab:Header:Name:n:Sum:" type="Double" />
+            <Field name="Number of Rows" source="Formula: [n]/([k]*[n_k])" type="Double" />
+            <Field name="Seed" source="Formula: 0" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="774" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Filter</When>
+          <Filter>[Number of Rows] &lt; 1000000000</Filter>
+          <Type>Message</Type>
+          <Priority>High</Priority>
+          <Transient>True</Transient>
+          <MessageExpression>"Generating " +  ToString([Number of Rows]) + " rows"</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="k" source="CrossTab:Header:Name:k:Sum:" type="Double" />
+            <Field name="n_k" source="CrossTab:Header:Name:n-k:Sum:" type="Double" />
+            <Field name="n" source="CrossTab:Header:Name:n:Sum:" type="Double" />
+            <Field name="Number of Rows" source="Formula: [n]/([k]*[n_k])" type="Double" />
+            <Field name="Seed" source="Formula: 0" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Message.Message">
+        <Position x="678" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <When>Filter</When>
+          <Filter>[Number of Rows] &gt; 1000000000</Filter>
+          <Type>ErrorStop</Type>
+          <Priority>High</Priority>
+          <Transient>False</Transient>
+          <MessageExpression>"Too many rows for the combinations generator - capped at 1bn combinations"</MessageExpression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="k" source="CrossTab:Header:Name:k:Sum:" type="Double" />
+            <Field name="n_k" source="CrossTab:Header:Name:n-k:Sum:" type="Double" />
+            <Field name="n" source="CrossTab:Header:Name:n:Sum:" type="Double" />
+            <Field name="Number of Rows" source="Formula: [n]/([k]*[n_k])" type="Double" />
+            <Field name="Seed" source="Formula: 0" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMessage" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="k" selected="False" />
+            <SelectField field="n_k" selected="False" />
+            <SelectField field="n" selected="False" />
+            <SelectField field="Number of Rows" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Seed" source="Formula: 0" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings>
+        <Position x="1038" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="N">10</Value>
+          <Value name="K">5</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Iterative Output">
+          <RecordInfo>
+            <Field name="1" type="Byte" />
+            <Field name="2" type="Byte" />
+            <Field name="3" type="Byte" />
+            <Field name="4" type="Byte" />
+            <Field name="5" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Seed" type="Byte" />
+            <Field name="1" type="Byte" />
+            <Field name="2" type="Byte" />
+            <Field name="3" type="Byte" />
+            <Field name="4" type="Byte" />
+            <Field name="5" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Preparation\Combinations Generator Inner.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="32" Connection="Question" />
+      <Destination ToolID="35" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="33" Connection="Question" />
+      <Destination ToolID="34" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="34" Connection="Action" />
+      <Destination ToolID="60" Connection="Action" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="35" Connection="Action" />
+      <Destination ToolID="60" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="60" Connection="Input3" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="53" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="53" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Join" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="55" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>N</Name>
+        <Value>10</Value>
+        <IsNumeric value="True" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>K</Name>
+        <Value>5</Value>
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Combination Generator</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName>Preparation</CategoryName>
+      <SearchTags />
+      <Author>Ian Baldwin</Author>
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="34" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>59/Value[@name='K']</Destination>
+            </Action>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="35" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="False" />
+              <Destination>59/Value[@name='N']</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (30)</Name>
+          <ToolId value="30" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (31)</Description>
+              <Name>Macro Output (31)</Name>
+              <ToolId value="31" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>N</Description>
+              <Name>N</Name>
+              <ToolId value="32" />
+              <Minimum value="0" />
+              <Maximum value="100" />
+              <Increment value="1" />
+              <Default value="10" />
+              <Decimals value="0" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>K</Description>
+              <Name>K</Name>
+              <ToolId value="33" />
+              <Minimum value="0" />
+              <Maximum value="100" />
+              <Increment value="1" />
+              <Default value="5" />
+              <Decimals value="0" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="31" Selected="True" />
+        <Tool ToolId="60" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
