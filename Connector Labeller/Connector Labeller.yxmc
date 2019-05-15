@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.2">
+<AlteryxDocument yxmdVer="2018.4">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
@@ -1325,9 +1325,9 @@ XML = Replace([XML], ' ="', '="')
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
-      <CategoryName />
+      <CategoryName>RickRoll</CategoryName>
       <SearchTags />
-      <Author />
+      <Author>Ian Baldwin</Author>
       <Company />
       <Copyright />
       <DescriptionLink actual="" displayed="" />

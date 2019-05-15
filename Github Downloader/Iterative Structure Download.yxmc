@@ -734,36 +734,16 @@ download_url = Replace([download_url], "%20", "...</DefaultAnnotationText>
     <ShowConnectionStatusOnlyWhenRunning value="False" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <Constants>
-      <Constant>
-        <Namespace>Question</Namespace>
-        <Name>Macro Input (83)</Name>
-        <Value />
-        <IsNumeric value="False" />
-      </Constant>
-      <Constant>
-        <Namespace>Question</Namespace>
-        <Name>Macro Output (84)</Name>
-        <Value />
-        <IsNumeric value="False" />
-      </Constant>
-      <Constant>
-        <Namespace>Question</Namespace>
-        <Name>Macro Output (85)</Name>
-        <Value />
-        <IsNumeric value="False" />
-      </Constant>
-    </Constants>
     <MetaInfo>
-      <NameIsFileName value="True" />
-      <Name>Iterative Structure Download</Name>
+      <NameIsFileName value="False" />
+      <Name>Github Folder Structure</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
       <ToolInDb value="False" />
-      <CategoryName />
-      <SearchTags />
-      <Author />
+      <CategoryName>Supporting Macros</CategoryName>
+      <SearchTags>Github</SearchTags>
+      <Author>Ian Baldwin</Author>
       <Company />
       <Copyright />
       <DescriptionLink actual="" displayed="" />

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="11.7">
+<AlteryxDocument yxmdVer="2019.1">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -239,11 +239,11 @@
       <Origin ToolID="39" Connection="Action" />
       <Destination ToolID="38" Connection="Action" />
     </Connection>
-    <Connection name="#1">
+    <Connection name="#1" Wireless="True">
       <Origin ToolID="36" Connection="Question" />
       <Destination ToolID="37" Connection="Question" />
     </Connection>
-    <Connection name="#1">
+    <Connection name="#1" Wireless="True">
       <Origin ToolID="36" Connection="Question" />
       <Destination ToolID="39" Connection="Question" />
     </Connection>
@@ -331,7 +331,7 @@
           <Questions>
             <Question>
               <Type>FileBrowse</Type>
-              <Description>File Browse (10)</Description>
+              <Description>Choose CSV file to convert:</Description>
               <Name>File Browse (36)</Name>
               <ToolId value="36" />
               <SaveAs value="False" />
