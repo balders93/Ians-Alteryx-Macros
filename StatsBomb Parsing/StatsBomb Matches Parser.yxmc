@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.4">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -88,7 +88,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>StatsBomb Competition File Parser</Text>
+          <Text>StatsBomb Matches Parser</Text>
           <Font name="Segoe UI" size="48" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -235,171 +235,50 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="45">
+    <Node ToolID="49">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="498" y="486" />
+        <Position x="498" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <UseFileInput value="False" />
-          <Name>Input45</Name>
+          <UseFileInput value="True" />
+          <Name>Input1</Name>
           <Abbrev />
           <ShowFieldMap value="False" />
           <Optional value="False" />
-          <TextInput>
+          <FileInput>
             <Configuration>
-              <NumRows value="25" />
-              <Fields>
-                <Field name="Field_1" />
-              </Fields>
-              <Data>
-                <r>
-                  <c>[ {</c>
-                </r>
-                <r>
-                  <c><![CDATA[  "competition_id" : 37,]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "season_id" : 4,]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "country_name" : "England",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "competition_name" : "FA Women's Super League",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "season_name" : "2018/2019",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "match_updated" : "2018-12-09T21:31:22.632190",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "match_available" : "2018-12-09T21:31:22.632190"]]></c>
-                </r>
-                <r>
-                  <c>}, {</c>
-                </r>
-                <r>
-                  <c><![CDATA[  "competition_id" : 43,]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "season_id" : 3,]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "country_name" : "International",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "competition_name" : "FIFA World Cup",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "season_name" : "2018",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "match_updated" : "2018-11-19T10:40:22.087513",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "match_available" : "2018-11-19T10:40:22.087513"]]></c>
-                </r>
-                <r>
-                  <c>}, {</c>
-                </r>
-                <r>
-                  <c><![CDATA[  "competition_id" : 49,]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "season_id" : 3,]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "country_name" : "United States of America",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "competition_name" : "NWSL",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "season_name" : "2018",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "match_updated" : "2018-11-20T14:33:28.815129",]]></c>
-                </r>
-                <r>
-                  <c><![CDATA[  "match_available" : "2018-11-03T20:33:13.451301"]]></c>
-                </r>
-                <r>
-                  <c>} ]</c>
-                </r>
-              </Data>
+              <Passwords />
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="54">G:\My Drive\Ian Baldwin\0. Personal Projects\Womens Football\open-data\data\matches\37.json</File>
+              <FormatSpecificOptions>
+                <SingleField>True</SingleField>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
             </Configuration>
-          </TextInput>
+          </FileInput>
         </Configuration>
         <Annotation DisplayMode="0">
-          <Name>Input Data (35)</Name>
-          <AnnotationText>competitions.json</AnnotationText>
-          <DefaultAnnotationText />
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>37.json</DefaultAnnotationText>
           <Left value="True" />
         </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Field_1" size="50" source="TextInput:" type="V_String" />
+            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
     </Node>
-    <Node ToolID="37">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="610" y="486" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="Field_1" action="Concat" rename="Concat_Field_1">
-              <Concat_Start />
-              <Separator>\n</Separator>
-              <Concat_End />
-            </SummarizeField>
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Concat_Field_1" size="2147483647" source="Summarize: Concat - Field_1" type="V_String" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="38">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.JSONParse.JSONParse">
-        <Position x="722" y="486" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <JSON_Field>Concat_Field_1</JSON_Field>
-          <IncludeInOutput value="False" />
-          <SingleField value="True" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
-            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJSONParse" />
-    </Node>
-    <Node ToolID="39">
+    <Node ToolID="52">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="834" y="486" />
+        <Position x="846" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -418,8 +297,9 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
-            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
           </RecordInfo>
@@ -427,13 +307,14 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
     </Node>
-    <Node ToolID="40">
+    <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1058" y="486" />
+        <Position x="1134" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <GroupFields>
+            <Field field="FileName" />
             <Field field="Row ID" />
           </GroupFields>
           <HeaderField field="2" />
@@ -451,25 +332,39 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
+            <Field name="FileName" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Row ID" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="away_score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="away_team_id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
+            <Field name="away_team_name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
             <Field name="competition_id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
             <Field name="competition_name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
             <Field name="country_name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="match_available" size="2048" source="CrossTab:Header:2:match_available:Concat:" type="V_WString" />
-            <Field name="match_updated" size="2048" source="CrossTab:Header:2:match_updated:Concat:" type="V_WString" />
+            <Field name="data_version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="home_score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="home_team_id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
+            <Field name="home_team_name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="kick_off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
+            <Field name="last_updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
+            <Field name="match_date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="match_id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="match_status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="referee_name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
             <Field name="season_id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
             <Field name="season_name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="stadium_name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
           </RecordInfo>
           <SortInfo>
+            <Field field="FileName" order="Asc" />
             <Field field="Row ID" order="Asc" />
           </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
     </Node>
-    <Node ToolID="41">
+    <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="946" y="486" />
+        <Position x="1038" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -487,106 +382,72 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="JSON_Name" size="1073741823" source="JSONParse: " type="V_WString" />
-            <Field name="JSON_ValueString" size="1073741823" source="JSONParse: " type="V_WString" />
+            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Row ID" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
-            <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="Formula: REGEX_Replace([2], &quot;.*\.&quot;, &quot;&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="42">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1170" y="486" />
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="942" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <OrderChanged value="False" />
-          <CommaDecimal value="False" />
-          <SelectFields>
-            <SelectField field="competition_id" selected="True" />
-            <SelectField field="competition_name" selected="True" />
-            <SelectField field="country_name" selected="True" />
-            <SelectField field="match_available" selected="True" />
-            <SelectField field="match_updated" selected="True" />
-            <SelectField field="season_id" selected="True" />
-            <SelectField field="season_name" selected="True" />
-            <SelectField field="*Unknown" selected="False" />
-          </SelectFields>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([2], &quot;.*\.&quot;, &quot;&quot;)" field="2" size="1073741823" type="V_WString" />
+          </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText />
+          <DefaultAnnotationText><![CDATA[2 = REGEX_Replace([2], ".*\.", "")
+]]></DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="competition_id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="competition_name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="country_name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="match_available" size="2048" source="CrossTab:Header:2:match_available:Concat:" type="V_WString" />
-            <Field name="match_updated" size="2048" source="CrossTab:Header:2:match_updated:Concat:" type="V_WString" />
-            <Field name="season_id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="season_name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="Formula: REGEX_Replace([2], &quot;.*\.&quot;, &quot;&quot;)" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
-    <Node ToolID="43">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="1282" y="486" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <RenameMode>Formula</RenameMode>
-          <Fields orderChanged="False">
-            <Field name="competition_id" />
-            <Field name="competition_name" />
-            <Field name="country_name" />
-            <Field name="match_available" />
-            <Field name="match_updated" />
-            <Field name="season_id" />
-            <Field name="season_name" />
-            <Field name="*Unknown" />
-          </Fields>
-          <Expression>TitleCase(Replace([_CurrentField_],"_"," "))</Expression>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="Match Available" size="2048" source="CrossTab:Header:2:match_available:Concat:" type="V_WString" />
-            <Field name="Match Updated" size="2048" source="CrossTab:Header:2:match_updated:Concat:" type="V_WString" />
-            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
-    </Node>
-    <Node ToolID="44">
+    <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
-        <Position x="1394" y="486" />
+        <Position x="1422" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <FieldType>Text</FieldType>
           <Fields orderChanged="False">
-            <Field name="Match Available" />
-            <Field name="Match Updated" />
+            <Field name="Last Updated" />
+            <Field name="Away Score" selected="False" />
+            <Field name="Away Team Id" selected="False" />
+            <Field name="Away Team Name" selected="False" />
             <Field name="Competition Id" selected="False" />
             <Field name="Competition Name" selected="False" />
             <Field name="Country Name" selected="False" />
+            <Field name="Data Version" selected="False" />
+            <Field name="Home Score" selected="False" />
+            <Field name="Home Team Id" selected="False" />
+            <Field name="Home Team Name" selected="False" />
+            <Field name="Kick Off" selected="False" />
+            <Field name="Match Date" selected="False" />
+            <Field name="Match Id" selected="False" />
+            <Field name="Match Status" selected="False" />
+            <Field name="Referee Name" selected="False" />
             <Field name="Season Id" selected="False" />
             <Field name="Season Name" selected="False" />
+            <Field name="Stadium Name" selected="False" />
+            <Field name="last_updated" selected="False" />
             <Field name="*Unknown" selected="False" />
           </Fields>
           <CopyOutput value="False" />
@@ -600,25 +461,238 @@
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
+            <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
             <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
             <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
             <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="Match Available" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
-            <Field name="Match Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
+            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Kick Off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
+            <Field name="Last Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
+            <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
             <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
             <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiFieldFormula" />
     </Node>
-    <Node ToolID="47">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1518" y="486" />
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1518" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Name>Output47</Name>
+          <FormulaFields>
+            <FormulaField expression="[match date] + &quot; &quot; + Left([kick off], 8)" field="Kick Off" size="2048" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Kick Off = [match date] + " " + Left([kick off], 8)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
+            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
+            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
+            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Kick Off" size="2048" source="Formula: [match date] + &quot; &quot; + Left([kick off], 8)" type="V_WString" />
+            <Field name="Last Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
+            <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
+            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1614" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Away Score" selected="True" type="Int32" size="4" />
+            <SelectField field="Away Team Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Competition Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Home Score" selected="True" type="Int32" size="4" />
+            <SelectField field="Home Team Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Kick Off" selected="True" type="DateTime" size="19" />
+            <SelectField field="Match Date" selected="True" type="Date" size="10" />
+            <SelectField field="Match Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Season Id" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Away Score" source="CrossTab:Header:2:away_score:Concat:" type="Int32" />
+            <Field name="Away Team Id" source="CrossTab:Header:2:away_team_id:Concat:" type="Int32" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
+            <Field name="Competition Id" source="CrossTab:Header:2:competition_id:Concat:" type="Int32" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
+            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
+            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Home Score" source="CrossTab:Header:2:home_score:Concat:" type="Int32" />
+            <Field name="Home Team Id" source="CrossTab:Header:2:home_team_id:Concat:" type="Int32" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Kick Off" source="Formula: [match date] + &quot; &quot; + Left([kick off], 8)" type="DateTime" />
+            <Field name="Last Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
+            <Field name="Match Date" source="CrossTab:Header:2:match_date:Concat:" type="Date" />
+            <Field name="Match Id" source="CrossTab:Header:2:match_id:Concat:" type="Int32" />
+            <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
+            <Field name="Season Id" source="CrossTab:Header:2:season_id:Concat:" type="Int32" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="60">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1326" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="away_score" />
+            <Field name="away_team_id" />
+            <Field name="away_team_name" />
+            <Field name="competition_id" />
+            <Field name="competition_name" />
+            <Field name="country_name" />
+            <Field name="data_version" />
+            <Field name="home_score" />
+            <Field name="home_team_id" />
+            <Field name="home_team_name" />
+            <Field name="kick_off" />
+            <Field name="last_updated" />
+            <Field name="match_date" />
+            <Field name="match_id" />
+            <Field name="match_status" />
+            <Field name="referee_name" />
+            <Field name="season_id" />
+            <Field name="season_name" />
+            <Field name="stadium_name" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression>TitleCase(Replace([_CurrentField_],"_"," "))</Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
+            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
+            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
+            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Kick Off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
+            <Field name="Last Updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
+            <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
+            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1230" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="FileName" selected="False" />
+            <SelectField field="Row ID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="away_score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="away_team_id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
+            <Field name="away_team_name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
+            <Field name="competition_id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
+            <Field name="competition_name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
+            <Field name="country_name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
+            <Field name="data_version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="home_score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="home_team_id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
+            <Field name="home_team_name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="kick_off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
+            <Field name="last_updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
+            <Field name="match_date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="match_id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="match_status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="referee_name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
+            <Field name="season_id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
+            <Field name="season_name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
+            <Field name="stadium_name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1746" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output48</Name>
           <Abbrev />
         </Configuration>
         <Annotation DisplayMode="0">
@@ -632,40 +706,44 @@
   </Nodes>
   <Connections>
     <Connection>
-      <Origin ToolID="45" Connection="Output" />
-      <Destination ToolID="37" Connection="Input" />
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="37" Connection="Output" />
-      <Destination ToolID="38" Connection="Input" />
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="38" Connection="Output" />
-      <Destination ToolID="39" Connection="Input" />
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="39" Connection="Output" />
-      <Destination ToolID="41" Connection="Input" />
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="53" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="40" Connection="Output" />
-      <Destination ToolID="42" Connection="Input" />
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="41" Connection="Output" />
-      <Destination ToolID="40" Connection="Input" />
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="58" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="42" Connection="Output" />
-      <Destination ToolID="43" Connection="Targets" />
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="59" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="43" Connection="Output" />
-      <Destination ToolID="44" Connection="Input" />
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="62" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="44" Connection="Output" />
-      <Destination ToolID="47" Connection="Input" />
+      <Origin ToolID="60" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="60" Connection="Targets" />
     </Connection>
   </Connections>
   <Properties>
@@ -684,23 +762,9 @@
     <ShowConnectionStatusOnlyWhenRunning value="False" />
     <ZoomLevel value="0" />
     <LayoutType>Horizontal</LayoutType>
-    <Constants>
-      <Constant>
-        <Namespace>Question</Namespace>
-        <Name>Macro Input (45)</Name>
-        <Value />
-        <IsNumeric value="False" />
-      </Constant>
-      <Constant>
-        <Namespace>Question</Namespace>
-        <Name>Macro Output (47)</Name>
-        <Value />
-        <IsNumeric value="False" />
-      </Constant>
-    </Constants>
     <MetaInfo>
       <NameIsFileName value="False" />
-      <Name>Competition File Parser</Name>
+      <Name>Match Parser</Name>
       <Description />
       <RootToolName />
       <ToolVersion />
@@ -730,15 +794,15 @@
           <Questions>
             <Question>
               <Type>MacroInput</Type>
-              <Description>Macro Input (45)</Description>
-              <Name>Macro Input (45)</Name>
-              <ToolId value="45" />
+              <Description />
+              <Name>Macro Input (49)</Name>
+              <ToolId value="49" />
             </Question>
             <Question>
               <Type>MacroOutput</Type>
               <Description>Macro Output (47)</Description>
-              <Name>Macro Output (47)</Name>
-              <ToolId value="47" />
+              <Name>Macro Output (62)</Name>
+              <ToolId value="62" />
             </Question>
           </Questions>
         </Question>
@@ -753,8 +817,8 @@
       <Wiz_CustomGraphic value="False" />
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
-        <Tool ToolId="47" Selected="True" />
-        <Tool ToolId="45" Selected="True" />
+        <Tool ToolId="49" Selected="True" />
+        <Tool ToolId="62" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
