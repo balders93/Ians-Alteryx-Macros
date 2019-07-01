@@ -249,7 +249,7 @@
           <FileInput>
             <Configuration>
               <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="54">G:\My Drive\Ian Baldwin\0. Personal Projects\Womens Football\open-data\data\lineups\7298.json</File>
+              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="54">.\data\lineups\7298.json</File>
               <FormatSpecificOptions>
                 <SingleField>True</SingleField>
                 <CodePage>65001</CodePage>
