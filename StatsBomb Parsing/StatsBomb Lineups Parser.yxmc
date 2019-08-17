@@ -88,7 +88,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>StatsBomb Matches Parser</Text>
+          <Text>StatsBomb Lineups Parser</Text>
           <Font name="Segoe UI" size="48" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -208,7 +208,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>[A longer subtitle that explains in more detail what the workflow is doing]</Text>
+          <Text>Parses a set of lineup files from a SB data folder</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -262,9 +262,6 @@
           <DefaultAnnotationText>7298.json</DefaultAnnotationText>
           <Left value="True" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />

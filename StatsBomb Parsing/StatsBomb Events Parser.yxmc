@@ -262,9 +262,6 @@
           <DefaultAnnotationText>7298.json</DefaultAnnotationText>
           <Left value="True" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
@@ -663,12 +660,14 @@ ENDIF
           <RecordInfo>
             <Field name="FileName" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="1" source="CrossTab:Group:Concat:" type="Int64" />
+            <Field name="counterpress" size="2048" source="CrossTab:Header:2:counterpress:Concat:" type="V_WString" />
             <Field name="duration" size="2048" source="CrossTab:Header:2:duration:Concat:" type="V_WString" />
             <Field name="index" size="2048" source="CrossTab:Header:2:index:Concat:" type="V_WString" />
             <Field name="location_0" size="2048" source="CrossTab:Header:2:location.0:Concat:" type="V_WString" />
             <Field name="location_1" size="2048" source="CrossTab:Header:2:location.1:Concat:" type="V_WString" />
             <Field name="minute" size="2048" source="CrossTab:Header:2:minute:Concat:" type="V_WString" />
             <Field name="off_camera" size="2048" source="CrossTab:Header:2:off_camera:Concat:" type="V_WString" />
+            <Field name="out" size="2048" source="CrossTab:Header:2:out:Concat:" type="V_WString" />
             <Field name="period" size="2048" source="CrossTab:Header:2:period:Concat:" type="V_WString" />
             <Field name="player_id" size="2048" source="CrossTab:Header:2:player.id:Concat:" type="V_WString" />
             <Field name="player_name" size="2048" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
@@ -747,12 +746,14 @@ ENDIF
           <RecordInfo>
             <Field name="event_id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+            <Field name="counterpress" size="2048" source="CrossTab:Header:2:counterpress:Concat:" type="V_WString" />
             <Field name="duration" size="2048" source="CrossTab:Header:2:duration:Concat:" type="V_WString" />
             <Field name="index" size="2048" source="CrossTab:Header:2:index:Concat:" type="V_WString" />
             <Field name="location_0" size="2048" source="CrossTab:Header:2:location.0:Concat:" type="V_WString" />
             <Field name="location_1" size="2048" source="CrossTab:Header:2:location.1:Concat:" type="V_WString" />
             <Field name="minute" size="2048" source="CrossTab:Header:2:minute:Concat:" type="V_WString" />
             <Field name="off_camera" size="2048" source="CrossTab:Header:2:off_camera:Concat:" type="V_WString" />
+            <Field name="out" size="2048" source="CrossTab:Header:2:out:Concat:" type="V_WString" />
             <Field name="period" size="2048" source="CrossTab:Header:2:period:Concat:" type="V_WString" />
             <Field name="player_id" size="2048" source="CrossTab:Header:2:player.id:Concat:" type="V_WString" />
             <Field name="player_name" size="2048" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
@@ -779,12 +780,14 @@ ENDIF
           <RecordInfo>
             <Field name="FileName" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="1" source="CrossTab:Group:Concat:" type="Int64" />
+            <Field name="counterpress" size="2048" source="CrossTab:Header:2:counterpress:Concat:" type="V_WString" />
             <Field name="duration" size="2048" source="CrossTab:Header:2:duration:Concat:" type="V_WString" />
             <Field name="index" size="2048" source="CrossTab:Header:2:index:Concat:" type="V_WString" />
             <Field name="location_0" size="2048" source="CrossTab:Header:2:location.0:Concat:" type="V_WString" />
             <Field name="location_1" size="2048" source="CrossTab:Header:2:location.1:Concat:" type="V_WString" />
             <Field name="minute" size="2048" source="CrossTab:Header:2:minute:Concat:" type="V_WString" />
             <Field name="off_camera" size="2048" source="CrossTab:Header:2:off_camera:Concat:" type="V_WString" />
+            <Field name="out" size="2048" source="CrossTab:Header:2:out:Concat:" type="V_WString" />
             <Field name="period" size="2048" source="CrossTab:Header:2:period:Concat:" type="V_WString" />
             <Field name="player_id" size="2048" source="CrossTab:Header:2:player.id:Concat:" type="V_WString" />
             <Field name="player_name" size="2048" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
@@ -822,7 +825,8 @@ ENDIF
           <SelectFields>
             <SelectField field="FileName" selected="True" rename="match_id" type="Int32" size="4" />
             <SelectField field="1" selected="False" />
-            <SelectField field="id" selected="True" rename="event_id" />
+            <SelectField field="id" selected="True" rename="event_id" size="254" />
+            <SelectField field="related_events" selected="True" size="254" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -834,8 +838,8 @@ ENDIF
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="match_id" source="CrossTab:Group:Concat:" type="Int32" />
-            <Field name="event_id" size="2048" source="CrossTab:Header:2:id:Concat:" type="V_WString" />
-            <Field description="TextToColumns: Parsed from related_events" name="related_events" size="2048" source="TextToColumns: Parsed from related_events" type="V_WString" />
+            <Field name="event_id" size="254" source="CrossTab:Header:2:id:Concat:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from related_events" name="related_events" size="254" source="TextToColumns: Parsed from related_events" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -914,35 +918,63 @@ ENDIF
             <Field name="card_id" size="2048" source="CrossTab:Header:3:card.id:Concat:" type="V_WString" />
             <Field name="card_name" size="2048" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
             <Field name="cross" size="2048" source="CrossTab:Header:3:cross:Concat:" type="V_WString" />
+            <Field name="cut_back" size="2048" source="CrossTab:Header:3:cut_back:Concat:" type="V_WString" />
             <Field name="defensive" size="2048" source="CrossTab:Header:3:defensive:Concat:" type="V_WString" />
             <Field name="deflected" size="2048" source="CrossTab:Header:3:deflected:Concat:" type="V_WString" />
             <Field name="deflection" size="2048" source="CrossTab:Header:3:deflection:Concat:" type="V_WString" />
+            <Field name="early_video_end" size="2048" source="CrossTab:Header:3:early_video_end:Concat:" type="V_WString" />
             <Field name="end_location_0" size="2048" source="CrossTab:Header:3:end_location.0:Concat:" type="V_WString" />
             <Field name="end_location_1" size="2048" source="CrossTab:Header:3:end_location.1:Concat:" type="V_WString" />
             <Field name="end_location_2" size="2048" source="CrossTab:Header:3:end_location.2:Concat:" type="V_WString" />
             <Field name="first_time" size="2048" source="CrossTab:Header:3:first_time:Concat:" type="V_WString" />
             <Field name="follows_dribble" size="2048" source="CrossTab:Header:3:follows_dribble:Concat:" type="V_WString" />
             <Field name="goal_assist" size="2048" source="CrossTab:Header:3:goal_assist:Concat:" type="V_WString" />
+            <Field name="head" size="2048" source="CrossTab:Header:3:head:Concat:" type="V_WString" />
             <Field name="height_id" size="2048" source="CrossTab:Header:3:height.id:Concat:" type="V_WString" />
             <Field name="height_name" size="2048" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="inswinging" size="2048" source="CrossTab:Header:3:inswinging:Concat:" type="V_WString" />
             <Field name="in_chain" size="2048" source="CrossTab:Header:3:in_chain:Concat:" type="V_WString" />
             <Field name="key_pass_id" size="2048" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="kick_off" size="2048" source="CrossTab:Header:3:kick_off:Concat:" type="V_WString" />
+            <Field name="late_video_start" size="2048" source="CrossTab:Header:3:late_video_start:Concat:" type="V_WString" />
+            <Field name="left_foot" size="2048" source="CrossTab:Header:3:left_foot:Concat:" type="V_WString" />
             <Field name="length" size="2048" source="CrossTab:Header:3:length:Concat:" type="V_WString" />
+            <Field name="lost_in_play" size="2048" source="CrossTab:Header:3:lost_in_play:Concat:" type="V_WString" />
+            <Field name="lost_out" size="2048" source="CrossTab:Header:3:lost_out:Concat:" type="V_WString" />
+            <Field name="miscommunication" size="2048" source="CrossTab:Header:3:miscommunication:Concat:" type="V_WString" />
+            <Field name="no_touch" size="2048" source="CrossTab:Header:3:no_touch:Concat:" type="V_WString" />
             <Field name="nutmeg" size="2048" source="CrossTab:Header:3:nutmeg:Concat:" type="V_WString" />
             <Field name="offensive" size="2048" source="CrossTab:Header:3:offensive:Concat:" type="V_WString" />
             <Field name="one_on_one" size="2048" source="CrossTab:Header:3:one_on_one:Concat:" type="V_WString" />
+            <Field name="open_goal" size="2048" source="CrossTab:Header:3:open_goal:Concat:" type="V_WString" />
+            <Field name="other" size="2048" source="CrossTab:Header:3:other:Concat:" type="V_WString" />
             <Field name="outcome_id" size="2048" source="CrossTab:Header:3:outcome.id:Concat:" type="V_WString" />
             <Field name="outcome_name" size="2048" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="outswinging" size="2048" source="CrossTab:Header:3:outswinging:Concat:" type="V_WString" />
             <Field name="overrun" size="2048" source="CrossTab:Header:3:overrun:Concat:" type="V_WString" />
+            <Field name="penalty" size="2048" source="CrossTab:Header:3:penalty:Concat:" type="V_WString" />
+            <Field name="penalty_saved_to_post" size="2048" source="CrossTab:Header:3:penalty_saved_to_post:Concat:" type="V_WString" />
+            <Field name="permanent" size="2048" source="CrossTab:Header:3:permanent:Concat:" type="V_WString" />
             <Field name="position_id" size="2048" source="CrossTab:Header:3:position.id:Concat:" type="V_WString" />
             <Field name="position_name" size="2048" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="punched_out" size="2048" source="CrossTab:Header:3:punched_out:Concat:" type="V_WString" />
             <Field name="recipient_id" size="2048" source="CrossTab:Header:3:recipient.id:Concat:" type="V_WString" />
             <Field name="recipient_name" size="2048" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
             <Field name="recovery_failure" size="2048" source="CrossTab:Header:3:recovery_failure:Concat:" type="V_WString" />
+            <Field name="redirect" size="2048" source="CrossTab:Header:3:redirect:Concat:" type="V_WString" />
             <Field name="replacement_id" size="2048" source="CrossTab:Header:3:replacement.id:Concat:" type="V_WString" />
             <Field name="replacement_name" size="2048" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="right_foot" size="2048" source="CrossTab:Header:3:right_foot:Concat:" type="V_WString" />
+            <Field name="saved_off_target" size="2048" source="CrossTab:Header:3:saved_off_target:Concat:" type="V_WString" />
+            <Field name="saved_to_post" size="2048" source="CrossTab:Header:3:saved_to_post:Concat:" type="V_WString" />
+            <Field name="save_block" size="2048" source="CrossTab:Header:3:save_block:Concat:" type="V_WString" />
             <Field name="shot_assist" size="2048" source="CrossTab:Header:3:shot_assist:Concat:" type="V_WString" />
+            <Field name="shot_saved_off_target" size="2048" source="CrossTab:Header:3:shot_saved_off_target:Concat:" type="V_WString" />
+            <Field name="shot_saved_to_post" size="2048" source="CrossTab:Header:3:shot_saved_to_post:Concat:" type="V_WString" />
             <Field name="statsbomb_xg" size="2048" source="CrossTab:Header:3:statsbomb_xg:Concat:" type="V_WString" />
+            <Field name="straight" size="2048" source="CrossTab:Header:3:straight:Concat:" type="V_WString" />
+            <Field name="success_in_play" size="2048" source="CrossTab:Header:3:success_in_play:Concat:" type="V_WString" />
+            <Field name="success_out" size="2048" source="CrossTab:Header:3:success_out:Concat:" type="V_WString" />
             <Field name="switch" size="2048" source="CrossTab:Header:3:switch:Concat:" type="V_WString" />
             <Field name="technique_id" size="2048" source="CrossTab:Header:3:technique.id:Concat:" type="V_WString" />
             <Field name="technique_name" size="2048" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
@@ -1132,35 +1164,63 @@ ENDIF
             <Field name="card_id" size="2048" source="CrossTab:Header:3:card.id:Concat:" type="V_WString" />
             <Field name="card_name" size="2048" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
             <Field name="cross" size="2048" source="CrossTab:Header:3:cross:Concat:" type="V_WString" />
+            <Field name="cut_back" size="2048" source="CrossTab:Header:3:cut_back:Concat:" type="V_WString" />
             <Field name="defensive" size="2048" source="CrossTab:Header:3:defensive:Concat:" type="V_WString" />
             <Field name="deflected" size="2048" source="CrossTab:Header:3:deflected:Concat:" type="V_WString" />
             <Field name="deflection" size="2048" source="CrossTab:Header:3:deflection:Concat:" type="V_WString" />
+            <Field name="early_video_end" size="2048" source="CrossTab:Header:3:early_video_end:Concat:" type="V_WString" />
             <Field name="end_location_0" size="2048" source="CrossTab:Header:3:end_location.0:Concat:" type="V_WString" />
             <Field name="end_location_1" size="2048" source="CrossTab:Header:3:end_location.1:Concat:" type="V_WString" />
             <Field name="end_location_2" size="2048" source="CrossTab:Header:3:end_location.2:Concat:" type="V_WString" />
             <Field name="first_time" size="2048" source="CrossTab:Header:3:first_time:Concat:" type="V_WString" />
             <Field name="follows_dribble" size="2048" source="CrossTab:Header:3:follows_dribble:Concat:" type="V_WString" />
             <Field name="goal_assist" size="2048" source="CrossTab:Header:3:goal_assist:Concat:" type="V_WString" />
+            <Field name="head" size="2048" source="CrossTab:Header:3:head:Concat:" type="V_WString" />
             <Field name="height_id" size="2048" source="CrossTab:Header:3:height.id:Concat:" type="V_WString" />
             <Field name="height_name" size="2048" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="inswinging" size="2048" source="CrossTab:Header:3:inswinging:Concat:" type="V_WString" />
             <Field name="in_chain" size="2048" source="CrossTab:Header:3:in_chain:Concat:" type="V_WString" />
             <Field name="key_pass_id" size="2048" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="kick_off" size="2048" source="CrossTab:Header:3:kick_off:Concat:" type="V_WString" />
+            <Field name="late_video_start" size="2048" source="CrossTab:Header:3:late_video_start:Concat:" type="V_WString" />
+            <Field name="left_foot" size="2048" source="CrossTab:Header:3:left_foot:Concat:" type="V_WString" />
             <Field name="length" size="2048" source="CrossTab:Header:3:length:Concat:" type="V_WString" />
+            <Field name="lost_in_play" size="2048" source="CrossTab:Header:3:lost_in_play:Concat:" type="V_WString" />
+            <Field name="lost_out" size="2048" source="CrossTab:Header:3:lost_out:Concat:" type="V_WString" />
+            <Field name="miscommunication" size="2048" source="CrossTab:Header:3:miscommunication:Concat:" type="V_WString" />
+            <Field name="no_touch" size="2048" source="CrossTab:Header:3:no_touch:Concat:" type="V_WString" />
             <Field name="nutmeg" size="2048" source="CrossTab:Header:3:nutmeg:Concat:" type="V_WString" />
             <Field name="offensive" size="2048" source="CrossTab:Header:3:offensive:Concat:" type="V_WString" />
             <Field name="one_on_one" size="2048" source="CrossTab:Header:3:one_on_one:Concat:" type="V_WString" />
+            <Field name="open_goal" size="2048" source="CrossTab:Header:3:open_goal:Concat:" type="V_WString" />
+            <Field name="other" size="2048" source="CrossTab:Header:3:other:Concat:" type="V_WString" />
             <Field name="outcome_id" size="2048" source="CrossTab:Header:3:outcome.id:Concat:" type="V_WString" />
             <Field name="outcome_name" size="2048" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="outswinging" size="2048" source="CrossTab:Header:3:outswinging:Concat:" type="V_WString" />
             <Field name="overrun" size="2048" source="CrossTab:Header:3:overrun:Concat:" type="V_WString" />
+            <Field name="penalty" size="2048" source="CrossTab:Header:3:penalty:Concat:" type="V_WString" />
+            <Field name="penalty_saved_to_post" size="2048" source="CrossTab:Header:3:penalty_saved_to_post:Concat:" type="V_WString" />
+            <Field name="permanent" size="2048" source="CrossTab:Header:3:permanent:Concat:" type="V_WString" />
             <Field name="position_id" size="2048" source="CrossTab:Header:3:position.id:Concat:" type="V_WString" />
             <Field name="position_name" size="2048" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="punched_out" size="2048" source="CrossTab:Header:3:punched_out:Concat:" type="V_WString" />
             <Field name="recipient_id" size="2048" source="CrossTab:Header:3:recipient.id:Concat:" type="V_WString" />
             <Field name="recipient_name" size="2048" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
             <Field name="recovery_failure" size="2048" source="CrossTab:Header:3:recovery_failure:Concat:" type="V_WString" />
+            <Field name="redirect" size="2048" source="CrossTab:Header:3:redirect:Concat:" type="V_WString" />
             <Field name="replacement_id" size="2048" source="CrossTab:Header:3:replacement.id:Concat:" type="V_WString" />
             <Field name="replacement_name" size="2048" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="right_foot" size="2048" source="CrossTab:Header:3:right_foot:Concat:" type="V_WString" />
+            <Field name="saved_off_target" size="2048" source="CrossTab:Header:3:saved_off_target:Concat:" type="V_WString" />
+            <Field name="saved_to_post" size="2048" source="CrossTab:Header:3:saved_to_post:Concat:" type="V_WString" />
+            <Field name="save_block" size="2048" source="CrossTab:Header:3:save_block:Concat:" type="V_WString" />
             <Field name="shot_assist" size="2048" source="CrossTab:Header:3:shot_assist:Concat:" type="V_WString" />
+            <Field name="shot_saved_off_target" size="2048" source="CrossTab:Header:3:shot_saved_off_target:Concat:" type="V_WString" />
+            <Field name="shot_saved_to_post" size="2048" source="CrossTab:Header:3:shot_saved_to_post:Concat:" type="V_WString" />
             <Field name="statsbomb_xg" size="2048" source="CrossTab:Header:3:statsbomb_xg:Concat:" type="V_WString" />
+            <Field name="straight" size="2048" source="CrossTab:Header:3:straight:Concat:" type="V_WString" />
+            <Field name="success_in_play" size="2048" source="CrossTab:Header:3:success_in_play:Concat:" type="V_WString" />
+            <Field name="success_out" size="2048" source="CrossTab:Header:3:success_out:Concat:" type="V_WString" />
             <Field name="switch" size="2048" source="CrossTab:Header:3:switch:Concat:" type="V_WString" />
             <Field name="technique_id" size="2048" source="CrossTab:Header:3:technique.id:Concat:" type="V_WString" />
             <Field name="technique_name" size="2048" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
@@ -1187,35 +1247,63 @@ ENDIF
             <Field name="card_id" size="2048" source="CrossTab:Header:3:card.id:Concat:" type="V_WString" />
             <Field name="card_name" size="2048" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
             <Field name="cross" size="2048" source="CrossTab:Header:3:cross:Concat:" type="V_WString" />
+            <Field name="cut_back" size="2048" source="CrossTab:Header:3:cut_back:Concat:" type="V_WString" />
             <Field name="defensive" size="2048" source="CrossTab:Header:3:defensive:Concat:" type="V_WString" />
             <Field name="deflected" size="2048" source="CrossTab:Header:3:deflected:Concat:" type="V_WString" />
             <Field name="deflection" size="2048" source="CrossTab:Header:3:deflection:Concat:" type="V_WString" />
+            <Field name="early_video_end" size="2048" source="CrossTab:Header:3:early_video_end:Concat:" type="V_WString" />
             <Field name="end_location_0" size="2048" source="CrossTab:Header:3:end_location.0:Concat:" type="V_WString" />
             <Field name="end_location_1" size="2048" source="CrossTab:Header:3:end_location.1:Concat:" type="V_WString" />
             <Field name="end_location_2" size="2048" source="CrossTab:Header:3:end_location.2:Concat:" type="V_WString" />
             <Field name="first_time" size="2048" source="CrossTab:Header:3:first_time:Concat:" type="V_WString" />
             <Field name="follows_dribble" size="2048" source="CrossTab:Header:3:follows_dribble:Concat:" type="V_WString" />
             <Field name="goal_assist" size="2048" source="CrossTab:Header:3:goal_assist:Concat:" type="V_WString" />
+            <Field name="head" size="2048" source="CrossTab:Header:3:head:Concat:" type="V_WString" />
             <Field name="height_id" size="2048" source="CrossTab:Header:3:height.id:Concat:" type="V_WString" />
             <Field name="height_name" size="2048" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="inswinging" size="2048" source="CrossTab:Header:3:inswinging:Concat:" type="V_WString" />
             <Field name="in_chain" size="2048" source="CrossTab:Header:3:in_chain:Concat:" type="V_WString" />
             <Field name="key_pass_id" size="2048" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="kick_off" size="2048" source="CrossTab:Header:3:kick_off:Concat:" type="V_WString" />
+            <Field name="late_video_start" size="2048" source="CrossTab:Header:3:late_video_start:Concat:" type="V_WString" />
+            <Field name="left_foot" size="2048" source="CrossTab:Header:3:left_foot:Concat:" type="V_WString" />
             <Field name="length" size="2048" source="CrossTab:Header:3:length:Concat:" type="V_WString" />
+            <Field name="lost_in_play" size="2048" source="CrossTab:Header:3:lost_in_play:Concat:" type="V_WString" />
+            <Field name="lost_out" size="2048" source="CrossTab:Header:3:lost_out:Concat:" type="V_WString" />
+            <Field name="miscommunication" size="2048" source="CrossTab:Header:3:miscommunication:Concat:" type="V_WString" />
+            <Field name="no_touch" size="2048" source="CrossTab:Header:3:no_touch:Concat:" type="V_WString" />
             <Field name="nutmeg" size="2048" source="CrossTab:Header:3:nutmeg:Concat:" type="V_WString" />
             <Field name="offensive" size="2048" source="CrossTab:Header:3:offensive:Concat:" type="V_WString" />
             <Field name="one_on_one" size="2048" source="CrossTab:Header:3:one_on_one:Concat:" type="V_WString" />
+            <Field name="open_goal" size="2048" source="CrossTab:Header:3:open_goal:Concat:" type="V_WString" />
+            <Field name="other" size="2048" source="CrossTab:Header:3:other:Concat:" type="V_WString" />
             <Field name="outcome_id" size="2048" source="CrossTab:Header:3:outcome.id:Concat:" type="V_WString" />
             <Field name="outcome_name" size="2048" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="outswinging" size="2048" source="CrossTab:Header:3:outswinging:Concat:" type="V_WString" />
             <Field name="overrun" size="2048" source="CrossTab:Header:3:overrun:Concat:" type="V_WString" />
+            <Field name="penalty" size="2048" source="CrossTab:Header:3:penalty:Concat:" type="V_WString" />
+            <Field name="penalty_saved_to_post" size="2048" source="CrossTab:Header:3:penalty_saved_to_post:Concat:" type="V_WString" />
+            <Field name="permanent" size="2048" source="CrossTab:Header:3:permanent:Concat:" type="V_WString" />
             <Field name="position_id" size="2048" source="CrossTab:Header:3:position.id:Concat:" type="V_WString" />
             <Field name="position_name" size="2048" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="punched_out" size="2048" source="CrossTab:Header:3:punched_out:Concat:" type="V_WString" />
             <Field name="recipient_id" size="2048" source="CrossTab:Header:3:recipient.id:Concat:" type="V_WString" />
             <Field name="recipient_name" size="2048" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
             <Field name="recovery_failure" size="2048" source="CrossTab:Header:3:recovery_failure:Concat:" type="V_WString" />
+            <Field name="redirect" size="2048" source="CrossTab:Header:3:redirect:Concat:" type="V_WString" />
             <Field name="replacement_id" size="2048" source="CrossTab:Header:3:replacement.id:Concat:" type="V_WString" />
             <Field name="replacement_name" size="2048" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="right_foot" size="2048" source="CrossTab:Header:3:right_foot:Concat:" type="V_WString" />
+            <Field name="saved_off_target" size="2048" source="CrossTab:Header:3:saved_off_target:Concat:" type="V_WString" />
+            <Field name="saved_to_post" size="2048" source="CrossTab:Header:3:saved_to_post:Concat:" type="V_WString" />
+            <Field name="save_block" size="2048" source="CrossTab:Header:3:save_block:Concat:" type="V_WString" />
             <Field name="shot_assist" size="2048" source="CrossTab:Header:3:shot_assist:Concat:" type="V_WString" />
+            <Field name="shot_saved_off_target" size="2048" source="CrossTab:Header:3:shot_saved_off_target:Concat:" type="V_WString" />
+            <Field name="shot_saved_to_post" size="2048" source="CrossTab:Header:3:shot_saved_to_post:Concat:" type="V_WString" />
             <Field name="statsbomb_xg" size="2048" source="CrossTab:Header:3:statsbomb_xg:Concat:" type="V_WString" />
+            <Field name="straight" size="2048" source="CrossTab:Header:3:straight:Concat:" type="V_WString" />
+            <Field name="success_in_play" size="2048" source="CrossTab:Header:3:success_in_play:Concat:" type="V_WString" />
+            <Field name="success_out" size="2048" source="CrossTab:Header:3:success_out:Concat:" type="V_WString" />
             <Field name="switch" size="2048" source="CrossTab:Header:3:switch:Concat:" type="V_WString" />
             <Field name="technique_id" size="2048" source="CrossTab:Header:3:technique.id:Concat:" type="V_WString" />
             <Field name="technique_name" size="2048" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
@@ -1793,7 +1881,7 @@ ENDIF
         <Configuration>
           <RenameMode>Formula</RenameMode>
           <Fields orderChanged="False">
-            <Field name="FileName" />
+            <Field name="match_id" />
             <Field name="event_id" />
             <Field name="related_events" />
             <Field name="*Unknown" />
@@ -1808,8 +1896,8 @@ ENDIF
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Match Id" source="CrossTab:Group:Concat:" type="Int32" />
-            <Field name="Event Id" size="2048" source="CrossTab:Header:2:id:Concat:" type="V_WString" />
-            <Field description="TextToColumns: Parsed from related_events" name="Related Events" size="2048" source="TextToColumns: Parsed from related_events" type="V_WString" />
+            <Field name="Event Id" size="254" source="CrossTab:Header:2:id:Concat:" type="V_WString" />
+            <Field description="TextToColumns: Parsed from related_events" name="Related Events" size="254" source="TextToColumns: Parsed from related_events" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1846,12 +1934,12 @@ ENDIF
             <Field name="Event Id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="Match Id" source="File: FileName" type="Int32" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Event Type" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
-            <Field name="Formation" size="2048" source="CrossTab:Header:3:formation:Concat:" type="V_WString" />
+            <Field name="Formation" size="254" source="CrossTab:Header:3:formation:Concat:" type="V_WString" />
             <Field name="Jersey Number" source="CrossTab:Header:42:jersey_number:Concat:" type="Int32" />
             <Field name="Player Id" source="CrossTab:Header:42:player.id:Concat:" type="Int32" />
-            <Field name="Player Name" size="2048" source="CrossTab:Header:42:player.name:Concat:" type="V_WString" />
+            <Field name="Player Name" size="254" source="CrossTab:Header:42:player.name:Concat:" type="V_WString" />
             <Field name="Position Id" source="CrossTab:Header:42:position.id:Concat:" type="Int32" />
-            <Field name="Position Name" size="2048" source="CrossTab:Header:42:position.name:Concat:" type="V_WString" />
+            <Field name="Position Name" size="254" source="CrossTab:Header:42:position.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1903,28 +1991,30 @@ ENDIF
           <RecordInfo>
             <Field name="Event Id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="Match Id" source="File: FileName" type="Int32" />
+            <Field name="Counterpress" source="CrossTab:Header:2:counterpress:Concat:" type="Int32" />
             <Field name="Duration" source="CrossTab:Header:2:duration:Concat:" type="Double" />
             <Field name="Index" source="CrossTab:Header:2:index:Concat:" type="Int32" />
-            <Field name="Location 0" source="CrossTab:Header:2:location.0:Concat:" type="Int32" />
-            <Field name="Location 1" source="CrossTab:Header:2:location.1:Concat:" type="Int32" />
+            <Field name="Location 0" source="CrossTab:Header:2:location.0:Concat:" type="Double" />
+            <Field name="Location 1" source="CrossTab:Header:2:location.1:Concat:" type="Double" />
             <Field name="Minute" source="CrossTab:Header:2:minute:Concat:" type="Int32" />
             <Field name="Off Camera" source="CrossTab:Header:2:off_camera:Concat:" type="Int32" />
+            <Field name="Out" source="CrossTab:Header:2:out:Concat:" type="Int32" />
             <Field name="Period" source="CrossTab:Header:2:period:Concat:" type="Int32" />
             <Field name="Player Id" source="CrossTab:Header:2:player.id:Concat:" type="Int32" />
-            <Field name="Player Name" size="2048" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
+            <Field name="Player Name" size="254" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
             <Field name="Play Pattern Id" source="CrossTab:Header:2:play_pattern.id:Concat:" type="Int32" />
-            <Field name="Play Pattern Name" size="2048" source="CrossTab:Header:2:play_pattern.name:Concat:" type="V_WString" />
+            <Field name="Play Pattern Name" size="254" source="CrossTab:Header:2:play_pattern.name:Concat:" type="V_WString" />
             <Field name="Position Id" source="CrossTab:Header:2:position.id:Concat:" type="Int32" />
-            <Field name="Position Name" size="2048" source="CrossTab:Header:2:position.name:Concat:" type="V_WString" />
+            <Field name="Position Name" size="254" source="CrossTab:Header:2:position.name:Concat:" type="V_WString" />
             <Field name="Possession" source="CrossTab:Header:2:possession:Concat:" type="Int32" />
             <Field name="Possession Team Id" source="CrossTab:Header:2:possession_team.id:Concat:" type="Int32" />
-            <Field name="Possession Team Name" size="2048" source="CrossTab:Header:2:possession_team.name:Concat:" type="V_WString" />
+            <Field name="Possession Team Name" size="254" source="CrossTab:Header:2:possession_team.name:Concat:" type="V_WString" />
             <Field name="Second" source="CrossTab:Header:2:second:Concat:" type="Int32" />
             <Field name="Team Id" source="CrossTab:Header:2:team.id:Concat:" type="Int32" />
-            <Field name="Team Name" size="2048" source="CrossTab:Header:2:team.name:Concat:" type="V_WString" />
-            <Field name="Timestamp" size="2048" source="CrossTab:Header:2:timestamp:Concat:" type="V_WString" />
+            <Field name="Team Name" size="254" source="CrossTab:Header:2:team.name:Concat:" type="V_WString" />
+            <Field name="Timestamp" size="254" source="CrossTab:Header:2:timestamp:Concat:" type="V_WString" />
             <Field name="Type Id" source="CrossTab:Header:2:type.id:Concat:" type="Int32" />
-            <Field name="Type Name" size="2048" source="CrossTab:Header:2:type.name:Concat:" type="V_WString" />
+            <Field name="Type Name" size="254" source="CrossTab:Header:2:type.name:Concat:" type="V_WString" />
             <Field name="Under Pressure" source="CrossTab:Header:2:under_pressure:Concat:" type="Int32" />
           </RecordInfo>
         </MetaInfo>
@@ -1999,53 +2089,81 @@ ENDIF
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Event Id" size="254" source="JSON_Input: " type="V_WString" />
-            <Field name="Filename" source="File: FileName" type="Int32" />
+            <Field name="Match Id" source="File: FileName" type="Int32" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Event Type" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field name="Advantage" source="CrossTab:Header:3:advantage:Concat:" type="Int32" />
             <Field name="Aerial Won" source="CrossTab:Header:3:aerial_won:Concat:" type="Int32" />
             <Field name="Angle" source="CrossTab:Header:3:angle:Concat:" type="Double" />
-            <Field name="Assisted Shot Id" size="2048" source="CrossTab:Header:3:assisted_shot_id:Concat:" type="V_WString" />
+            <Field name="Assisted Shot Id" size="254" source="CrossTab:Header:3:assisted_shot_id:Concat:" type="V_WString" />
             <Field name="Backheel" source="CrossTab:Header:3:backheel:Concat:" type="Int32" />
             <Field name="Body Part Id" source="CrossTab:Header:3:body_part.id:Concat:" type="Int32" />
-            <Field name="Body Part Name" size="2048" source="CrossTab:Header:3:body_part.name:Concat:" type="V_WString" />
+            <Field name="Body Part Name" size="254" source="CrossTab:Header:3:body_part.name:Concat:" type="V_WString" />
             <Field name="Card Id" source="CrossTab:Header:3:card.id:Concat:" type="Int32" />
-            <Field name="Card Name" size="2048" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
+            <Field name="Card Name" size="254" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
             <Field name="Cross" source="CrossTab:Header:3:cross:Concat:" type="Int32" />
+            <Field name="Cut Back" size="254" source="CrossTab:Header:3:cut_back:Concat:" type="V_WString" />
             <Field name="Defensive" source="CrossTab:Header:3:defensive:Concat:" type="Int32" />
             <Field name="Deflected" source="CrossTab:Header:3:deflected:Concat:" type="Int32" />
             <Field name="Deflection" source="CrossTab:Header:3:deflection:Concat:" type="Int32" />
+            <Field name="Early Video End" size="254" source="CrossTab:Header:3:early_video_end:Concat:" type="V_WString" />
             <Field name="End Location 0" source="CrossTab:Header:3:end_location.0:Concat:" type="Double" />
             <Field name="End Location 1" source="CrossTab:Header:3:end_location.1:Concat:" type="Double" />
             <Field name="End Location 2" source="CrossTab:Header:3:end_location.2:Concat:" type="Double" />
             <Field name="First Time" source="CrossTab:Header:3:first_time:Concat:" type="Int32" />
             <Field name="Follows Dribble" source="CrossTab:Header:3:follows_dribble:Concat:" type="Int32" />
             <Field name="Goal Assist" source="CrossTab:Header:3:goal_assist:Concat:" type="Int32" />
+            <Field name="Head" source="CrossTab:Header:3:head:Concat:" type="Int32" />
             <Field name="Height Id" source="CrossTab:Header:3:height.id:Concat:" type="Int32" />
-            <Field name="Height Name" size="2048" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="Height Name" size="254" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="Inswinging" source="CrossTab:Header:3:inswinging:Concat:" type="Int32" />
             <Field name="In Chain" source="CrossTab:Header:3:in_chain:Concat:" type="Int32" />
-            <Field name="Key Pass Id" size="2048" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="Key Pass Id" size="254" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="Kick Off" source="CrossTab:Header:3:kick_off:Concat:" type="Int32" />
+            <Field name="Late Video Start" source="CrossTab:Header:3:late_video_start:Concat:" type="Int32" />
+            <Field name="Left Foot" source="CrossTab:Header:3:left_foot:Concat:" type="Int32" />
             <Field name="Length" source="CrossTab:Header:3:length:Concat:" type="Double" />
+            <Field name="Lost In Play" source="CrossTab:Header:3:lost_in_play:Concat:" type="Int32" />
+            <Field name="Lost Out" source="CrossTab:Header:3:lost_out:Concat:" type="Int32" />
+            <Field name="Miscommunication" source="CrossTab:Header:3:miscommunication:Concat:" type="Int32" />
+            <Field name="No Touch" source="CrossTab:Header:3:no_touch:Concat:" type="Int32" />
             <Field name="Nutmeg" source="CrossTab:Header:3:nutmeg:Concat:" type="Int32" />
             <Field name="Offensive" source="CrossTab:Header:3:offensive:Concat:" type="Int32" />
             <Field name="One On One" source="CrossTab:Header:3:one_on_one:Concat:" type="Int32" />
+            <Field name="Open Goal" source="CrossTab:Header:3:open_goal:Concat:" type="Int32" />
+            <Field name="Other" size="254" source="CrossTab:Header:3:other:Concat:" type="V_WString" />
             <Field name="Outcome Id" source="CrossTab:Header:3:outcome.id:Concat:" type="Int32" />
-            <Field name="Outcome Name" size="2048" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="Outcome Name" size="254" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="Outswinging" source="CrossTab:Header:3:outswinging:Concat:" type="Int32" />
             <Field name="Overrun" source="CrossTab:Header:3:overrun:Concat:" type="Int32" />
+            <Field name="Penalty" source="CrossTab:Header:3:penalty:Concat:" type="Int32" />
+            <Field name="Penalty Saved To Post" source="CrossTab:Header:3:penalty_saved_to_post:Concat:" type="Int32" />
+            <Field name="Permanent" source="CrossTab:Header:3:permanent:Concat:" type="Int32" />
             <Field name="Position Id" source="CrossTab:Header:3:position.id:Concat:" type="Int32" />
-            <Field name="Position Name" size="2048" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="Position Name" size="254" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="Punched Out" source="CrossTab:Header:3:punched_out:Concat:" type="Int32" />
             <Field name="Recipient Id" source="CrossTab:Header:3:recipient.id:Concat:" type="Int32" />
-            <Field name="Recipient Name" size="2048" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
+            <Field name="Recipient Name" size="254" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
             <Field name="Recovery Failure" source="CrossTab:Header:3:recovery_failure:Concat:" type="Int32" />
+            <Field name="Redirect" size="254" source="CrossTab:Header:3:redirect:Concat:" type="V_WString" />
             <Field name="Replacement Id" source="CrossTab:Header:3:replacement.id:Concat:" type="Int32" />
-            <Field name="Replacement Name" size="2048" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="Replacement Name" size="254" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="Right Foot" source="CrossTab:Header:3:right_foot:Concat:" type="Int32" />
+            <Field name="Saved Off Target" source="CrossTab:Header:3:saved_off_target:Concat:" type="Int32" />
+            <Field name="Saved To Post" source="CrossTab:Header:3:saved_to_post:Concat:" type="Int32" />
+            <Field name="Save Block" source="CrossTab:Header:3:save_block:Concat:" type="Int32" />
             <Field name="Shot Assist" source="CrossTab:Header:3:shot_assist:Concat:" type="Int32" />
+            <Field name="Shot Saved Off Target" source="CrossTab:Header:3:shot_saved_off_target:Concat:" type="Int32" />
+            <Field name="Shot Saved To Post" source="CrossTab:Header:3:shot_saved_to_post:Concat:" type="Int32" />
             <Field name="Statsbomb Xg" source="CrossTab:Header:3:statsbomb_xg:Concat:" type="Double" />
+            <Field name="Straight" source="CrossTab:Header:3:straight:Concat:" type="Int32" />
+            <Field name="Success In Play" source="CrossTab:Header:3:success_in_play:Concat:" type="Int32" />
+            <Field name="Success Out" source="CrossTab:Header:3:success_out:Concat:" type="Int32" />
             <Field name="Switch" source="CrossTab:Header:3:switch:Concat:" type="Int32" />
             <Field name="Technique Id" source="CrossTab:Header:3:technique.id:Concat:" type="Int32" />
-            <Field name="Technique Name" size="2048" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
+            <Field name="Technique Name" size="254" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
             <Field name="Through Ball" source="CrossTab:Header:3:through_ball:Concat:" type="Int32" />
             <Field name="Type Id" source="CrossTab:Header:3:type.id:Concat:" type="Int32" />
-            <Field name="Type Name" size="2048" source="CrossTab:Header:3:type.name:Concat:" type="V_WString" />
+            <Field name="Type Name" size="254" source="CrossTab:Header:3:type.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -2083,12 +2201,12 @@ ENDIF
             <Field name="Event Id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="Match Id" source="File: FileName" type="Int64" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Event Type" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
-            <Field name="Location 0" source="CrossTab:Header:5:location.0:Concat:" type="Int64" />
-            <Field name="Location 1" source="CrossTab:Header:5:location.1:Concat:" type="Int64" />
+            <Field name="Location 0" source="CrossTab:Header:5:location.0:Concat:" type="Double" />
+            <Field name="Location 1" source="CrossTab:Header:5:location.1:Concat:" type="Double" />
             <Field name="Player Id" source="CrossTab:Header:5:player.id:Concat:" type="Int64" />
-            <Field name="Player Name" size="2048" source="CrossTab:Header:5:player.name:Concat:" type="V_WString" />
+            <Field name="Player Name" size="254" source="CrossTab:Header:5:player.name:Concat:" type="V_WString" />
             <Field name="Position Id" source="CrossTab:Header:5:position.id:Concat:" type="Int64" />
-            <Field name="Position Name" size="2048" source="CrossTab:Header:5:position.name:Concat:" type="V_WString" />
+            <Field name="Position Name" size="254" source="CrossTab:Header:5:position.name:Concat:" type="V_WString" />
             <Field name="Teammate" source="CrossTab:Header:5:teammate:Concat:" type="Int64" />
           </RecordInfo>
         </MetaInfo>
@@ -2191,9 +2309,12 @@ ENDIF
           <SelectFields>
             <SelectField field="FileName" selected="True" rename="match_id" type="Int32" size="4" />
             <SelectField field="event type" selected="True" size="254" />
+            <SelectField field="formation" selected="True" size="254" />
             <SelectField field="jersey_number" selected="True" type="Int32" size="4" />
             <SelectField field="player_id" selected="True" type="Int32" size="4" />
+            <SelectField field="player_name" selected="True" size="254" />
             <SelectField field="position_id" selected="True" type="Int32" size="4" />
+            <SelectField field="position_name" selected="True" size="254" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -2207,12 +2328,12 @@ ENDIF
             <Field name="event id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="match_id" source="File: FileName" type="Int32" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="event type" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
-            <Field name="formation" size="2048" source="CrossTab:Header:3:formation:Concat:" type="V_WString" />
+            <Field name="formation" size="254" source="CrossTab:Header:3:formation:Concat:" type="V_WString" />
             <Field name="jersey_number" source="CrossTab:Header:42:jersey_number:Concat:" type="Int32" />
             <Field name="player_id" source="CrossTab:Header:42:player.id:Concat:" type="Int32" />
-            <Field name="player_name" size="2048" source="CrossTab:Header:42:player.name:Concat:" type="V_WString" />
+            <Field name="player_name" size="254" source="CrossTab:Header:42:player.name:Concat:" type="V_WString" />
             <Field name="position_id" source="CrossTab:Header:42:position.id:Concat:" type="Int32" />
-            <Field name="position_name" size="2048" source="CrossTab:Header:42:position.name:Concat:" type="V_WString" />
+            <Field name="position_name" size="254" source="CrossTab:Header:42:position.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -2228,21 +2349,30 @@ ENDIF
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="FileName" selected="True" rename="match_id" type="Int32" size="4" />
+            <SelectField field="counterpress" selected="True" type="Int32" size="4" />
             <SelectField field="duration" selected="True" type="Double" size="8" />
             <SelectField field="index" selected="True" type="Int32" size="4" />
-            <SelectField field="location_0" selected="True" type="Int32" size="4" />
-            <SelectField field="location_1" selected="True" type="Int32" size="4" />
+            <SelectField field="location_0" selected="True" type="Double" size="8" />
+            <SelectField field="location_1" selected="True" type="Double" size="8" />
             <SelectField field="minute" selected="True" type="Int32" size="4" />
             <SelectField field="off_camera" selected="True" type="Int32" size="4" />
+            <SelectField field="out" selected="True" type="Int32" size="4" />
             <SelectField field="period" selected="True" type="Int32" size="4" />
             <SelectField field="player_id" selected="True" type="Int32" size="4" />
+            <SelectField field="player_name" selected="True" size="254" />
             <SelectField field="play_pattern_id" selected="True" type="Int32" size="4" />
+            <SelectField field="play_pattern_name" selected="True" size="254" />
             <SelectField field="position_id" selected="True" type="Int32" size="4" />
+            <SelectField field="position_name" selected="True" size="254" />
             <SelectField field="possession" selected="True" type="Int32" size="4" />
             <SelectField field="possession_team_id" selected="True" type="Int32" size="4" />
+            <SelectField field="possession_team_name" selected="True" size="254" />
             <SelectField field="second" selected="True" type="Int32" size="4" />
             <SelectField field="team_id" selected="True" type="Int32" size="4" />
+            <SelectField field="team_name" selected="True" size="254" />
+            <SelectField field="timestamp" selected="True" size="254" />
             <SelectField field="type_id" selected="True" type="Int32" size="4" />
+            <SelectField field="type_name" selected="True" size="254" />
             <SelectField field="under_pressure" selected="True" type="Int32" size="4" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
@@ -2256,28 +2386,30 @@ ENDIF
           <RecordInfo>
             <Field name="event_id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="match_id" source="File: FileName" type="Int32" />
+            <Field name="counterpress" source="CrossTab:Header:2:counterpress:Concat:" type="Int32" />
             <Field name="duration" source="CrossTab:Header:2:duration:Concat:" type="Double" />
             <Field name="index" source="CrossTab:Header:2:index:Concat:" type="Int32" />
-            <Field name="location_0" source="CrossTab:Header:2:location.0:Concat:" type="Int32" />
-            <Field name="location_1" source="CrossTab:Header:2:location.1:Concat:" type="Int32" />
+            <Field name="location_0" source="CrossTab:Header:2:location.0:Concat:" type="Double" />
+            <Field name="location_1" source="CrossTab:Header:2:location.1:Concat:" type="Double" />
             <Field name="minute" source="CrossTab:Header:2:minute:Concat:" type="Int32" />
             <Field name="off_camera" source="CrossTab:Header:2:off_camera:Concat:" type="Int32" />
+            <Field name="out" source="CrossTab:Header:2:out:Concat:" type="Int32" />
             <Field name="period" source="CrossTab:Header:2:period:Concat:" type="Int32" />
             <Field name="player_id" source="CrossTab:Header:2:player.id:Concat:" type="Int32" />
-            <Field name="player_name" size="2048" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
+            <Field name="player_name" size="254" source="CrossTab:Header:2:player.name:Concat:" type="V_WString" />
             <Field name="play_pattern_id" source="CrossTab:Header:2:play_pattern.id:Concat:" type="Int32" />
-            <Field name="play_pattern_name" size="2048" source="CrossTab:Header:2:play_pattern.name:Concat:" type="V_WString" />
+            <Field name="play_pattern_name" size="254" source="CrossTab:Header:2:play_pattern.name:Concat:" type="V_WString" />
             <Field name="position_id" source="CrossTab:Header:2:position.id:Concat:" type="Int32" />
-            <Field name="position_name" size="2048" source="CrossTab:Header:2:position.name:Concat:" type="V_WString" />
+            <Field name="position_name" size="254" source="CrossTab:Header:2:position.name:Concat:" type="V_WString" />
             <Field name="possession" source="CrossTab:Header:2:possession:Concat:" type="Int32" />
             <Field name="possession_team_id" source="CrossTab:Header:2:possession_team.id:Concat:" type="Int32" />
-            <Field name="possession_team_name" size="2048" source="CrossTab:Header:2:possession_team.name:Concat:" type="V_WString" />
+            <Field name="possession_team_name" size="254" source="CrossTab:Header:2:possession_team.name:Concat:" type="V_WString" />
             <Field name="second" source="CrossTab:Header:2:second:Concat:" type="Int32" />
             <Field name="team_id" source="CrossTab:Header:2:team.id:Concat:" type="Int32" />
-            <Field name="team_name" size="2048" source="CrossTab:Header:2:team.name:Concat:" type="V_WString" />
-            <Field name="timestamp" size="2048" source="CrossTab:Header:2:timestamp:Concat:" type="V_WString" />
+            <Field name="team_name" size="254" source="CrossTab:Header:2:team.name:Concat:" type="V_WString" />
+            <Field name="timestamp" size="254" source="CrossTab:Header:2:timestamp:Concat:" type="V_WString" />
             <Field name="type_id" source="CrossTab:Header:2:type.id:Concat:" type="Int32" />
-            <Field name="type_name" size="2048" source="CrossTab:Header:2:type.name:Concat:" type="V_WString" />
+            <Field name="type_name" size="254" source="CrossTab:Header:2:type.name:Concat:" type="V_WString" />
             <Field name="under_pressure" source="CrossTab:Header:2:under_pressure:Concat:" type="Int32" />
           </RecordInfo>
         </MetaInfo>
@@ -2293,42 +2425,81 @@ ENDIF
           <OrderChanged value="False" />
           <CommaDecimal value="False" />
           <SelectFields>
-            <SelectField field="FileName" selected="True" type="Int32" size="4" />
+            <SelectField field="FileName" selected="True" rename="match_id" type="Int32" size="4" />
             <SelectField field="event_type" selected="True" size="254" />
             <SelectField field="advantage" selected="True" type="Int32" size="4" />
             <SelectField field="aerial_won" selected="True" type="Int32" size="4" />
             <SelectField field="angle" selected="True" type="Double" size="8" />
+            <SelectField field="assisted_shot_id" selected="True" size="254" />
             <SelectField field="backheel" selected="True" type="Int32" size="4" />
             <SelectField field="body_part_id" selected="True" type="Int32" size="4" />
+            <SelectField field="body_part_name" selected="True" size="254" />
             <SelectField field="card_id" selected="True" type="Int32" size="4" />
+            <SelectField field="card_name" selected="True" size="254" />
             <SelectField field="cross" selected="True" type="Int32" size="4" />
+            <SelectField field="cut_back" selected="True" size="254" />
             <SelectField field="defensive" selected="True" type="Int32" size="4" />
             <SelectField field="deflected" selected="True" type="Int32" size="4" />
             <SelectField field="deflection" selected="True" type="Int32" size="4" />
+            <SelectField field="early_video_end" selected="True" size="254" />
             <SelectField field="end_location_0" selected="True" type="Double" size="8" />
             <SelectField field="end_location_1" selected="True" type="Double" size="8" />
             <SelectField field="end_location_2" selected="True" type="Double" size="8" />
             <SelectField field="first_time" selected="True" type="Int32" size="4" />
             <SelectField field="follows_dribble" selected="True" type="Int32" size="4" />
             <SelectField field="goal_assist" selected="True" type="Int32" size="4" />
+            <SelectField field="head" selected="True" type="Int32" size="4" />
             <SelectField field="height_id" selected="True" type="Int32" size="4" />
+            <SelectField field="height_name" selected="True" size="254" />
+            <SelectField field="inswinging" selected="True" type="Int32" size="4" />
             <SelectField field="in_chain" selected="True" type="Int32" size="4" />
+            <SelectField field="key_pass_id" selected="True" size="254" />
+            <SelectField field="kick_off" selected="True" type="Int32" size="4" />
+            <SelectField field="late_video_start" selected="True" type="Int32" size="4" />
+            <SelectField field="left_foot" selected="True" type="Int32" size="4" />
             <SelectField field="length" selected="True" type="Double" size="8" />
+            <SelectField field="lost_in_play" selected="True" type="Int32" size="4" />
+            <SelectField field="lost_out" selected="True" type="Int32" size="4" />
+            <SelectField field="miscommunication" selected="True" type="Int32" size="4" />
+            <SelectField field="no_touch" selected="True" type="Int32" size="4" />
             <SelectField field="nutmeg" selected="True" type="Int32" size="4" />
             <SelectField field="offensive" selected="True" type="Int32" size="4" />
             <SelectField field="one_on_one" selected="True" type="Int32" size="4" />
+            <SelectField field="open_goal" selected="True" type="Int32" size="4" />
+            <SelectField field="other" selected="True" size="254" />
             <SelectField field="outcome_id" selected="True" type="Int32" size="4" />
+            <SelectField field="outcome_name" selected="True" size="254" />
+            <SelectField field="outswinging" selected="True" type="Int32" size="4" />
             <SelectField field="overrun" selected="True" type="Int32" size="4" />
+            <SelectField field="penalty" selected="True" type="Int32" size="4" />
+            <SelectField field="penalty_saved_to_post" selected="True" type="Int32" size="4" />
+            <SelectField field="permanent" selected="True" type="Int32" size="4" />
             <SelectField field="position_id" selected="True" type="Int32" size="4" />
+            <SelectField field="position_name" selected="True" size="254" />
+            <SelectField field="punched_out" selected="True" type="Int32" size="4" />
             <SelectField field="recipient_id" selected="True" type="Int32" size="4" />
+            <SelectField field="recipient_name" selected="True" size="254" />
             <SelectField field="recovery_failure" selected="True" type="Int32" size="4" />
+            <SelectField field="redirect" selected="True" size="254" />
             <SelectField field="replacement_id" selected="True" type="Int32" size="4" />
+            <SelectField field="replacement_name" selected="True" size="254" />
+            <SelectField field="right_foot" selected="True" type="Int32" size="4" />
+            <SelectField field="saved_off_target" selected="True" type="Int32" size="4" />
+            <SelectField field="saved_to_post" selected="True" type="Int32" size="4" />
+            <SelectField field="save_block" selected="True" type="Int32" size="4" />
             <SelectField field="shot_assist" selected="True" type="Int32" size="4" />
+            <SelectField field="shot_saved_off_target" selected="True" type="Int32" size="4" />
+            <SelectField field="shot_saved_to_post" selected="True" type="Int32" size="4" />
             <SelectField field="statsbomb_xg" selected="True" type="Double" size="8" />
+            <SelectField field="straight" selected="True" type="Int32" size="4" />
+            <SelectField field="success_in_play" selected="True" type="Int32" size="4" />
+            <SelectField field="success_out" selected="True" type="Int32" size="4" />
             <SelectField field="switch" selected="True" type="Int32" size="4" />
             <SelectField field="technique_id" selected="True" type="Int32" size="4" />
+            <SelectField field="technique_name" selected="True" size="254" />
             <SelectField field="through_ball" selected="True" type="Int32" size="4" />
             <SelectField field="type_id" selected="True" type="Int32" size="4" />
+            <SelectField field="type_name" selected="True" size="254" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -2340,53 +2511,81 @@ ENDIF
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="event_id" size="254" source="JSON_Input: " type="V_WString" />
-            <Field name="FileName" source="File: FileName" type="Int32" />
+            <Field name="match_id" source="File: FileName" type="Int32" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="event_type" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field name="advantage" source="CrossTab:Header:3:advantage:Concat:" type="Int32" />
             <Field name="aerial_won" source="CrossTab:Header:3:aerial_won:Concat:" type="Int32" />
             <Field name="angle" source="CrossTab:Header:3:angle:Concat:" type="Double" />
-            <Field name="assisted_shot_id" size="2048" source="CrossTab:Header:3:assisted_shot_id:Concat:" type="V_WString" />
+            <Field name="assisted_shot_id" size="254" source="CrossTab:Header:3:assisted_shot_id:Concat:" type="V_WString" />
             <Field name="backheel" source="CrossTab:Header:3:backheel:Concat:" type="Int32" />
             <Field name="body_part_id" source="CrossTab:Header:3:body_part.id:Concat:" type="Int32" />
-            <Field name="body_part_name" size="2048" source="CrossTab:Header:3:body_part.name:Concat:" type="V_WString" />
+            <Field name="body_part_name" size="254" source="CrossTab:Header:3:body_part.name:Concat:" type="V_WString" />
             <Field name="card_id" source="CrossTab:Header:3:card.id:Concat:" type="Int32" />
-            <Field name="card_name" size="2048" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
+            <Field name="card_name" size="254" source="CrossTab:Header:3:card.name:Concat:" type="V_WString" />
             <Field name="cross" source="CrossTab:Header:3:cross:Concat:" type="Int32" />
+            <Field name="cut_back" size="254" source="CrossTab:Header:3:cut_back:Concat:" type="V_WString" />
             <Field name="defensive" source="CrossTab:Header:3:defensive:Concat:" type="Int32" />
             <Field name="deflected" source="CrossTab:Header:3:deflected:Concat:" type="Int32" />
             <Field name="deflection" source="CrossTab:Header:3:deflection:Concat:" type="Int32" />
+            <Field name="early_video_end" size="254" source="CrossTab:Header:3:early_video_end:Concat:" type="V_WString" />
             <Field name="end_location_0" source="CrossTab:Header:3:end_location.0:Concat:" type="Double" />
             <Field name="end_location_1" source="CrossTab:Header:3:end_location.1:Concat:" type="Double" />
             <Field name="end_location_2" source="CrossTab:Header:3:end_location.2:Concat:" type="Double" />
             <Field name="first_time" source="CrossTab:Header:3:first_time:Concat:" type="Int32" />
             <Field name="follows_dribble" source="CrossTab:Header:3:follows_dribble:Concat:" type="Int32" />
             <Field name="goal_assist" source="CrossTab:Header:3:goal_assist:Concat:" type="Int32" />
+            <Field name="head" source="CrossTab:Header:3:head:Concat:" type="Int32" />
             <Field name="height_id" source="CrossTab:Header:3:height.id:Concat:" type="Int32" />
-            <Field name="height_name" size="2048" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="height_name" size="254" source="CrossTab:Header:3:height.name:Concat:" type="V_WString" />
+            <Field name="inswinging" source="CrossTab:Header:3:inswinging:Concat:" type="Int32" />
             <Field name="in_chain" source="CrossTab:Header:3:in_chain:Concat:" type="Int32" />
-            <Field name="key_pass_id" size="2048" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="key_pass_id" size="254" source="CrossTab:Header:3:key_pass_id:Concat:" type="V_WString" />
+            <Field name="kick_off" source="CrossTab:Header:3:kick_off:Concat:" type="Int32" />
+            <Field name="late_video_start" source="CrossTab:Header:3:late_video_start:Concat:" type="Int32" />
+            <Field name="left_foot" source="CrossTab:Header:3:left_foot:Concat:" type="Int32" />
             <Field name="length" source="CrossTab:Header:3:length:Concat:" type="Double" />
+            <Field name="lost_in_play" source="CrossTab:Header:3:lost_in_play:Concat:" type="Int32" />
+            <Field name="lost_out" source="CrossTab:Header:3:lost_out:Concat:" type="Int32" />
+            <Field name="miscommunication" source="CrossTab:Header:3:miscommunication:Concat:" type="Int32" />
+            <Field name="no_touch" source="CrossTab:Header:3:no_touch:Concat:" type="Int32" />
             <Field name="nutmeg" source="CrossTab:Header:3:nutmeg:Concat:" type="Int32" />
             <Field name="offensive" source="CrossTab:Header:3:offensive:Concat:" type="Int32" />
             <Field name="one_on_one" source="CrossTab:Header:3:one_on_one:Concat:" type="Int32" />
+            <Field name="open_goal" source="CrossTab:Header:3:open_goal:Concat:" type="Int32" />
+            <Field name="other" size="254" source="CrossTab:Header:3:other:Concat:" type="V_WString" />
             <Field name="outcome_id" source="CrossTab:Header:3:outcome.id:Concat:" type="Int32" />
-            <Field name="outcome_name" size="2048" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="outcome_name" size="254" source="CrossTab:Header:3:outcome.name:Concat:" type="V_WString" />
+            <Field name="outswinging" source="CrossTab:Header:3:outswinging:Concat:" type="Int32" />
             <Field name="overrun" source="CrossTab:Header:3:overrun:Concat:" type="Int32" />
+            <Field name="penalty" source="CrossTab:Header:3:penalty:Concat:" type="Int32" />
+            <Field name="penalty_saved_to_post" source="CrossTab:Header:3:penalty_saved_to_post:Concat:" type="Int32" />
+            <Field name="permanent" source="CrossTab:Header:3:permanent:Concat:" type="Int32" />
             <Field name="position_id" source="CrossTab:Header:3:position.id:Concat:" type="Int32" />
-            <Field name="position_name" size="2048" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="position_name" size="254" source="CrossTab:Header:3:position.name:Concat:" type="V_WString" />
+            <Field name="punched_out" source="CrossTab:Header:3:punched_out:Concat:" type="Int32" />
             <Field name="recipient_id" source="CrossTab:Header:3:recipient.id:Concat:" type="Int32" />
-            <Field name="recipient_name" size="2048" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
+            <Field name="recipient_name" size="254" source="CrossTab:Header:3:recipient.name:Concat:" type="V_WString" />
             <Field name="recovery_failure" source="CrossTab:Header:3:recovery_failure:Concat:" type="Int32" />
+            <Field name="redirect" size="254" source="CrossTab:Header:3:redirect:Concat:" type="V_WString" />
             <Field name="replacement_id" source="CrossTab:Header:3:replacement.id:Concat:" type="Int32" />
-            <Field name="replacement_name" size="2048" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="replacement_name" size="254" source="CrossTab:Header:3:replacement.name:Concat:" type="V_WString" />
+            <Field name="right_foot" source="CrossTab:Header:3:right_foot:Concat:" type="Int32" />
+            <Field name="saved_off_target" source="CrossTab:Header:3:saved_off_target:Concat:" type="Int32" />
+            <Field name="saved_to_post" source="CrossTab:Header:3:saved_to_post:Concat:" type="Int32" />
+            <Field name="save_block" source="CrossTab:Header:3:save_block:Concat:" type="Int32" />
             <Field name="shot_assist" source="CrossTab:Header:3:shot_assist:Concat:" type="Int32" />
+            <Field name="shot_saved_off_target" source="CrossTab:Header:3:shot_saved_off_target:Concat:" type="Int32" />
+            <Field name="shot_saved_to_post" source="CrossTab:Header:3:shot_saved_to_post:Concat:" type="Int32" />
             <Field name="statsbomb_xg" source="CrossTab:Header:3:statsbomb_xg:Concat:" type="Double" />
+            <Field name="straight" source="CrossTab:Header:3:straight:Concat:" type="Int32" />
+            <Field name="success_in_play" source="CrossTab:Header:3:success_in_play:Concat:" type="Int32" />
+            <Field name="success_out" source="CrossTab:Header:3:success_out:Concat:" type="Int32" />
             <Field name="switch" source="CrossTab:Header:3:switch:Concat:" type="Int32" />
             <Field name="technique_id" source="CrossTab:Header:3:technique.id:Concat:" type="Int32" />
-            <Field name="technique_name" size="2048" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
+            <Field name="technique_name" size="254" source="CrossTab:Header:3:technique.name:Concat:" type="V_WString" />
             <Field name="through_ball" source="CrossTab:Header:3:through_ball:Concat:" type="Int32" />
             <Field name="type_id" source="CrossTab:Header:3:type.id:Concat:" type="Int32" />
-            <Field name="type_name" size="2048" source="CrossTab:Header:3:type.name:Concat:" type="V_WString" />
+            <Field name="type_name" size="254" source="CrossTab:Header:3:type.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -2403,10 +2602,12 @@ ENDIF
           <SelectFields>
             <SelectField field="FileName" selected="True" rename="match_id" type="Int64" size="8" />
             <SelectField field="event_type" selected="True" size="254" />
-            <SelectField field="location_0" selected="True" type="Int64" size="8" />
-            <SelectField field="location_1" selected="True" type="Int64" size="8" />
+            <SelectField field="location_0" selected="True" type="Double" size="8" />
+            <SelectField field="location_1" selected="True" type="Double" size="8" />
             <SelectField field="player_id" selected="True" type="Int64" size="8" />
+            <SelectField field="player_name" selected="True" size="254" />
             <SelectField field="position_id" selected="True" type="Int64" size="8" />
+            <SelectField field="position_name" selected="True" size="254" />
             <SelectField field="teammate" selected="True" type="Int64" size="8" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
@@ -2421,12 +2622,12 @@ ENDIF
             <Field name="event_id" size="254" source="JSON_Input: " type="V_WString" />
             <Field name="match_id" source="File: FileName" type="Int64" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="event_type" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
-            <Field name="location_0" source="CrossTab:Header:5:location.0:Concat:" type="Int64" />
-            <Field name="location_1" source="CrossTab:Header:5:location.1:Concat:" type="Int64" />
+            <Field name="location_0" source="CrossTab:Header:5:location.0:Concat:" type="Double" />
+            <Field name="location_1" source="CrossTab:Header:5:location.1:Concat:" type="Double" />
             <Field name="player_id" source="CrossTab:Header:5:player.id:Concat:" type="Int64" />
-            <Field name="player_name" size="2048" source="CrossTab:Header:5:player.name:Concat:" type="V_WString" />
+            <Field name="player_name" size="254" source="CrossTab:Header:5:player.name:Concat:" type="V_WString" />
             <Field name="position_id" source="CrossTab:Header:5:position.id:Concat:" type="Int64" />
-            <Field name="position_name" size="2048" source="CrossTab:Header:5:position.name:Concat:" type="V_WString" />
+            <Field name="position_name" size="254" source="CrossTab:Header:5:position.name:Concat:" type="V_WString" />
             <Field name="teammate" source="CrossTab:Header:5:teammate:Concat:" type="Int64" />
           </RecordInfo>
         </MetaInfo>

@@ -235,50 +235,9 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="49">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
-        <Position x="498" y="678" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UseFileInput value="True" />
-          <Name>Input1</Name>
-          <Abbrev />
-          <ShowFieldMap value="False" />
-          <Optional value="False" />
-          <FileInput>
-            <Configuration>
-              <Passwords />
-              <File OutputFileName="FileName" RecordLimit="" SearchSubDirs="False" FileFormat="54">.\data\matches\37.json</File>
-              <FormatSpecificOptions>
-                <SingleField>True</SingleField>
-                <CodePage>65001</CodePage>
-              </FormatSpecificOptions>
-            </Configuration>
-          </FileInput>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <AnnotationText />
-          <DefaultAnnotationText>37.json</DefaultAnnotationText>
-          <Left value="True" />
-        </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
-            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
-            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
-    </Node>
     <Node ToolID="52">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="846" y="678" />
+        <Position x="743" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -299,7 +258,8 @@
           <RecordInfo>
             <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
             <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
-            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+            <Field name="FileName" size="254" source="Formula: REGEX_Replace([FileName], &quot;(.*\\)(.*)(\.json)&quot;, &quot;$2&quot;)" type="V_WString" />
+            <Field name="FolderName" size="1073741823" source="Formula: REGEX_Replace([FileName], &quot;(.*\\)(.*)(\\.*)(\.json)&quot;, &quot;$2&quot;)" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
           </RecordInfo>
@@ -307,14 +267,53 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
     </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="498" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="Path" RecordLimit="" SearchSubDirs="True" FileFormat="54">.\data\matches\*.json</File>
+              <FormatSpecificOptions>
+                <SingleField>True</SingleField>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText />
+          <DefaultAnnotationText>*.json</DefaultAnnotationText>
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
     <Node ToolID="53">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1134" y="678" />
+        <Position x="988" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <GroupFields>
             <Field field="FileName" />
+            <Field field="FolderName" />
             <Field field="Row ID" />
           </GroupFields>
           <HeaderField field="2" />
@@ -333,29 +332,61 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="FileName" size="254" source="CrossTab:Group:Concat:" type="V_WString" />
+            <Field name="FolderName" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Row ID" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
             <Field name="away_score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
-            <Field name="away_team_id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
-            <Field name="away_team_name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
-            <Field name="competition_id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="competition_name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="country_name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="data_version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="away_team_country_id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="away_team_country_name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_country_id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_country_name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="competition_competition_id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="competition_competition_name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="competition_country_name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="competition_stage_id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="competition_stage_name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
             <Field name="home_score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
-            <Field name="home_team_id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
-            <Field name="home_team_name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="home_team_country_id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="home_team_country_name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_country_id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_country_name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
             <Field name="kick_off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
             <Field name="last_updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
             <Field name="match_date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
             <Field name="match_id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
             <Field name="match_status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
-            <Field name="referee_name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
-            <Field name="season_id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="season_name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-            <Field name="stadium_name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+            <Field name="match_week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="metadata_data_version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="metadata_shot_fidelity_version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="referee_country_id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="referee_country_name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="referee_id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="referee_name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="season_season_id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="season_season_name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="stadium_country_id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="stadium_country_name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="stadium_id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="stadium_name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
           </RecordInfo>
           <SortInfo>
             <Field field="FileName" order="Asc" />
+            <Field field="FolderName" order="Asc" />
             <Field field="Row ID" order="Asc" />
           </SortInfo>
         </MetaInfo>
@@ -364,7 +395,7 @@
     </Node>
     <Node ToolID="54">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1038" y="678" />
+        <Position x="865" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -384,45 +415,18 @@
           <RecordInfo>
             <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
             <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
-            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
+            <Field name="FileName" size="254" source="Formula: REGEX_Replace([FileName], &quot;(.*\\)(.*)(\.json)&quot;, &quot;$2&quot;)" type="V_WString" />
+            <Field name="FolderName" size="1073741823" source="Formula: REGEX_Replace([FileName], &quot;(.*\\)(.*)(\\.*)(\.json)&quot;, &quot;$2&quot;)" type="V_WString" />
             <Field description="TextToColumns: Parsed from JSON_Name" name="Row ID" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
-            <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="Formula: REGEX_Replace([2], &quot;.*\.&quot;, &quot;&quot;)" type="V_WString" />
+            <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="56">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="942" y="678" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField expression="REGEX_Replace([2], &quot;.*\.&quot;, &quot;&quot;)" field="2" size="1073741823" type="V_WString" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText><![CDATA[2 = REGEX_Replace([2], ".*\.", "")
-]]></DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-        <MetaInfo connection="Output">
-          <RecordInfo>
-            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
-            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
-            <Field name="FileName" size="254" source="File: FileName" type="V_WString" />
-            <Field description="TextToColumns: Parsed from JSON_Name" name="1" size="1073741823" source="TextToColumns: Parsed from JSON_Name" type="V_WString" />
-            <Field description="TextToColumns: Parsed from JSON_Name" name="2" size="1073741823" source="Formula: REGEX_Replace([2], &quot;.*\.&quot;, &quot;&quot;)" type="V_WString" />
-          </RecordInfo>
-        </MetaInfo>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
     <Node ToolID="57">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
-        <Position x="1422" y="678" />
+        <Position x="1518" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -462,24 +466,54 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
-            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
-            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
-            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Away Team Gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="Away Team Group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="Away Team Country Id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Country Name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="Competition Country Name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="Competition Stage Id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="Competition Stage Name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
             <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
-            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
-            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Country Id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Country Name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="Home Team Group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
             <Field name="Kick Off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
             <Field name="Last Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
             <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
             <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
             <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
-            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
-            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+            <Field name="Match Week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="Metadata Data Version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="Metadata Shot Fidelity Version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="Referee Country Id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="Referee Country Name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="Referee Id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Country Id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="Stadium Country Name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="Stadium Id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -487,7 +521,7 @@
     </Node>
     <Node ToolID="58">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1518" y="678" />
+        <Position x="1614" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -504,24 +538,54 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
-            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
-            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
-            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Away Team Gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="Away Team Group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="Away Team Country Id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Country Name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="Competition Country Name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="Competition Stage Id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="Competition Stage Name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
             <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
-            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
-            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Country Id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Country Name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="Home Team Group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
             <Field name="Kick Off" size="2048" source="Formula: [match date] + &quot; &quot; + Left([kick off], 8)" type="V_WString" />
             <Field name="Last Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
             <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
             <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
             <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
-            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
-            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+            <Field name="Match Week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="Metadata Data Version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="Metadata Shot Fidelity Version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="Referee Country Id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="Referee Country Name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="Referee Id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Country Id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="Stadium Country Name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="Stadium Id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -529,7 +593,7 @@
     </Node>
     <Node ToolID="59">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1614" y="678" />
+        <Position x="1710" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -538,13 +602,26 @@
           <SelectFields>
             <SelectField field="Away Score" selected="True" type="Int32" size="4" />
             <SelectField field="Away Team Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Away Team Country Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Away Team Managers 0 Country Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Away Team Managers 0 Dob" selected="True" type="Date" size="10" />
+            <SelectField field="Away Team Managers 0 Id" selected="True" type="Int32" size="4" />
             <SelectField field="Competition Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Competition Stage Id" selected="True" type="Int32" size="4" />
             <SelectField field="Home Score" selected="True" type="Int32" size="4" />
+            <SelectField field="Home Team Country Id" selected="True" type="Int32" size="4" />
             <SelectField field="Home Team Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Home Team Managers 0 Country Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Home Team Managers 0 Dob" selected="True" type="Date" size="10" />
+            <SelectField field="Home Team Managers 0 Id" selected="True" type="Int32" size="4" />
             <SelectField field="Kick Off" selected="True" type="DateTime" size="19" />
             <SelectField field="Match Date" selected="True" type="Date" size="10" />
             <SelectField field="Match Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Referee Country Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Referee Id" selected="True" type="Int32" size="4" />
             <SelectField field="Season Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Stadium Country Id" selected="True" type="Int32" size="4" />
+            <SelectField field="Stadium Id" selected="True" type="Int32" size="4" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -556,24 +633,54 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Away Score" source="CrossTab:Header:2:away_score:Concat:" type="Int32" />
-            <Field name="Away Team Id" source="CrossTab:Header:2:away_team_id:Concat:" type="Int32" />
-            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
-            <Field name="Competition Id" source="CrossTab:Header:2:competition_id:Concat:" type="Int32" />
-            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Away Team Gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="Away Team Group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="Away Team Id" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="Int32" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="Away Team Country Id" source="CrossTab:Header:2:away_team.country.id:Concat:" type="Int32" />
+            <Field name="Away Team Country Name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Id" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="Int32" />
+            <Field name="Away Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Dob" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="Date" />
+            <Field name="Away Team Managers 0 Id" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="Int32" />
+            <Field name="Away Team Managers 0 Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Competition Id" source="CrossTab:Header:2:competition.competition_id:Concat:" type="Int32" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="Competition Country Name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="Competition Stage Id" source="CrossTab:Header:2:competition_stage.id:Concat:" type="Int32" />
+            <Field name="Competition Stage Name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
             <Field name="Home Score" source="CrossTab:Header:2:home_score:Concat:" type="Int32" />
-            <Field name="Home Team Id" source="CrossTab:Header:2:home_team_id:Concat:" type="Int32" />
-            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Country Id" source="CrossTab:Header:2:home_team.country.id:Concat:" type="Int32" />
+            <Field name="Home Team Country Name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="Home Team Group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="Home Team Id" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="Int32" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Id" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="Int32" />
+            <Field name="Home Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Dob" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="Date" />
+            <Field name="Home Team Managers 0 Id" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="Int32" />
+            <Field name="Home Team Managers 0 Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
             <Field name="Kick Off" source="Formula: [match date] + &quot; &quot; + Left([kick off], 8)" type="DateTime" />
             <Field name="Last Updated" size="2048" source="Formula: DateTimeParse([_CurrentField_],&quot;%y-%m-%dT%H:%M:%S&quot;)" type="V_WString" />
             <Field name="Match Date" source="CrossTab:Header:2:match_date:Concat:" type="Date" />
             <Field name="Match Id" source="CrossTab:Header:2:match_id:Concat:" type="Int32" />
             <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
-            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
-            <Field name="Season Id" source="CrossTab:Header:2:season_id:Concat:" type="Int32" />
-            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+            <Field name="Match Week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="Metadata Data Version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="Metadata Shot Fidelity Version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="Referee Country Id" source="CrossTab:Header:2:referee.country.id:Concat:" type="Int32" />
+            <Field name="Referee Country Name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="Referee Id" source="CrossTab:Header:2:referee.id:Concat:" type="Int32" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="Season Id" source="CrossTab:Header:2:season.season_id:Concat:" type="Int32" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Country Id" source="CrossTab:Header:2:stadium.country.id:Concat:" type="Int32" />
+            <Field name="Stadium Country Name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="Stadium Id" source="CrossTab:Header:2:stadium.id:Concat:" type="Int32" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -581,30 +688,60 @@
     </Node>
     <Node ToolID="60">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="1326" y="678" />
+        <Position x="1230" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <RenameMode>Formula</RenameMode>
           <Fields orderChanged="False">
             <Field name="away_score" />
-            <Field name="away_team_id" />
-            <Field name="away_team_name" />
-            <Field name="competition_id" />
-            <Field name="competition_name" />
-            <Field name="country_name" />
-            <Field name="data_version" />
+            <Field name="away_team_away_team_gender" />
+            <Field name="away_team_away_team_group" />
+            <Field name="away_team_away_team_id" />
+            <Field name="away_team_away_team_name" />
+            <Field name="away_team_country_id" />
+            <Field name="away_team_country_name" />
+            <Field name="away_team_managers_0_country_id" />
+            <Field name="away_team_managers_0_country_name" />
+            <Field name="away_team_managers_0_dob" />
+            <Field name="away_team_managers_0_id" />
+            <Field name="away_team_managers_0_name" />
+            <Field name="away_team_managers_0_nickname" />
+            <Field name="competition_competition_id" />
+            <Field name="competition_competition_name" />
+            <Field name="competition_country_name" />
+            <Field name="competition_stage_id" />
+            <Field name="competition_stage_name" />
             <Field name="home_score" />
-            <Field name="home_team_id" />
-            <Field name="home_team_name" />
+            <Field name="home_team_country_id" />
+            <Field name="home_team_country_name" />
+            <Field name="home_team_home_team_gender" />
+            <Field name="home_team_home_team_group" />
+            <Field name="home_team_home_team_id" />
+            <Field name="home_team_home_team_name" />
+            <Field name="home_team_managers_0_country_id" />
+            <Field name="home_team_managers_0_country_name" />
+            <Field name="home_team_managers_0_dob" />
+            <Field name="home_team_managers_0_id" />
+            <Field name="home_team_managers_0_name" />
+            <Field name="home_team_managers_0_nickname" />
             <Field name="kick_off" />
             <Field name="last_updated" />
             <Field name="match_date" />
             <Field name="match_id" />
             <Field name="match_status" />
+            <Field name="match_week" />
+            <Field name="metadata_data_version" />
+            <Field name="metadata_shot_fidelity_version" />
+            <Field name="referee_country_id" />
+            <Field name="referee_country_name" />
+            <Field name="referee_id" />
             <Field name="referee_name" />
-            <Field name="season_id" />
-            <Field name="season_name" />
+            <Field name="season_season_id" />
+            <Field name="season_season_name" />
+            <Field name="stadium_country_id" />
+            <Field name="stadium_country_name" />
+            <Field name="stadium_id" />
             <Field name="stadium_name" />
             <Field name="*Unknown" />
           </Fields>
@@ -618,24 +755,54 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
-            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
-            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
-            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="Country Name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="Data Version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="Away Team Country Id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Country Name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Competition Competition Id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Competition Name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="Competition Country Name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="Competition Stage Id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="Competition Stage Name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
             <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
-            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
-            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Country Id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Country Name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
             <Field name="Kick Off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
             <Field name="Last Updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
             <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
             <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
             <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
-            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
-            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+            <Field name="Match Week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="Metadata Data Version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="Metadata Shot Fidelity Version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="Referee Country Id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="Referee Country Name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="Referee Id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="Season Season Id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="Season Season Name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Country Id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="Stadium Country Name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="Stadium Id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -643,7 +810,7 @@
     </Node>
     <Node ToolID="61">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1230" y="678" />
+        <Position x="1110" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -651,6 +818,7 @@
           <CommaDecimal value="False" />
           <SelectFields>
             <SelectField field="FileName" selected="False" />
+            <SelectField field="FolderName" selected="False" />
             <SelectField field="Row ID" selected="False" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
@@ -663,24 +831,54 @@
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="away_score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
-            <Field name="away_team_id" size="2048" source="CrossTab:Header:2:away_team_id:Concat:" type="V_WString" />
-            <Field name="away_team_name" size="2048" source="CrossTab:Header:2:away_team_name:Concat:" type="V_WString" />
-            <Field name="competition_id" size="2048" source="CrossTab:Header:2:competition_id:Concat:" type="V_WString" />
-            <Field name="competition_name" size="2048" source="CrossTab:Header:2:competition_name:Concat:" type="V_WString" />
-            <Field name="country_name" size="2048" source="CrossTab:Header:2:country_name:Concat:" type="V_WString" />
-            <Field name="data_version" size="2048" source="CrossTab:Header:2:data_version:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="away_team_away_team_name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="away_team_country_id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="away_team_country_name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_country_id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_country_name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="away_team_managers_0_nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="competition_competition_id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="competition_competition_name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="competition_country_name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="competition_stage_id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="competition_stage_name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
             <Field name="home_score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
-            <Field name="home_team_id" size="2048" source="CrossTab:Header:2:home_team_id:Concat:" type="V_WString" />
-            <Field name="home_team_name" size="2048" source="CrossTab:Header:2:home_team_name:Concat:" type="V_WString" />
+            <Field name="home_team_country_id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="home_team_country_name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="home_team_home_team_name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_country_id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_country_name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="home_team_managers_0_nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
             <Field name="kick_off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
             <Field name="last_updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
             <Field name="match_date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
             <Field name="match_id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
             <Field name="match_status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
-            <Field name="referee_name" size="2048" source="CrossTab:Header:2:referee_name:Concat:" type="V_WString" />
-            <Field name="season_id" size="2048" source="CrossTab:Header:2:season_id:Concat:" type="V_WString" />
-            <Field name="season_name" size="2048" source="CrossTab:Header:2:season_name:Concat:" type="V_WString" />
-            <Field name="stadium_name" size="2048" source="CrossTab:Header:2:stadium_name:Concat:" type="V_WString" />
+            <Field name="match_week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="metadata_data_version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="metadata_shot_fidelity_version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="referee_country_id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="referee_country_name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="referee_id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="referee_name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="season_season_id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="season_season_name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="stadium_country_id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="stadium_country_name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="stadium_id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="stadium_name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -688,7 +886,7 @@
     </Node>
     <Node ToolID="62">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1746" y="678" />
+        <Position x="1806" y="678" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -703,15 +901,266 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
     </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="620" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="REGEX_Replace([FileName], &quot;(.*\\)(.*)(\\.*)(\.json)&quot;, &quot;$2&quot;)" field="FolderName" size="1073741823" type="V_WString" />
+            <FormulaField expression="REGEX_Replace([FileName], &quot;(.*\\)(.*)(\.json)&quot;, &quot;$2&quot;)" field="FileName" size="254" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>FolderName = REGEX_Replace([FileName], "(.*\\)(.*)(\\.*)(\.json)", "$2")
+FileNam...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="JSON_ValueString" size="1073741823" source="JSON_Input: " type="V_WString" />
+            <Field name="FileName" size="254" source="Formula: REGEX_Replace([FileName], &quot;(.*\\)(.*)(\.json)&quot;, &quot;$2&quot;)" type="V_WString" />
+            <Field name="FolderName" size="1073741823" source="Formula: REGEX_Replace([FileName], &quot;(.*\\)(.*)(\\.*)(\.json)&quot;, &quot;$2&quot;)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1326" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Away Score" />
+            <Field name="Away Team Away Team Id" />
+            <Field name="Away Team Away Team Name" />
+            <Field name="Competition Competition Id" />
+            <Field name="Competition Competition Name" />
+            <Field name="Competition Country Name" />
+            <Field name="Data Version" />
+            <Field name="Home Score" />
+            <Field name="Home Team Home Team Id" />
+            <Field name="Home Team Home Team Name" />
+            <Field name="Kick Off" />
+            <Field name="Last Updated" />
+            <Field name="Match Date" />
+            <Field name="Match Id" />
+            <Field name="Match Status" />
+            <Field name="Referee Name" />
+            <Field name="Season Season Id" />
+            <Field name="Season Season Name" />
+            <Field name="Stadium Name" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression><![CDATA[IF Regex_Replace([_CurrentField_], "(\w+)\s(\w+).*", "$1") 
+=  Regex_Replace([_CurrentField_], "(\w+)\s(\w+).*", "$2")
+THEN Regex_Replace([_CurrentField_], "(\w+\s)(.*)","$2")
+ELSE [_CurrentField_]
+ENDIF ]]></Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Away Team Name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="Away Team Country Id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Country Name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="Competition Country Name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="Competition Stage Id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="Competition Stage Name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
+            <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="Home Team Country Id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Country Name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Home Team Name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Kick Off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
+            <Field name="Last Updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
+            <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="Match Week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="Metadata Data Version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="Metadata Shot Fidelity Version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="Referee Country Id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="Referee Country Name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="Referee Id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Country Id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="Stadium Country Name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="Stadium Id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="1422" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>Formula</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="Away Score" />
+            <Field name="Away Team Away Team Gender" />
+            <Field name="Away Team Away Team Group" />
+            <Field name="Away Team Away Team Id" />
+            <Field name="Away Team Away Team Name" />
+            <Field name="Away Team Country Id" />
+            <Field name="Away Team Country Name" />
+            <Field name="Away Team Managers 0 Country Id" />
+            <Field name="Away Team Managers 0 Country Name" />
+            <Field name="Away Team Managers 0 Dob" />
+            <Field name="Away Team Managers 0 Id" />
+            <Field name="Away Team Managers 0 Name" />
+            <Field name="Away Team Managers 0 Nickname" />
+            <Field name="Competition Id" />
+            <Field name="Competition Name" />
+            <Field name="Competition Country Name" />
+            <Field name="Competition Stage Id" />
+            <Field name="Competition Stage Name" />
+            <Field name="Home Score" />
+            <Field name="Home Team Country Id" />
+            <Field name="Home Team Country Name" />
+            <Field name="Home Team Home Team Gender" />
+            <Field name="Home Team Home Team Group" />
+            <Field name="Home Team Home Team Id" />
+            <Field name="Home Team Home Team Name" />
+            <Field name="Home Team Managers 0 Country Id" />
+            <Field name="Home Team Managers 0 Country Name" />
+            <Field name="Home Team Managers 0 Dob" />
+            <Field name="Home Team Managers 0 Id" />
+            <Field name="Home Team Managers 0 Name" />
+            <Field name="Home Team Managers 0 Nickname" />
+            <Field name="Kick Off" />
+            <Field name="Last Updated" />
+            <Field name="Match Date" />
+            <Field name="Match Id" />
+            <Field name="Match Status" />
+            <Field name="Match Week" />
+            <Field name="Metadata Data Version" />
+            <Field name="Metadata Shot Fidelity Version" />
+            <Field name="Referee Country Id" />
+            <Field name="Referee Country Name" />
+            <Field name="Referee Id" />
+            <Field name="Referee Name" />
+            <Field name="Season Id" />
+            <Field name="Season Name" />
+            <Field name="Stadium Country Id" />
+            <Field name="Stadium Country Name" />
+            <Field name="Stadium Id" />
+            <Field name="Stadium Name" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression><![CDATA[IF Regex_Replace([_CurrentField_], "(\w+\s\w+\s)(\w+\s\w+\s).*", "$1") 
+=  Regex_Replace([_CurrentField_], "(\w+\s\w+\s)(\w+\s\w+\s).*", "$2")
+AND Regex_Match([_CurrentField_], "(\w+\s\w+\s)(\w+\s\w+\s).*")
+THEN Regex_Replace([_CurrentField_], "(\w+\s\w+\s)(.*)","$2")
+ELSE [_CurrentField_]
+ENDIF ]]></Expression>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Away Score" size="2048" source="CrossTab:Header:2:away_score:Concat:" type="V_WString" />
+            <Field name="Away Team Gender" size="2048" source="CrossTab:Header:2:away_team.away_team_gender:Concat:" type="V_WString" />
+            <Field name="Away Team Group" size="2048" source="CrossTab:Header:2:away_team.away_team_group:Concat:" type="V_WString" />
+            <Field name="Away Team Id" size="2048" source="CrossTab:Header:2:away_team.away_team_id:Concat:" type="V_WString" />
+            <Field name="Away Team Name" size="2048" source="CrossTab:Header:2:away_team.away_team_name:Concat:" type="V_WString" />
+            <Field name="Away Team Country Id" size="2048" source="CrossTab:Header:2:away_team.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Country Name" size="2048" source="CrossTab:Header:2:away_team.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:away_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Id" size="2048" source="CrossTab:Header:2:away_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Name" size="2048" source="CrossTab:Header:2:away_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Away Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:away_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Competition Id" size="2048" source="CrossTab:Header:2:competition.competition_id:Concat:" type="V_WString" />
+            <Field name="Competition Name" size="2048" source="CrossTab:Header:2:competition.competition_name:Concat:" type="V_WString" />
+            <Field name="Competition Country Name" size="2048" source="CrossTab:Header:2:competition.country_name:Concat:" type="V_WString" />
+            <Field name="Competition Stage Id" size="2048" source="CrossTab:Header:2:competition_stage.id:Concat:" type="V_WString" />
+            <Field name="Competition Stage Name" size="2048" source="CrossTab:Header:2:competition_stage.name:Concat:" type="V_WString" />
+            <Field name="Home Score" size="2048" source="CrossTab:Header:2:home_score:Concat:" type="V_WString" />
+            <Field name="Home Team Country Id" size="2048" source="CrossTab:Header:2:home_team.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Country Name" size="2048" source="CrossTab:Header:2:home_team.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Gender" size="2048" source="CrossTab:Header:2:home_team.home_team_gender:Concat:" type="V_WString" />
+            <Field name="Home Team Group" size="2048" source="CrossTab:Header:2:home_team.home_team_group:Concat:" type="V_WString" />
+            <Field name="Home Team Id" size="2048" source="CrossTab:Header:2:home_team.home_team_id:Concat:" type="V_WString" />
+            <Field name="Home Team Name" size="2048" source="CrossTab:Header:2:home_team.home_team_name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Country Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.country.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Dob" size="2048" source="CrossTab:Header:2:home_team.managers.0.dob:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Id" size="2048" source="CrossTab:Header:2:home_team.managers.0.id:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Name" size="2048" source="CrossTab:Header:2:home_team.managers.0.name:Concat:" type="V_WString" />
+            <Field name="Home Team Managers 0 Nickname" size="2048" source="CrossTab:Header:2:home_team.managers.0.nickname:Concat:" type="V_WString" />
+            <Field name="Kick Off" size="2048" source="CrossTab:Header:2:kick_off:Concat:" type="V_WString" />
+            <Field name="Last Updated" size="2048" source="CrossTab:Header:2:last_updated:Concat:" type="V_WString" />
+            <Field name="Match Date" size="2048" source="CrossTab:Header:2:match_date:Concat:" type="V_WString" />
+            <Field name="Match Id" size="2048" source="CrossTab:Header:2:match_id:Concat:" type="V_WString" />
+            <Field name="Match Status" size="2048" source="CrossTab:Header:2:match_status:Concat:" type="V_WString" />
+            <Field name="Match Week" size="2048" source="CrossTab:Header:2:match_week:Concat:" type="V_WString" />
+            <Field name="Metadata Data Version" size="2048" source="CrossTab:Header:2:metadata.data_version:Concat:" type="V_WString" />
+            <Field name="Metadata Shot Fidelity Version" size="2048" source="CrossTab:Header:2:metadata.shot_fidelity_version:Concat:" type="V_WString" />
+            <Field name="Referee Country Id" size="2048" source="CrossTab:Header:2:referee.country.id:Concat:" type="V_WString" />
+            <Field name="Referee Country Name" size="2048" source="CrossTab:Header:2:referee.country.name:Concat:" type="V_WString" />
+            <Field name="Referee Id" size="2048" source="CrossTab:Header:2:referee.id:Concat:" type="V_WString" />
+            <Field name="Referee Name" size="2048" source="CrossTab:Header:2:referee.name:Concat:" type="V_WString" />
+            <Field name="Season Id" size="2048" source="CrossTab:Header:2:season.season_id:Concat:" type="V_WString" />
+            <Field name="Season Name" size="2048" source="CrossTab:Header:2:season.season_name:Concat:" type="V_WString" />
+            <Field name="Stadium Country Id" size="2048" source="CrossTab:Header:2:stadium.country.id:Concat:" type="V_WString" />
+            <Field name="Stadium Country Name" size="2048" source="CrossTab:Header:2:stadium.country.name:Concat:" type="V_WString" />
+            <Field name="Stadium Id" size="2048" source="CrossTab:Header:2:stadium.id:Concat:" type="V_WString" />
+            <Field name="Stadium Name" size="2048" source="CrossTab:Header:2:stadium.name:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
   </Nodes>
   <Connections>
     <Connection>
-      <Origin ToolID="49" Connection="Output" />
-      <Destination ToolID="52" Connection="Input" />
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="54" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="52" Connection="Output" />
-      <Destination ToolID="56" Connection="Input" />
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
@@ -720,10 +1169,6 @@
     <Connection>
       <Origin ToolID="54" Connection="Output" />
       <Destination ToolID="53" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="56" Connection="Output" />
-      <Destination ToolID="54" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="57" Connection="Output" />
@@ -739,11 +1184,23 @@
     </Connection>
     <Connection>
       <Origin ToolID="60" Connection="Output" />
-      <Destination ToolID="57" Connection="Input" />
+      <Destination ToolID="65" Connection="Targets" />
     </Connection>
     <Connection>
       <Origin ToolID="61" Connection="Output" />
       <Destination ToolID="60" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="66" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>

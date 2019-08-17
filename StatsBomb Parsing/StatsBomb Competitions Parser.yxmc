@@ -88,7 +88,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>StatsBomb Matches Parser</Text>
+          <Text>StatsBomb Competitions Parser</Text>
           <Font name="Segoe UI" size="48" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -208,7 +208,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text>[A longer subtitle that explains in more detail what the workflow is doing]</Text>
+          <Text>Parses a competitions.json file to output a list of competitions in a SB data folder</Text>
           <Font name="Segoe UI" size="20.25" style="0" />
           <TextColor name="Black" />
           <FillColor name="White" />
@@ -263,9 +263,6 @@
           <DefaultAnnotationText>competitions.json</DefaultAnnotationText>
           <Left value="True" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="JSON_Name" size="1073741823" source="JSON_Input: " type="V_WString" />
@@ -278,7 +275,7 @@
     </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
-        <Position x="762" y="486" />
+        <Position x="638" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -309,7 +306,7 @@
     </Node>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1058" y="486" />
+        <Position x="916" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -349,7 +346,7 @@
     </Node>
     <Node ToolID="41">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="946" y="486" />
+        <Position x="777" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -379,7 +376,7 @@
     </Node>
     <Node ToolID="42">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1170" y="486" />
+        <Position x="1056" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -417,7 +414,7 @@
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="1282" y="486" />
+        <Position x="1196" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -455,7 +452,7 @@
     </Node>
     <Node ToolID="44">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiFieldFormula.MultiFieldFormula">
-        <Position x="1398" y="486" />
+        <Position x="1335" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -512,7 +509,7 @@
     </Node>
     <Node ToolID="48">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1506" y="486" />
+        <Position x="1474" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
