@@ -1,0 +1,1944 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="726" width="252" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Ratings</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="426" y="498" width="420" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Add home advantage</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="2166" y="498" width="684" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Output Ratings</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1662" y="498" width="480" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Solve system of equations</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="1398" y="498" width="240" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Multiply both sides by XT</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="870" y="726" width="504" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create score difference matrix</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="870" y="498" width="504" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Create H2H fixtures matrix</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="150" y="498" width="252" height="204" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Input H2H scores
+]]></Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="191" g="255" b="191" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="162" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev>F</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="5" />
+              <Fields>
+                <Field name="Team 1" />
+                <Field name="Team 2" />
+                <Field name="Team 1 Score" />
+                <Field name="Team 2 Score" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>A</c>
+                  <c>B</c>
+                  <c>10</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>C</c>
+                  <c>D</c>
+                  <c>4</c>
+                  <c>4</c>
+                </r>
+                <r>
+                  <c>D</c>
+                  <c>B</c>
+                  <c>9</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>A</c>
+                  <c>D</c>
+                  <c>8</c>
+                  <c>6</c>
+                </r>
+                <r>
+                  <c>B</c>
+                  <c>C</c>
+                  <c>3</c>
+                  <c>2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team 1" size="1" source="TextInput:" type="String" />
+            <Field name="Team 2" size="1" source="TextInput:" type="String" />
+            <Field name="Team 1 Score" source="TextInput:" type="Byte" />
+            <Field name="Team 2 Score" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="666" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="i" />
+          </KeyFields>
+          <DataFields>
+            <Field field="i" selected="False" />
+            <Field field="Team 1" selected="True" />
+            <Field field="Team 2" selected="True" />
+            <Field field="Team 1 Score" selected="False" />
+            <Field field="Team 2 Score" selected="False" />
+            <Field field="Home" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Name" size="6" source="Transpose:" type="String" />
+            <Field name="Value" size="1073741823" source="(Multiple Sources)" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="894" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Value" action="GroupBy" rename="Team" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Value" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="990" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>j</FieldName>
+          <StartValue>0</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="j" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Value" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1110" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Value</FieldFind>
+          <FieldSearch>Team</FieldSearch>
+          <ReplaceFoundField>Value</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="True" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="j" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Name" size="6" source="Transpose:" type="String" />
+            <Field name="Value" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="j" source="RecordID: Starting Value=0" type="Int32" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+        <Position x="1110" y="594" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <NumRows value="3" />
+          <Fields>
+            <Field name="Name" />
+            <Field name="Matrix Value" />
+          </Fields>
+          <Data>
+            <r>
+              <c>Team 1</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>Team 2</c>
+              <c>1</c>
+            </r>
+            <r>
+              <c>Home</c>
+              <c>1</c>
+            </r>
+          </Data>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Name" size="6" source="TextInput:" type="String" />
+            <Field name="Matrix Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="1206" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>Name</FieldFind>
+          <FieldSearch>Name</FieldSearch>
+          <ReplaceFoundField>Name</ReplaceFoundField>
+          <FindMode>FindWhole</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="Matrix Value" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Name" size="6" source="Transpose:" type="String" />
+            <Field name="Value" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="j" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Matrix Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1302" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="False" />
+            <SelectField field="Value" selected="False" />
+            <SelectField field="Matrix Value" selected="True" rename="Value" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="j" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings>
+        <Position x="1422" y="534" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input2"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output3">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="j" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Matrix Calculations\Transpose Matrix.yxmc" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="1542" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input1"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+          <Value name="Input.Input2"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output14">
+          <RecordInfo>
+            <Field name="i" source="Summarize: GroupBy - Left_i" type="Int32" />
+            <Field name="j" source="Summarize: GroupBy - Right_j" type="Int32" />
+            <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Left_i" order="Asc" />
+            <Field field="Right_j" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Matrix Calculations\Matrix Multiplication.yxmc" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2742" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output35</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1164" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Massey Ratings Calculator</Text>
+          <Font name="Segoe UI" size="48" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="78" y="198" width="456" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Workflow built by: Ian Baldwin (@balders93)</Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1266" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="i" selected="True" />
+            <SelectField field="Value" selected="True" />
+            <SelectField field="j" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Value" source="Formula: [Count]*[Rating]-[Sum_For]" type="Double" />
+            <Field name="j" source="Formula: 0" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="570" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Home Modifier&quot;" field="Home" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="2">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Home = "Home Modifier"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team 1" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 2" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 1 Score" source="TextInput:" type="Double" />
+            <Field name="Team 2 Score" source="TextInput:" type="Double" />
+            <Field name="Home" size="1073741823" source="Formula: &quot;Home Modifier&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Detour.Detour">
+        <Position x="462" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <DetourRight value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team 1" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 2" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 1 Score" source="TextInput:" type="Double" />
+            <Field name="Team 2 Score" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team 1" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 2" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 1 Score" source="TextInput:" type="Double" />
+            <Field name="Team 2 Score" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetour" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DetourEnd.DetourEnd">
+        <Position x="762" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Name" size="6" source="Transpose:" type="String" />
+            <Field name="Value" size="9999999" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDetourEnd" />
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="570" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="i" />
+          </KeyFields>
+          <DataFields>
+            <Field field="i" selected="False" />
+            <Field field="Team 1" selected="True" />
+            <Field field="Team 2" selected="True" />
+            <Field field="Team 1 Score" selected="False" />
+            <Field field="Team 2 Score" selected="False" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Name" size="6" source="Transpose:" type="String" />
+            <Field name="Value" size="9999999" source="TextInput:" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="150" width="1164" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>[A longer subtitle that explains in more detail what the workflow is doing]</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2202" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="i" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="i" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Team" selected="True" input="Right_" />
+                <SelectField field="Left_Solution" selected="True" rename="Defensive Rating" input="Left_" />
+                <SelectField field="Left_i" selected="False" input="Left_" />
+                <SelectField field="Left_j" selected="False" input="Left_" />
+                <SelectField field="Left_Avg_Solution" selected="True" input="Left_" />
+                <SelectField field="Right_i" selected="False" input="Right_" />
+                <SelectField field="Right_Count" selected="False" input="Right_" />
+                <SelectField field="Right_Sum_For" selected="False" input="Right_" />
+                <SelectField field="Right_Rating" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
+            <Field name="Solution" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Defensive Rating" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="i" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2382" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>Contains([Team],"Home Modifier")</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>Contains</Operator>
+            <Field>Team</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-10-05 22:08:40</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Home Modifier</Operand>
+              <StartDate>2019-10-05 22:08:40</StartDate>
+              <EndDate>2019-10-05 22:08:40</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Contains([Team],"Home Modifier")</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Defensive Rating" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+            <Field name="Rating" source="Formula: [Rating]-2*[Avg_Solution]" type="Double" />
+            <Field name="Offensive Rating" source="Formula: [Rating]-[Defensive Rating]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Defensive Rating" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+            <Field name="Rating" source="Formula: [Rating]-2*[Avg_Solution]" type="Double" />
+            <Field name="Offensive Rating" source="Formula: [Rating]-[Defensive Rating]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2502" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="True" />
+          <OutputOrder>
+            <Connection>#1</Connection>
+            <Connection>#2</Connection>
+          </OutputOrder>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Defensive Rating" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+            <Field name="Rating" source="Formula: [Rating]-2*[Avg_Solution]" type="Double" />
+            <Field name="Offensive Rating" source="Formula: [Rating]-[Defensive Rating]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.CheckBoxGroup.CheckBoxGroup">
+        <Position x="462" y="306" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="474" y="402" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="79">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="318" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>i</FieldName>
+          <StartValue>0</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team 1" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 2" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 1 Score" source="TextInput:" type="Double" />
+            <Field name="Team 2 Score" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="i" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="234" y="798" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input88</Name>
+          <Abbrev>R</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="Team" />
+                <Field name="Rating" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>A</c>
+                  <c>2.375</c>
+                </r>
+                <r>
+                  <c>B</c>
+                  <c>-2.5</c>
+                </r>
+                <r>
+                  <c>C</c>
+                  <c>-1.125</c>
+                </r>
+                <r>
+                  <c>D</c>
+                  <c>1.25</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="1" source="TextInput:" type="String" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="91">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="714" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team 1" selected="True" rename="Team" />
+            <SelectField field="Team 1 Score" selected="True" rename="For" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="For" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="92">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="762" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team 2" selected="True" rename="Team" />
+            <SelectField field="Team 2 Score" selected="True" rename="For" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="For" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="93">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="618" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="(Multiple Sources)" type="V_WString" />
+            <Field name="For" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="94">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="714" y="726" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Team" action="GroupBy" rename="Team" />
+            <SummarizeField field="Team" action="Count" rename="Count" />
+            <SummarizeField field="For" action="Sum" rename="Sum_For" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Team" type="V_WString" />
+            <Field name="Count" source="Summarize: Count - Team" type="Int64" />
+            <Field name="Sum_For" source="Summarize: Sum - For" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Team" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="95">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="906" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Team" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Team" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Team" selected="True" input="Left_" />
+                <SelectField field="Left_Count" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_For" selected="True" input="Left_" />
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="Right_Rating" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Team" type="V_WString" />
+            <Field name="Count" source="Summarize: Count - Team" type="Int64" />
+            <Field name="Sum_For" source="Summarize: Sum - For" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Team" type="V_WString" />
+            <Field name="Count" source="Summarize: Count - Team" type="Int64" />
+            <Field name="Sum_For" source="Summarize: Sum - For" type="Double" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Team" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Team" size="1" source="TextInput:" type="String" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="96">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1158" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Count]*[Rating]-[Sum_For]" field="Value" size="8" type="Double" />
+            <FormulaField expression="0" field="j" size="1" type="Byte" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Value = [Count]*[Rating]-[Sum_For]
+j = 0
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Count" source="Summarize: Count - Team" type="Int64" />
+            <Field name="Sum_For" source="Summarize: Sum - For" type="Double" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+            <Field name="Value" source="Formula: [Count]*[Rating]-[Sum_For]" type="Double" />
+            <Field name="j" source="Formula: 0" type="Byte" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Team" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1770" y="570" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Solution" action="Avg" rename="Avg_Solution" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1854" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1938" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Solution]-[Avg_Solution]" field="Solution" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Solution = [Solution]-[Avg_Solution]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Solution" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2046" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Solution" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="105">
+      <GuiSettings>
+        <Position x="1674" y="558" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Input.Input2"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+          <Value name="Input.Target Vector"><![CDATA[i=i
+j=j
+Value=Value
+]]></Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output66">
+          <RecordInfo>
+            <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+          </RecordInfo>
+          <SortInfo locale="0">
+            <Field field="i" order="Ascending" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="Matrix Calculations\Solving Equations with LU Decomposition.yxmc" />
+    </Node>
+    <Node ToolID="106">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1062" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Team" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Team" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_j" selected="True" rename="i" input="Left_" />
+                <SelectField field="Right_Team" selected="False" rename="Right_Team" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="j" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="i" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Count" source="Summarize: Count - Team" type="Int64" />
+            <Field name="Sum_For" source="Summarize: Sum - For" type="Double" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="Team" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Team" type="V_WString" />
+            <Field name="Count" source="Summarize: Count - Team" type="Int64" />
+            <Field name="Sum_For" source="Summarize: Sum - For" type="Double" />
+            <Field name="Rating" source="TextInput:" type="Double" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="Team" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="546" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Home Modifier&quot;" field="Team" size="9999999" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Team = "Home Modifier"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Formula: &quot;Home Modifier&quot;" type="V_WString" />
+            <Field name="For" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="234" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team 1" selected="True" type="V_WString" size="9999999" />
+            <SelectField field="Team 2" selected="True" type="V_WString" size="9999999" />
+            <SelectField field="Team 1 Score" selected="True" type="Double" size="8" />
+            <SelectField field="Team 2 Score" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team 1" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 2" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="Team 1 Score" source="TextInput:" type="Double" />
+            <Field name="Team 2 Score" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="450" y="810" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Team 1" selected="True" rename="Team" />
+            <SelectField field="Team 1 Score" selected="True" rename="For" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="TextInput:" type="V_WString" />
+            <Field name="For" source="TextInput:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="111">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2286" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Rating]-2*[Avg_Solution]" field="Rating" size="8" type="Double" />
+            <FormulaField expression="[Rating]-[Defensive Rating]" field="Offensive Rating" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Rating = [Rating]-2*[Avg_Solution]
+Offensive Rating = [Rating]-[Defensive Rating...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Defensive Rating" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Avg_Solution" source="Summarize: Avg - Solution" type="Double" />
+            <Field name="Rating" source="Formula: [Rating]-2*[Avg_Solution]" type="Double" />
+            <Field name="Offensive Rating" source="Formula: [Rating]-[Defensive Rating]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="112">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2622" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Avg_Solution" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Team" size="9999999" source="Summarize: GroupBy - Value" type="V_WString" />
+            <Field name="Defensive Rating" source="Formula: [Solution]-[Avg_Solution]" type="Double" />
+            <Field name="Rating" source="Formula: [Rating]-2*[Avg_Solution]" type="Double" />
+            <Field name="Offensive Rating" source="Formula: [Rating]-[Defensive Rating]" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="58" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="59" Connection="Output" />
+      <Destination ToolID="58" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="11" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="106" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="95" Connection="Join" />
+      <Destination ToolID="106" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="14" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="14" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="18" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="19" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output3" />
+      <Destination ToolID="19" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output14" />
+      <Destination ToolID="105" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="105" Connection="Target Vector" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Left" />
+      <Destination ToolID="59" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Right" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Join" />
+      <Destination ToolID="111" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="64" Connection="True" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="64" Connection="False" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="112" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="67" Connection="Question" />
+      <Destination ToolID="68" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="68" Connection="Action" />
+      <Destination ToolID="57" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="91" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="110" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="95" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="94" Connection="Output" />
+      <Destination ToolID="95" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="91" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="93" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="93" Connection="Output" />
+      <Destination ToolID="94" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="96" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="99" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output66" />
+      <Destination ToolID="99" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Output" />
+      <Destination ToolID="100" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="Output" />
+      <Destination ToolID="63" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Join" />
+      <Destination ToolID="63" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="105" Connection="Output66" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="106" Connection="Join" />
+      <Destination ToolID="96" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="112" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Check Box (67)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (88)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Massey Att-Def Split</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>Dynamic</Type>
+              <Description />
+              <ToolId value="68" />
+              <Expression>{{INPUT}}</Expression>
+              <Destination>57/DetourRight/@value</Destination>
+              <Mapping>Update Detour Direction from Question</Mapping>
+              <Mode>Expression</Mode>
+              <DynamicConfiguration />
+              <DefaultConfiguration value="True" />
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (34)</Name>
+          <ToolId value="34" />
+          <Questions>
+            <Question>
+              <Type>BooleanGroup</Type>
+              <Description>Include home field advantage?</Description>
+              <Name>Check Box (67)</Name>
+              <ToolId value="67" />
+              <Questions />
+              <Default value="True" />
+              <Collapsable value="False" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (35)</Description>
+              <Name>Macro Output (35)</Name>
+              <ToolId value="35" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (88)</Name>
+              <ToolId value="88" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="0" />
+      <MacroInputs />
+      <MacroOutputs />
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="18" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+        <Tool ToolId="35" Selected="True" />
+        <Tool ToolId="88" Selected="True" />
+        <Tool ToolId="105" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
