@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="24">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -158,7 +158,7 @@
                 <r>
                   <c>0</c>
                   <c>0</c>
-                  <c>2</c>
+                  <c>2.0</c>
                 </r>
                 <r>
                   <c>0</c>
@@ -213,7 +213,7 @@
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -503,7 +503,7 @@
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="0" field="value" size="8" type="Double" />
+            <FormulaField expression="0" field="Value" size="8" type="Double" />
             <FormulaField expression="&quot;U&quot;" field="Triangle" size="1" type="String" />
           </FormulaFields>
         </Configuration>
@@ -512,7 +512,7 @@
           <AnnotationText><![CDATA[value = 0
 Triangle = "U"
 ]]></AnnotationText>
-          <DefaultAnnotationText><![CDATA[value = 0
+          <DefaultAnnotationText><![CDATA[Value = 0
 Triangle = "U"
 ]]></DefaultAnnotationText>
           <Left value="False" />
@@ -521,7 +521,7 @@ Triangle = "U"
           <RecordInfo>
             <Field name="i" type="Int32" />
             <Field name="j" type="Int32" />
-            <Field name="value" source="Formula: 0" type="Double" />
+            <Field name="Value" source="Formula: 0" type="Double" />
             <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
           </RecordInfo>
         </MetaInfo>
@@ -535,7 +535,7 @@ Triangle = "U"
       <Properties>
         <Configuration>
           <FormulaFields>
-            <FormulaField expression="IF i = j THEN 1 ELSE 0 ENDIF " field="value" size="8" type="Double" />
+            <FormulaField expression="IF i = j THEN 1 ELSE 0 ENDIF " field="Value" size="8" type="Double" />
             <FormulaField expression="&quot;L&quot;" field="Triangle" size="1" type="String" />
           </FormulaFields>
         </Configuration>
@@ -544,7 +544,7 @@ Triangle = "U"
           <AnnotationText><![CDATA[value = IF i = j THEN 1 ELSE 0 ENDIF 
 Triangle = "L"
 ]]></AnnotationText>
-          <DefaultAnnotationText><![CDATA[value = IF i = j THEN 1 ELSE 0 ENDIF 
+          <DefaultAnnotationText><![CDATA[Value = IF i = j THEN 1 ELSE 0 ENDIF 
 Triangle = "L"
 ]]></DefaultAnnotationText>
           <Left value="False" />
@@ -553,7 +553,7 @@ Triangle = "L"
           <RecordInfo>
             <Field name="i" type="Int32" />
             <Field name="j" type="Int32" />
-            <Field name="value" source="Formula: IF i = j THEN 1 ELSE 0 ENDIF " type="Double" />
+            <Field name="Value" source="Formula: IF i = j THEN 1 ELSE 0 ENDIF " type="Double" />
             <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
           </RecordInfo>
         </MetaInfo>
@@ -584,14 +584,14 @@ Triangle = "L"
           <RecordInfo>
             <Field name="i" type="Int32" />
             <Field name="j" type="Int32" />
-            <Field name="value" source="Formula: (Multiple Sources)" type="Double" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="Double" />
             <Field name="Triangle" size="1" source="Formula: (Multiple Sources)" type="String" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
     </Node>
-    <Node ToolID="33">
+    <Node ToolID="35">
       <GuiSettings>
         <Position x="1686" y="270" />
       </GuiSettings>
@@ -614,10 +614,10 @@ Value=Value
         </Annotation>
         <MetaInfo connection="End Output">
           <RecordInfo>
-            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Iteration Output">
@@ -677,11 +677,11 @@ Value=Value
     </Connection>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="33" Connection="Answer Matrix" />
+      <Destination ToolID="35" Connection="Answer Matrix" />
     </Connection>
     <Connection>
       <Origin ToolID="21" Connection="Output" />
-      <Destination ToolID="33" Connection="L &amp; U" />
+      <Destination ToolID="35" Connection="L &amp; U" />
     </Connection>
     <Connection name="#1">
       <Origin ToolID="8" Connection="Output" />
@@ -724,7 +724,7 @@ Value=Value
       <Destination ToolID="21" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="33" Connection="End Output" />
+      <Origin ToolID="35" Connection="End Output" />
       <Destination ToolID="34" Connection="Input" />
     </Connection>
   </Connections>
@@ -814,7 +814,7 @@ Value=Value
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
         <Tool ToolId="2" Selected="True" />
-        <Tool ToolId="33" Selected="True" />
+        <Tool ToolId="35" Selected="True" />
         <Tool ToolId="34" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="90">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -440,7 +440,7 @@
                   <c>L</c>
                   <c>0</c>
                   <c>0</c>
-                  <c>1</c>
+                  <c>1.0</c>
                 </r>
                 <r>
                   <c>L</c>
@@ -522,7 +522,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -571,7 +571,7 @@
                 <r>
                   <c>0</c>
                   <c>0</c>
-                  <c>2</c>
+                  <c>2.0</c>
                 </r>
                 <r>
                   <c>0</c>
@@ -626,7 +626,7 @@
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -861,7 +861,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -869,7 +869,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -911,7 +911,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -919,7 +919,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -960,7 +960,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -968,7 +968,7 @@
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1058,7 +1058,7 @@ Value=Value
             <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
             <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
             <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
-            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="Right_Value" source="TextInput:" type="Double" />
           </RecordInfo>
           <SortInfo>
             <Field field="i" order="" />
@@ -1069,7 +1069,7 @@ Value=Value
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
           <SortInfo noProgress="True">
             <Field field="i" />
@@ -1132,7 +1132,7 @@ Value=Value
             <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
             <Field name="Value" source="Formula: [Right_Value]-[Value]" type="Double" />
             <Field name="Triangle" size="1" source="Formula: &quot;U&quot;" type="String" />
-            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="Right_Value" source="TextInput:" type="Double" />
           </RecordInfo>
           <SortInfo>
             <Field field="i" order="" />
@@ -1215,7 +1215,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -1223,7 +1223,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1400,7 +1400,7 @@ Value=Value
             <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
             <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
             <Field name="Value" source="Summarize: Sum - New Matrix Value" type="Double" />
-            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="Right_Value" source="TextInput:" type="Double" />
             <Field name="Uii" source="(Multiple Sources)" type="Double" />
           </RecordInfo>
           <SortInfo>
@@ -1412,7 +1412,7 @@ Value=Value
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
           <SortInfo noProgress="True">
             <Field field="i" />
@@ -1445,7 +1445,7 @@ Value=Value
             <Field name="i" source="Summarize: GroupBy - Left_i" type="Byte" />
             <Field name="j" source="Summarize: GroupBy - Right_j" type="Byte" />
             <Field name="Value" source="Formula: ([Right_Value]-[Value])/[Uii]" type="Double" />
-            <Field name="Right_Value" source="TextInput:" type="Int16" />
+            <Field name="Right_Value" source="TextInput:" type="Double" />
             <Field name="Uii" source="(Multiple Sources)" type="Double" />
           </RecordInfo>
           <SortInfo>
@@ -1591,7 +1591,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -1599,7 +1599,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1642,7 +1642,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -1650,7 +1650,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -1776,7 +1776,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
@@ -1784,7 +1784,7 @@ Value=Value
             <Field name="Triangle" size="1" source="TextInput:" type="String" />
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>

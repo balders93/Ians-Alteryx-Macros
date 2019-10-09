@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.1">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="77">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -197,7 +197,7 @@
                 <r>
                   <c>0</c>
                   <c>0</c>
-                  <c>2</c>
+                  <c>2.0</c>
                 </r>
                 <r>
                   <c>0</c>
@@ -252,7 +252,7 @@
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -319,7 +319,7 @@
         </Annotation>
       </Properties>
     </Node>
-    <Node ToolID="80">
+    <Node ToolID="83">
       <GuiSettings>
         <Position x="378" y="306" />
       </GuiSettings>
@@ -337,10 +337,10 @@ Value=Value
         </Annotation>
         <MetaInfo connection="Output Decomposition">
           <RecordInfo>
-            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -369,7 +369,7 @@ Value=Value
                 <r>
                   <c>0</c>
                   <c>0</c>
-                  <c>17</c>
+                  <c>17.0</c>
                 </r>
                 <r>
                   <c>1</c>
@@ -394,7 +394,7 @@ Value=Value
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -424,10 +424,10 @@ Solution=Solution
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="TextInput: (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Iterative Output">
@@ -461,7 +461,7 @@ Solution=Solution
           <RecordInfo>
             <Field name="i" source="TextInput:" type="Byte" />
             <Field name="j" source="TextInput:" type="Byte" />
-            <Field name="Value" source="TextInput:" type="Int16" />
+            <Field name="Value" source="TextInput:" type="Double" />
             <Field name="Solution" source="Formula: 0" type="Double" />
           </RecordInfo>
         </MetaInfo>
@@ -499,18 +499,18 @@ Solution=Solution
         </Annotation>
         <MetaInfo connection="True">
           <RecordInfo>
-            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="False">
           <RecordInfo>
-            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -537,9 +537,9 @@ Solution=Solution
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -563,9 +563,9 @@ Solution=Solution
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Solution" source="Formula: 0" type="Double" />
           </RecordInfo>
         </MetaInfo>
@@ -596,10 +596,10 @@ Solution=Solution
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
         <MetaInfo connection="Iterative Output">
@@ -642,8 +642,8 @@ j = [Max_i]-j
             <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
             <Field name="i" source="Formula: [Max_i] - i " type="Int32" />
             <Field name="j" source="Formula: [Max_i]-j " type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -666,7 +666,7 @@ j = [Max_i]-j
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -696,11 +696,11 @@ j = [Max_i]-j
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Solution" source="Formula: 0" type="Double" />
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -725,10 +725,10 @@ j = [Max_i]-j
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Solution" source="Formula: 0" type="Double" />
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -755,8 +755,8 @@ j = [Max_i]-j
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
             <Field name="Solution" source="Formula: 0" type="Double" />
           </RecordInfo>
         </MetaInfo>
@@ -787,11 +787,11 @@ j = [Max_i]-j
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Triangle" size="1" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="String" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -820,7 +820,7 @@ j = [Max_i]-j
             <Field name="Triangle" size="1" source="Formula: &quot;L&quot;" type="String" />
             <Field name="i" source="Formula: [Max_i] - i " type="Int32" />
             <Field name="j" source="Formula: [Max_i]-j " type="Int32" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -867,11 +867,11 @@ j = [Max_i]-j
         </Annotation>
         <MetaInfo connection="Output">
           <RecordInfo>
-            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -896,10 +896,10 @@ j = [Max_i]-j
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
-            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="Max_i" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -927,8 +927,8 @@ j = [Max_i]-j
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
         </MetaInfo>
       </Properties>
@@ -952,8 +952,8 @@ j = [Max_i]-j
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="i" source="Formula: [Max_i]-[i]" type="Int32" />
-            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
-            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
+            <Field name="j" source="(Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Byte" />
+            <Field name="Solution" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Double" />
           </RecordInfo>
           <SortInfo locale="0">
             <Field field="i" order="Ascending" />
@@ -986,10 +986,10 @@ j = [Max_i]-j
   <Connections>
     <Connection>
       <Origin ToolID="2" Connection="Output" />
-      <Destination ToolID="80" Connection="Input2" />
+      <Destination ToolID="83" Connection="Input2" />
     </Connection>
     <Connection>
-      <Origin ToolID="80" Connection="Output Decomposition" />
+      <Origin ToolID="83" Connection="Output Decomposition" />
       <Destination ToolID="43" Connection="Input" />
     </Connection>
     <Connection>
@@ -1179,11 +1179,11 @@ j = [Max_i]-j
       <Wiz_ShowOutput value="True" />
       <Wiz_OpenOutputTools>
         <Tool ToolId="2" Selected="True" />
+        <Tool ToolId="83" Selected="True" />
         <Tool ToolId="37" Selected="True" />
         <Tool ToolId="79" Selected="True" />
         <Tool ToolId="78" Selected="True" />
         <Tool ToolId="66" Selected="True" />
-        <Tool ToolId="80" Selected="True" />
       </Wiz_OpenOutputTools>
       <Wiz_OutputMessage />
       <Wiz_NoOutputFilesMessage />
