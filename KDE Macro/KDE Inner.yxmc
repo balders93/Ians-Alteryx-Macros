@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2018.4">
+<AlteryxDocument yxmdVer="2019.2">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
@@ -79,7 +79,7 @@
           <UseFileInput value="False" />
           <Name>Input5</Name>
           <Abbrev />
-          <ShowFieldMap value="False" />
+          <ShowFieldMap value="True" />
           <Optional value="False" />
           <TextInput>
             <Configuration>
@@ -268,7 +268,8 @@
               <ToolId value="8" />
               <Mode>Simple</Mode>
               <Variable />
-              <Replace value="False" />
+              <Replace value="True" />
+              <ReplaceText>1</ReplaceText>
               <Destination>1/NumRows/@value</Destination>
             </Action>
           </True>
