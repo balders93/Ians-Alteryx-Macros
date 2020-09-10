@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.2">
+<AlteryxDocument yxmdVer="2019.3">
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
@@ -277,9 +277,9 @@
               <ToolId value="7" />
               <Multiple value="True" />
               <Multiple_Custom value="True" />
-              <Multiple_Start>IsNull(</Multiple_Start>
-              <Multiple_Separator>) AND IsNull(</Multiple_Separator>
-              <Multiple_End>)</Multiple_End>
+              <Multiple_Start>IsNull([</Multiple_Start>
+              <Multiple_Separator>]) AND IsNull([</Multiple_Separator>
+              <Multiple_End>])</Multiple_End>
               <Multiple_Default value="True" />
               <Mode>MacroField</Mode>
               <MacroField_InputTool value="0" />
