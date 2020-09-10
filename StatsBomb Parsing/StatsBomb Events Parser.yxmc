@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.2">
+<AlteryxDocument yxmdVer="2019.3">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -546,7 +546,7 @@
     </Node>
     <Node ToolID="95">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1362" y="726" />
+        <Position x="1362" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -580,7 +580,7 @@ ENDIF
     </Node>
     <Node ToolID="97">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1458" y="726" />
+        <Position x="1458" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -635,7 +635,7 @@ ENDIF
     </Node>
     <Node ToolID="99">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1554" y="726" />
+        <Position x="1554" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -696,7 +696,7 @@ ENDIF
     </Node>
     <Node ToolID="100">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1650" y="726" />
+        <Position x="1650" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -847,7 +847,7 @@ ENDIF
     </Node>
     <Node ToolID="104">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1554" y="858" />
+        <Position x="1554" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -881,7 +881,7 @@ ENDIF
     </Node>
     <Node ToolID="105">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="1746" y="858" />
+        <Position x="1746" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1047,7 +1047,7 @@ ENDIF
     </Node>
     <Node ToolID="108">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1650" y="858" />
+        <Position x="1650" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -1102,7 +1102,7 @@ ENDIF
     </Node>
     <Node ToolID="112">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1938" y="858" />
+        <Position x="1938" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -1947,7 +1947,7 @@ ENDIF
     </Node>
     <Node ToolID="132">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="1842" y="726" />
+        <Position x="1842" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2023,7 +2023,7 @@ ENDIF
     </Node>
     <Node ToolID="133">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
-        <Position x="2106" y="858" />
+        <Position x="2106" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2249,7 +2249,7 @@ ENDIF
     </Node>
     <Node ToolID="137">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="1938" y="726" />
+        <Position x="1938" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2266,7 +2266,7 @@ ENDIF
     </Node>
     <Node ToolID="138">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
-        <Position x="2214" y="858" />
+        <Position x="2214" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2341,7 +2341,7 @@ ENDIF
     </Node>
     <Node ToolID="141">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1746" y="726" />
+        <Position x="1746" y="702" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -2418,7 +2418,7 @@ ENDIF
     </Node>
     <Node ToolID="142">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="2022" y="858" />
+        <Position x="2022" y="834" />
       </GuiSettings>
       <Properties>
         <Configuration>
