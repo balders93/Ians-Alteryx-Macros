@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<AlteryxDocument yxmdVer="2019.2">
+<AlteryxDocument yxmdVer="2019.3">
   <Nodes>
     <Node ToolID="26">
       <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
@@ -413,7 +413,7 @@
             <Field name="Country Id" source="CrossTab:Header:4:country.id:Concat:" type="Int32" />
             <Field name="Country Name" size="2048" source="CrossTab:Header:4:country.name:Concat:" type="V_WString" />
             <Field name="Jersey Number" source="CrossTab:Header:4:jersey_number:Concat:" type="Int32" />
-            <Field name="Player Id" size="2048" source="CrossTab:Header:4:player_id:Concat:" type="V_WString" />
+            <Field name="Player Id" source="CrossTab:Header:4:player_id:Concat:" type="Int32" />
             <Field name="Player Name" size="2048" source="CrossTab:Header:4:player_name:Concat:" type="V_WString" />
             <Field name="Team Id" source="CrossTab:Header:2:team_id:Concat:" type="Int32" />
             <Field name="Team Name" size="2048" source="CrossTab:Header:2:team_name:Concat:" type="V_WString" />
@@ -436,6 +436,7 @@
             <SelectField field="Player Temp ID" selected="False" />
             <SelectField field="country_id" selected="True" type="Int32" size="4" />
             <SelectField field="jersey_number" selected="True" type="Int32" size="4" />
+            <SelectField field="player_id" selected="True" type="Int32" size="4" />
             <SelectField field="team_id" selected="True" type="Int32" size="4" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
@@ -451,7 +452,7 @@
             <Field name="country_id" source="CrossTab:Header:4:country.id:Concat:" type="Int32" />
             <Field name="country_name" size="2048" source="CrossTab:Header:4:country.name:Concat:" type="V_WString" />
             <Field name="jersey_number" source="CrossTab:Header:4:jersey_number:Concat:" type="Int32" />
-            <Field name="player_id" size="2048" source="CrossTab:Header:4:player_id:Concat:" type="V_WString" />
+            <Field name="player_id" source="CrossTab:Header:4:player_id:Concat:" type="Int32" />
             <Field name="player_name" size="2048" source="CrossTab:Header:4:player_name:Concat:" type="V_WString" />
             <Field name="team_id" source="CrossTab:Header:2:team_id:Concat:" type="Int32" />
             <Field name="team_name" size="2048" source="CrossTab:Header:2:team_name:Concat:" type="V_WString" />
